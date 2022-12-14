@@ -1,0 +1,40 @@
+{% if about_title or about_image or about_content or about_button %}
+	<section data-component="about-section" class="about-section">
+		<div class="container">
+			<div class="about-section__block">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-md-7 text-center text-md-left">
+						{% if about_title %}
+							<h2>{{ about_title }}</h2>
+						{% endif %}
+
+						{{ about_content }}
+
+						{% if about_button %}
+							<a href="{{ about_button.url }}" class="btn primary d-none d-md-inline-flex" target="{{ about_button.target }}">
+								{{ about_button.title }}
+							</a>
+						{% endif %}
+					</div>
+
+					<div class="col-md-5 d-md-flex justify-content-md-end">
+						{% if about_image %}
+							<div class="about-section__image">
+								{{ image(about_image,[350,391]) }}
+							</div>
+						{% endif %}
+
+						{% if about_button %}
+							<div class="d-flex d-md-none justify-content-center">
+								<a href="{{ about_button.url }}" class="btn primary w-100" target="{{ about_button.target }}">
+									{{ about_button.title }}
+								</a>
+							</div>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endif %}
+

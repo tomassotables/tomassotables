@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/sold-product/sold-product.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/65.00b5e.chunk.js","sourcesContent":["import './sold-product.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

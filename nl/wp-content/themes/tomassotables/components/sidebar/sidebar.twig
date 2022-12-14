@@ -1,0 +1,52 @@
+<div data-component="sidebar" class="sidebar">
+    <div class="sidebar__top">
+    	
+    	<div id="sb_mobile_top">
+	    	<div class="category-section__heading">
+	            <h1>{{ fn('woocommerce_page_title') }}</h1>
+	        </div>
+	        
+	        {% if options.interior_advisor_button %}
+	            <div class="category-section__talk">
+	                <a href="{{ options.interior_advisor_button.url }}" class="btn btn-full btn-small">
+	                    <i class="icon-phone mr-md-2"></i> <span>{{ options.interior_advisor_button.title }}</span>
+	                </a>
+	            </div>
+	        {% endif %}
+	        {% if queried_object.description %}
+		        <div class="category-section__description sb_top_description">
+	                {% do fn('discript_short', queried_object.description) %}
+	            </div>
+	        {% endif %}
+        </div>
+        
+        <a href="#filter-popup" class="sidebar__filter-btn open-popup-link">
+            <i class="icon-filter-square"></i> {{ __('Filter') }}
+        </a>
+
+        <div class="sidebar__sort">
+            <h6>{{ __('Sort by:') }}</h6>
+
+            {% do action('woocommerce_sort_by_filter') %}
+        </div>
+    </div>
+
+    <div class="sidebar__filter mfp-hide" id="filter-popup">
+    	
+        <h6 class="sidebar__heading">{{ __('Filter Option') }}</h6>
+
+        <div class="sidebar__filter-holder">
+            {% do fn('dynamic_sidebar', 'filter_sidebar') %}
+
+            {% if options.interior_advisor_button %}
+                <a href="{{ options.interior_advisor_button.url }}" class="btn btn-outline btn-small open_chat2">
+                    <i class="icon-phone mr-2"></i> {{ options.interior_advisor_button.title }}
+                </a>
+            {% endif %}
+        </div>
+
+        <div class="sidebar__filter-back">
+            <span class="btn btn-primary w-100 popup-modal-dismiss">{{ __('Toon producten') }}</span>
+        </div>
+    </div>
+</div>

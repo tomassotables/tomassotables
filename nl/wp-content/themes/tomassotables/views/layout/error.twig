@@ -1,0 +1,17 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+    {% set not_found = get_404() %}
+
+    {% if not_found %}
+        {{ not_found.content }}
+    {% else %}
+        <div data-component="content" class="content mt-5 mb-5">
+            <div class="container">
+                <h1>{{ __('Page not found') }}</h1>
+
+                <p>{{ __('We could not locate the page you are looking for...') }}</p>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

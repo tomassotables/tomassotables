@@ -1,0 +1,29 @@
+<div data-component="customer-link" class="customer-link">
+	<div class="customer-link__top d-block d-lg-none">
+		<a href="#" class="customer-link__angle">
+			<i class="icon-angle-right"></i>
+		</a>
+
+		<div class="customer-link__title">{{ post.title }}</div>
+	</div>
+
+	<div class="customer-link__block d-none d-lg-block">
+		{% for item in customerMenu.items %}
+			<div class="customer-link__item">
+				<h6>{{ item.title }}</h6>
+
+				<ul class="customer-link__link">
+					{% for child in item.children %}
+						<li>
+							<a href="{{ child.link }}">
+								{{ child.title }}
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		{% endfor %}
+
+	</div>
+</div>
+

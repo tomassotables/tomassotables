@@ -1,0 +1,116 @@
+<section data-component="category-section" class="category-section">
+    <div id="sb_desktop_top" class="category-section__top d-flex">
+        <div class="category-section__heading">
+            <h1>{{ fn('woocommerce_page_title') }}</h1>
+
+            <div class="category-section__description">
+                {% do action('woocommerce_archive_description') %}
+            </div>
+        </div>
+
+        {% if options.interior_advisor_button %}
+            <div class="category-section__talk">
+                <a href="{{ options.interior_advisor_button.url }}" class="btn btn-full btn-small open_chat3">
+                    <i class="icon-phone mr-md-2"></i> <span>{{ options.interior_advisor_button.title }}</span>
+                </a>
+            </div>
+        {% endif %}
+    </div>
+
+    {#
+    {% set term_sub = fn('get_term_children', queried_object.term_id, 'product_cat') %}
+
+    {% if term_sub %}
+        <div class="category-section__slider js-categorie-slider">
+            {% for item in term_sub %}
+                <div class="category-section__item">
+                    {% set item = fn('get_term_by', 'id', item, 'product_cat') %}
+                    {% set term_image = fn('get_term_meta', item.term_id, 'thumbnail_id', 'true') %}
+                    {% include 'components/card-table' %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+    #}
+
+    {% set cat_term_sub = fn('get_term_meta', queried_object.term_id, 'featured_sub_categories') %}
+
+    {% if cat_term_sub %}
+        <div class="category-section_custom row">
+            {% for subitem in cat_term_sub %}
+                {% for i in 0..2 %} 
+                {% if subitem[i] %}
+                {% set item = fn('get_term_by', 'id', subitem[i], 'product_cat') %}
+                {% if item is not empty%}
+                    <div class="category-section__item col-md-4 col-sm-12"> 
+                        
+                        {% set term_image = fn('get_term_meta', item.term_id, 'thumbnail_id', 'true') %}
+                        {% include 'components/card-table' %}
+                    </div>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% set first_button = fn('get_field', 'category_first_button', queried_object) %}
+    {% set second_button = fn('get_field', 'category_second_button', queried_object) %}
+
+    {% if first_button or second_button %}
+        <div class="category-section__button d-flex justify-content-center">
+            {% if first_button %}
+                <a href="{{ first_button.url }}" class="btn btn-outline-secondary" target="{{ first_button.target }}">
+                    {{ first_button.title }}
+                </a>
+            {% endif %}
+
+            {% if second_button %}
+                <a href="{{ second_button.url }}" class="btn btn-outline-secondary" target="{{ second_button.target }}">
+                    {{ second_button.title }}
+                </a>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    <div class="category-section__view d-flex justify-content-between align-items-center">
+        <div class="category-section__left d-flex align-items-center">
+            {% do action('woocommerce_before_shop_loop') %}
+        </div>
+
+        <ul class="category-section__list d-flex">
+            <li class="is-active"><a href="#"><i class="icon-th-large"></i></a></li>
+            <li><a href="#"><i class="icon-list"></i></a></li>
+        </ul>
+    </div>
+
+    {% if posts %}
+        <div class="row products" id="producten_rij">
+            {% for post in posts %}
+                <div class="col-md-4 mb-5">
+                    {% include 'components/card-product' %}
+                </div>
+            {% endfor %}
+
+            <div class="col-md-12 mb-5 mt-5">
+                <div class="category-section__notfound text-center">
+                    <h3>{{ __('Er zijn geen producten gevonden die voldoen aan de criteria') }}</h3>
+
+                    <hr>
+
+                    {% if queried_object %}
+                        <a href="{{ fn('get_term_link', queried_object) }}" class="btn btn-primary">
+                            {{ __('Verwijder Alle Filters') }}
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% else %}
+        {% do action('woocommerce_no_products_found') %}
+    {% endif %}
+
+    <div class="category-section__view-text">
+        {% do action('woocommerce_after_shop_loop') %}
+    </div>
+</section>

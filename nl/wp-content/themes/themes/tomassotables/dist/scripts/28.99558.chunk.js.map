@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/categorie/categorie.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/28.99558.chunk.js","sourcesContent":["import './categorie.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

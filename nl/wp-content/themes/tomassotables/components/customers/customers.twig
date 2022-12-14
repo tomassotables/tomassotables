@@ -1,0 +1,19 @@
+{% if options.cart_review_title or options.cart_reviews %}
+    <section data-component="customers" class="customers">
+        <div class="container">
+            {% if options.cart_review_title %}
+                <h3>{{ options.cart_review_title }}</h3>
+            {% endif %}
+
+            {% if options.cart_reviews %}
+                <div class="customers__holder js-customers-slider">
+                    {% for item in options.cart_reviews | slice(0,4) %}
+                        <div class="customers__holder-slide">
+                            {% include 'components/card-review' %}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </section>
+{% endif %}

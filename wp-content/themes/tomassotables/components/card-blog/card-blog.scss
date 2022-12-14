@@ -1,0 +1,78 @@
+@import '~assets/styles/variables';
+
+.card-blog {
+	width: 100%;
+	border: 1px solid $gray-200;
+	border-radius: 8px;
+	transition: all 0.3s ease-in-out;
+
+	p {
+		margin-bottom: 19px;
+		height: 51px;
+		overflow: hidden;
+	}
+
+	h3 {
+		margin-bottom: 16px;
+		height: 51px;
+		font-weight: 600;
+		line-height: 1.3;
+		overflow: hidden;
+	}
+
+	&:hover {
+		border-color: $gray-100;
+		box-shadow: 5px 5px 20px rgba($black, 0.08);
+	}
+
+	&__item {
+		margin-bottom: 30px;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			text-decoration: $link-decoration;
+
+			.card-blog__read-more {
+				color: darken($primary, 15%);
+			}
+		}
+	}
+
+	&__image {
+		img {
+			width: 100%;
+			border-radius: 8px 8px 0 0;
+		}
+	}
+
+	&__content {
+		padding: 20px 15px;
+		color: $gray-700;
+	}
+
+	&__date {
+		margin-bottom: 6px;
+		font-size: 0.75rem;
+		color: $secondary;
+	}
+
+	&__read-more {
+		top: -10px;
+		display: inline-block;
+		font-size: 0.75rem;
+		color: $primary;
+		transition: all 0.3s ease-in-out;
+
+		&:after {
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: $orange;
+			content: '';
+		}
+	}
+}

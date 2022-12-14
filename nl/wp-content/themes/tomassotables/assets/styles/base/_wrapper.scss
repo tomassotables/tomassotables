@@ -1,0 +1,21 @@
+// Table of Content
+// ===============================================
+// # Variables
+// # Elements */
+
+// # Variables
+// =============================================== */
+// No local variables available
+
+// # Elements
+// =============================================== */
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+
+	.blog & {
+		overflow: visible;
+	}
+}

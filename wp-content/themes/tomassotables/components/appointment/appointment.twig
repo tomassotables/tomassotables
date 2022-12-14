@@ -1,0 +1,30 @@
+{% if options.advisor_title or options.advisor_content or options.advisor_button or options.advisor_image %}
+	<section data-component="appointment" class="appointment d-flex justify-content-between align-items-center">
+		{% if options.advisor_image %}
+			<div class="appointment__image">
+				{{ image(options.advisor_image,[312,282]) }}
+			</div>
+		{% endif %}
+
+		<div class="appointment__text">
+			{% if options.advisor_title %}
+				<h3>{{ options.advisor_title }}</h3>
+			{% endif %}
+
+			{% if options.advisor_image %}
+				<div class="appointment__image appointment__image--mobile">
+					{{ image(options.advisor_image,[250,226]) }}
+				</div>
+			{% endif %}
+
+			{{ options.advisor_content }}
+
+			{% if options.advisor_button %}
+				<a href="{{ options.advisor_button.url }}" class="btn secondary" target="{{ options.advisor_button.target }}">
+					{{ options.advisor_button.title }}
+				</a>
+			{% endif %}
+		</div>
+	</section>
+{% endif %}
+

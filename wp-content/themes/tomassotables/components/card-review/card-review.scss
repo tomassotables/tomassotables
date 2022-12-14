@@ -1,0 +1,65 @@
+@import '~assets/styles/variables';
+
+.card-review {
+	width: 100%;
+	font-size: 0.875rem;
+	line-height: 1.45;
+	border: 1px solid $gray-100;
+	border-radius: 8px;
+	background-color: $white;
+	box-shadow: 0 20px 40px rgba(49, 49, 49, 0.02);
+	padding: {
+		top: 22px;
+		right: 25px;
+		bottom: 25px;
+		left: 25px;
+	}
+
+	&__star {
+		margin-bottom: 14px;
+		font-size: 1.25rem;
+		color: $light-orange;
+	}
+
+	p {
+		margin-bottom: 22px;
+	}
+
+	&__author {
+		margin-left: -25px;
+		flex-wrap: wrap;
+		width: calc(100% + 50px);
+		border-top: 1px solid $gray-100;
+		padding: {
+			top: 16px;
+			right: 24px;
+			left: 24px;
+		}
+	}
+
+	&__image {
+		margin-right: 15px;
+		width: 36px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__text {
+		width: calc(100% - 51px);
+	}
+
+	&__name {
+		font-size: 0.875rem;
+		font-weight: 700;
+		color: $secondary;
+	}
+
+	&__description {
+		font-size: 0.75rem;
+		font-weight: 400;
+		color: $secondary;
+	}
+}

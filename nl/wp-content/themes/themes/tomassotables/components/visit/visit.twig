@@ -1,0 +1,62 @@
+{% if visit_title or visit_content or visit_button or visit_addresses %}
+	<div data-component="visit" class="visit">
+		<div class="container">
+			{% if visit_title %}
+				<h2>{{ visit_title }}</h2>
+			{% endif %}
+
+			<div class="row">
+				{% if visit_content or visit_button %}
+					<div class="col-md-6 col-lg-3 mb-5 mb-md-4">
+						<div class="visit__text">
+							{{ visit_content }}
+
+							{% if visit_button %}
+								<a href="{{ visit_button.url }}" class="btn btn-outline visit__btn" target="{{ visit_button.target }}">
+									{{ visit_button.title }}
+								</a>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+
+				{% if visit_addresses %}
+					{% for items in visit_addresses %}
+						<div class="col-md-6 col-lg-3 mb-5 mb-md-4">
+							<div class="visit__text">
+								{% if items.place %}
+									<h3>{{ items.place }}</h3>
+								{% endif %}
+
+								{% if items.address1 %}
+									<address>
+										{{ items.address1 }}
+									</address>
+								{% endif %}
+
+								{% if items.number %}
+									<a href="tel:{{ items.number }}" class="visit__tel">
+										{{ items.number }}
+									</a>
+								{% endif %}
+
+								{% if items.address2 %}
+									<address>
+										{{ items.address2 }}
+									</address>
+								{% endif %}
+
+								{% if items.button %}
+									<a href="{{ items.button.url }}" class="btn btn-outline visit__btn" target="{{ items.button.target }}">
+										{{ items.button.title }}
+									</a>
+								{% endif %}
+							</div>
+						</div>
+					{% endfor %}
+				{% endif  %}
+			</div>
+		</div>
+	</div>
+{% endif %}
+

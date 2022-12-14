@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/trust/trust.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/65.ce3d7.chunk.js","sourcesContent":["import './trust.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

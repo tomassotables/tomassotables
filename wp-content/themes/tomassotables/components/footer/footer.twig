@@ -1,0 +1,160 @@
+<footer data-component="footer" class="footer">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-md-6 col-lg-6">
+				<a href="{{ function ('home_url') }}" class="footer__logo">
+					{% if options.footer_logo.filename %}
+						{{ inline_svg(uploads ~ '/' ~ options.footer_logo.filename) }}
+					{% else %}
+						{{ site.name }}
+					{% endif %}
+				</a>
+			</div>
+
+			<div class="col-md-6 col-lg-6 d-flex justify-content-end">
+				<ul class="footer__social-icon m-0 p-0 d-none d-md-flex flex-wrap">
+					{% if options.twitter_url %}
+						<li>
+							<a href="{{ options.twitter_url }}" class="d-flex align-items-center justify-content-center" target="_blank">
+								<i class="icon-twitter"></i>
+							</a>
+						</li>
+					{% endif %}
+					{% if options.facebook_url %}
+						<li>
+							<a href="{{ options.facebook_url }}" class="d-flex align-items-center justify-content-center" target="_blank">
+								<i class="icon-facebook"></i>
+							</a>
+						</li>
+					{% endif %}
+					{% if options.linkedin_url %}
+						<li>
+							<a href="{{ options.linkedin_url }}" class="d-flex align-items-center justify-content-center" target="_blank">
+								<i class="icon-linkedin"></i>
+							</a>
+						</li>
+					{% endif %}
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer__block w-100">
+			<div class="row justify-content-between">
+				<div class="col-md-6 col-lg-3 mb-lg-0">
+					<div class="footer__subscribe w-100">
+						{% if options.newsletter_title %}
+							<div class="footer__title">
+								{{ options.newsletter_title }}
+							</div>
+						{% endif %}
+
+						{% if options.newsletter_text %}
+							{{ options.newsletter_text |wpautop }}
+						{% endif %}
+
+						{{ options.newsletter_form }}
+
+					</div>
+				</div>
+
+				<div class="col-md-12 col-lg-9 d-flex justify-content-end">
+					<div class="footer__menu position-relative">
+						<div class="row">
+							<div class="col-5 col-md-4 col-lg-4">
+								<div class="footer__title mb-4">{{ companyMenu.title }}</div>
+
+								<ul class="m-0 p-0">
+									{% for item in companyMenu.items %}
+										<li>
+											<a href="{{ item.url }}">
+												{{ item.title }}
+											</a>
+										</li>
+									{% endfor %}
+								</ul>
+							</div>
+
+							<div class="col-7 col-md-4 col-lg-4">
+								<div class="footer__title mb-4">{{ usefulMenu.title }}</div>
+
+								<ul class="m-0 p-0">
+									{% for item in  usefulMenu.items %}
+										<li>
+											<a href="{{ item.url }}">{{ item.title }}</a>
+										</li>
+									{% endfor %}
+								</ul>
+							</div>
+
+							<div class="col-md-4 col-lg-4">
+								<div class="footer__info">
+									<div class="footer__title mb-4">{{ __('Contacteer ons') }}</div>
+									<ul class="m-0">
+										{% if options.email_address %}
+											<li class="position-relative">
+												<a href="mailto:{{ options.email_address }}">
+													<i class="icon-sms"></i>
+													{{ options.email_address }}
+												</a>
+											</li>
+										{% endif %}
+										{% if options.phone_number %}
+											<li class="position-relative">
+												<a href="tel:{{ options.phone_number |strip_phone_number }}">
+													<i class="icon-call"></i>
+													{{ options.phone_number }}
+												</a>
+											</li>
+										{% endif %}
+										{% if options.address %}
+											<li class="position-relative">
+												<i class="icon-location"></i>
+												<address>
+													{{ options.address }}
+												</address>
+											</li>
+										{% endif %}
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<ul class="footer__social-icon m-0 p-0 d-md-none flex-wrap">
+							{% if options.twitter_url %}
+								<li class="pl-0">
+									<a href="{{ options.twitter_url }}" class="d-flex align-items-center justify-content-center" target="_blank">
+										<i class="icon-twitter"></i>
+									</a>
+								</li>
+							{% endif %}
+							{% if options.facebook_url %}
+								<li class="pl-0">
+									<a href="{{ options.facebook_url }}" class="d-flex align-items-center justify-content-center" target="_blank">
+										<i class="icon-facebook"></i>
+									</a>
+								</li>
+							{% endif %}
+							{% if options.linkedin_url %}
+								<li class="pl-0">
+									<a href="{{ options.linkedin_url }}" class="d-flex align-items-center justify-content-center" target="_blank">
+										<i class="icon-linkedin"></i>
+									</a>
+								</li>
+							{% endif %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__copyright d-flex flex-wrap align-items-center justify-content-between w-100">
+			<p class="order-2 order-md-1">{{ options.copyright_text }}</p>
+			<p class="order-1 order-md-2">
+				{% for item in footerMenu.items %}
+					<a href="{{ item.url }}">{{ item.title }}</a>
+				{% endfor %}
+			</p>
+		</div>
+	</div>
+</footer>
+

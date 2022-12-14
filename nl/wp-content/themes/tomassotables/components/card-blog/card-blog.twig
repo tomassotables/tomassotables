@@ -1,0 +1,19 @@
+<div data-component="card-blog" class="card-blog">
+	<a href="{{ items.link }}" class="card-blog__item d-block w-100">
+		<div class="card-blog__image w-100 h-100">
+			<picture>
+				<img src="{{ fn('get_template_directory_uri') }}/dist/images/blog-img1.jpg" alt="">
+			</picture>
+		</div>
+
+		<div class="card-blog__content w-100">
+			<div class="card-blog__date w-100 text-uppercase">{{ items.date('F j, Y') }}</div>
+			<h3>{{ items.title }}</h3>
+
+			{{ items.content |excerpt(15) |wpautop }}
+
+			<div class="card-blog__read-more text-uppercase position-relative">{{ __('Read More') }}</div>
+		</div>
+	</a>
+</div>
+

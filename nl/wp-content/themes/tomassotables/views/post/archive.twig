@@ -1,0 +1,24 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+
+    {% include 'components/banner' %}
+
+    <div class="layout">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-md-8 mb-5 mb-md-0">
+                    {% include 'components/post' %}
+                </div>
+                <div class="col-md-4 sidebar-sticky">
+                    {% include 'components/download' %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'components/employee' %}
+    {% include 'components/flexible' %}
+    {% include 'components/breadcrumbs' %}
+{% endblock %}
+

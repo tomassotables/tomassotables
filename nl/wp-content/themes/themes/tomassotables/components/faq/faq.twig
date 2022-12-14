@@ -1,0 +1,29 @@
+{% set category_faqs = fn('get_field', 'category_faqs', queried_object) %}
+
+{% if category_faqs %}
+    <div data-component="faq" class="faq">
+        <div class="container">
+            <h3>{{ __('FAQ') }}</h3>
+
+            <div class="accordion faq__accordion" id="accordionCategroy">
+                {% for item in category_faqs %}
+                    <div class="card faq__card">
+                        <div class="card-header faq__card-header" id="headingOne{{ loop.index }}">
+                            <h6 class="mb-0">
+                                <button class="faq__btn" type="button" data-toggle="collapse" data-target="#collapseOne{{ loop.index }}" aria-expanded="{% if loop.first %}true{% else %}false{% endif %}" aria-controls="collapseOne{{ loop.index }}">
+                                    {{ item.question }}
+                                </button>
+                            </h6>
+                        </div>
+
+                        <div id="collapseOne{{ loop.index }}" class="collapse faq__collapse{% if loop.first %} show{% endif %}" aria-labelledby="headingOne{{ loop.index }}" data-parent="#accordionCategroy">
+                            <div class="card-body faq__card-body">
+                                {{ item.answer | wpautop }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endif %}

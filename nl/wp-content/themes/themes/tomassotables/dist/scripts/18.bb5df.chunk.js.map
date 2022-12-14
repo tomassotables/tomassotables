@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/buy/buy.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/18.bb5df.chunk.js","sourcesContent":["import './buy.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

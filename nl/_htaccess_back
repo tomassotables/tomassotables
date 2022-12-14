@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteBase /
+
+# Rewrites all URLS without blog in them
+RewriteCond %{REQUEST_URI} !^/nl/
+
+
+
+# Rewrite all those to insert /folder
+RewriteRule ^(.*)$ /nl/$1 [L]

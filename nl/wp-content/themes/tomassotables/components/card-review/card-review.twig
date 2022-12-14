@@ -1,0 +1,32 @@
+<div data-component="card-review" class="card-review">
+    <div class="card-review__star">
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+    </div>
+
+    {{ item.comment | wpautop }}
+
+    <div class="card-review__author d-flex">
+        {% if item.image %}
+            <div class="card-review__image">
+                {{ image(item.image,[36,36]) }}
+            </div>
+        {% endif %}
+
+        {% if item.name or item.role %}
+            <div class="card-review__text">
+                {% if item.name %}
+                    <div class="card-review__name">{{ item.name }}</div>
+                {% endif %}
+
+                {% if item.role %}
+                    <div class="card-review__description">{{ item.role }}</div>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</div>
+

@@ -1,0 +1,29 @@
+{% if popular_image or popular_content or popular_button %}
+	<div data-component="popular" class="popular">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 mb-5 mb-md-0">
+					{% if popular_image %}
+						<div class="popular__image">
+							<picture>
+								{{ image(popular_image,[360,269]) }}
+							</picture>
+						</div>
+					{% endif %}
+
+				</div>
+				<div class="col-md-8">
+					{{ popular_content |wpautop }}
+
+					{% if popular_button %}
+						<a href="{{ popular_button.url }}" class="btn btn-outline-primary popular__btn" target="{{ popular_button.target }}">
+							{{ popular_button.title }}
+						</a>
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+	</div>
+{% endif %}
+

@@ -1,0 +1,23 @@
+{% if block_question or block_answer %}
+	<div data-component="question" class="question">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12 col-lg-8">
+					<div class="question__box bg-white position-relative text-center">
+						{% if block_question %}
+							<h3>{{ block_question }}</h3>
+						{% endif %}
+
+						{% if block_answer %}
+							<div class="question__text w-100">
+								{{ block_answer }}
+							</div>
+						{% endif %}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endif %}
+

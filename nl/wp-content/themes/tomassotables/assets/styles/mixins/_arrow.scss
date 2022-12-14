@@ -1,0 +1,37 @@
+// Table of Content
+// ===============================================
+// # Variables
+// # Mixin */
+
+// # Variables
+// =============================================== */
+// No local variables available
+
+// # Mixin
+// =============================================== */
+
+@mixin arrow( $size: 10px, $direction: down, $color: inherit ) {
+	display: block;
+	width: 0;
+	height: 0;
+	border: ($size / 2) solid transparent;
+	content: '';
+
+	@if ($direction == down) {
+		$direction: 'top';
+	}
+	@else if ($direction == up) {
+		$direction: 'bottom';
+	}
+	@else if ($direction == left) {
+		$direction: 'right';
+	}
+	@else if ($direction == right) {
+		$direction: 'left';
+	}
+	@else {
+		$direction: 'top';
+		@warn '[@include arrow[-*](vars)] $direction can only accept the following values: up, down, left, right. Falling back to default (down)';
+	}
+	border-#{$direction}-color: $color;
+}

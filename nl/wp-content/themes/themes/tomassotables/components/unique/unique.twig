@@ -1,0 +1,17 @@
+{% if options.interior_title or options.interior_list %}
+	<section data-component="unique" class="unique">
+		{% if options.interior_title %}
+			<h6>{{ options.interior_title }}</h6>
+		{% endif %}
+
+		{% if options.interior_list %}
+			<ul>
+				{% for item in options.interior_list %}
+					<li>{{ item.list }}</li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+
+	</section>
+{% endif %}
+

@@ -1,0 +1,48 @@
+2022-11-21T12:47:46+00:00 CRITICAL syntax error, unexpected '$price' (T_VARIABLE), expecting ')' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 570
+
+2022-11-21T12:47:48+00:00 CRITICAL syntax error, unexpected '$price' (T_VARIABLE), expecting ')' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 570
+
+2022-11-21T12:47:50+00:00 CRITICAL syntax error, unexpected '$price' (T_VARIABLE), expecting ')' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 570
+
+2022-11-21T12:47:50+00:00 CRITICAL syntax error, unexpected '$price' (T_VARIABLE), expecting ')' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php op de lijn 570
+
+2022-11-21T12:48:00+00:00 CRITICAL syntax error, unexpected '}' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 571
+
+2022-11-21T12:48:02+00:00 CRITICAL syntax error, unexpected '}' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 571
+
+2022-11-21T12:48:02+00:00 CRITICAL syntax error, unexpected '}' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 571
+
+2022-11-21T12:48:03+00:00 CRITICAL syntax error, unexpected '}' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 571
+
+2022-11-21T12:48:04+00:00 CRITICAL syntax error, unexpected '}' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 571
+
+2022-11-21T12:48:05+00:00 CRITICAL syntax error, unexpected '}' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 571
+
+2022-11-21T12:48:06+00:00 CRITICAL syntax error, unexpected '}' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 571
+
+2022-11-21T12:48:07+00:00 CRITICAL syntax error, unexpected '}' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 571
+
+2022-11-21T12:48:07+00:00 CRITICAL syntax error, unexpected '}' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 571
+
+2022-11-21T12:48:08+00:00 CRITICAL syntax error, unexpected '}' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 571
+
+2022-11-21T12:48:14+00:00 CRITICAL syntax error, unexpected '}' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php on line 571
+
+2022-11-21T23:28:13+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore::get_attribute_taxonomies() must be an instance of WC_Product, bool given, called in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php on line 378 and defined in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php:516
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(378): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->get_attribute_taxonomies()
+#1 /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(283): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->create_data_for_variation()
+#2 /var/www/test.tomassotables.com/ in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php op de lijn 516
+
+2022-11-21T23:31:10+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore::get_attribute_taxonomies() must be an instance of WC_Product, bool given, called in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php on line 378 and defined in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php:516
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(378): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->get_attribute_taxonomies()
+#1 /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(283): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->create_data_for_variation()
+#2 /var/www/test.tomassotables.com/ in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php op de lijn 516
+
+2022-11-21T23:35:18+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore::get_attribute_taxonomies() must be an instance of WC_Product, bool given, called in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php on line 378 and defined in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php:516
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(378): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->get_attribute_taxonomies()
+#1 /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(283): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->create_data_for_variation()
+#2 /var/www/test.tomassotables.com/ in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php op de lijn 516
+

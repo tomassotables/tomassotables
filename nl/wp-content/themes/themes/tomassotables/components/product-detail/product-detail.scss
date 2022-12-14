@@ -1,0 +1,43 @@
+@import '~assets/styles/variables';
+
+.product-detail {
+	margin-bottom: 100px;
+	font-size: 1rem;
+	@include media-breakpoint-up(xl) {
+		margin-bottom: 160px;
+	}
+
+	&__image {
+		width: 100%;
+		overflow: hidden;
+		border-radius: 15px;
+		@include media-breakpoint-up(md) {
+			height: 100%;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			@include media-breakpoint-up(md) {
+				height: 100%;
+				object-fit: cover;
+				object-position: center center;
+			}
+		}
+	}
+
+	p {
+		margin-bottom: 20px;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 45px;
+		}
+	}
+
+	.btn {
+		min-width: 100%;
+		min-height: 55px;
+		@include media-breakpoint-up(md) {
+			min-width: 197px;
+		}
+	}
+}

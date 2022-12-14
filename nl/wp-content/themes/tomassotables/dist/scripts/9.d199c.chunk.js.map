@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/account/account.js"],"names":[],"mappings":"+GAAA,cAEe","file":"scripts/9.d199c.chunk.js","sourcesContent":["import './account.scss';\n\nexport default () => {\n};\n"],"sourceRoot":""}

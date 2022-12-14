@@ -1,0 +1,48 @@
+{% if best_title %}
+	<section data-component="categorie" class="categorie">
+		<div class="container">
+			<h2>{{ best_title }}</h2>
+
+			<div class="row">
+				<div class="col-md-4 mb-3">
+					{% include 'components/card-categorie' %}
+				</div>
+				<div class="col-md-4 mb-3">
+					<a href="https://tomassotables.com/stoelen/eetkamerstoelen" data-component="card-categorie" class="card-categorie">
+						<div class="card-categorie__image">
+							<picture>
+								<img src="{{ fn('get_template_directory_uri') }}/dist/images/categorie-img4.jpg" alt="">
+							</picture>
+						</div>
+
+						<div class="card-categorie__text text-center">
+							<h3>Eetkamerstoelen</h3>
+
+							<div class="card-categorie__stock">
+								<strong></strong>
+								Kies uit 569 producten</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 mb-3">
+					<a href="https://tomassotables.com/eetkamer/eetkamersets" data-component="card-categorie" class="card-categorie">
+						<div class="card-categorie__image">
+							<picture>
+								<img src="{{ fn('get_template_directory_uri') }}/dist/images/categorie-img5.jpg" alt="">
+							</picture>
+						</div>
+
+						<div class="card-categorie__text text-center">
+							<h3>Eetkamersets</h3>
+
+							<div class="card-categorie__stock">
+								<strong></strong>
+								Kies uit 112 producten</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endif %}
+

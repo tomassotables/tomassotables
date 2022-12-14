@@ -1,0 +1,27 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+    <div class="layout mt-4">
+        <div class="container">
+            {% do action('woocommerce_before_main_content') %}
+
+            <div class="row">
+                <div class="col-lg-3 col-fhd-1 mb-4 mb-lg-0">
+                    {% include 'components/sidebar' %}
+                </div>
+
+                <div class="col-lg-9 col-fhd-11">
+                    {% include 'components/category-section' %}
+                </div>
+            </div>
+
+            {% do action('woocommerce_after_main_content') %}
+        </div>
+    </div>
+
+    {% include 'components/product-detail' %}
+
+    {% include 'components/faq' %}
+	
+	{% include 'components/breadcrumbs' %}
+{% endblock %}

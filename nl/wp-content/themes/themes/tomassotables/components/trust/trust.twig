@@ -1,0 +1,56 @@
+{% if trust_icon or trust_text or trust_title or trust_star or trust_text2 or trust_icon2 or trust_text3 %}
+	<section data-component="trust" class="trust d-none d-md-block">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-8">
+					<div class="row">
+						<div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-1 mb-md-0">
+							<div class="trust__score">
+								{% if trust_icon %}
+									<div class="trust__image">
+										{{ image(trust_icon,[68,24]) }}
+									</div>
+								{% endif %}
+
+								{{ trust_text }}
+							</div>
+						</div>
+						<div class="col-md-4 mb-3 mb-md-0">
+							<div class="trust__review text-center">
+								{% if trust_title %}
+									<h6>{{ trust_title }}</h6>
+								{% endif %}
+
+								{% if trust_star %}
+									<div class="trust__star">
+										<i class="icon-star fill"></i>
+										<i class="icon-star{% if trust_star != 1 %} fill{% endif %}"></i>
+										<i class="icon-star{% if trust_star != 1 and (trust_star == 3 or trust_star == 4 or trust_star == 5) %} fill{% endif %}"></i>
+										<i class="icon-star{% if trust_star != 1 and (trust_star == 4 or trust_star == 5) %} fill{% endif %}"></i>
+										<i class="icon-star{% if trust_star == 5 %} fill{% endif %}"></i>
+									</div>
+								{% endif %}
+
+								{{ trust_text2 }}
+
+							</div>
+						</div>
+						<div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+							<div class="trust_score">
+								{% if trust_icon2 %}
+									<div class="trust__image">
+										{{ image(trust_icon2,[69,24]) }}
+									</div>
+								{% endif %}
+
+								{{ trust_text3 }}
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endif %}
+

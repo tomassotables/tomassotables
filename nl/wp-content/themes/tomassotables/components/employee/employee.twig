@@ -1,0 +1,65 @@
+{% if options.help_title or options.help_subtitle or options.help_phone_number or options.help_email_address or options.help_button or options.help_person %}
+    <section data-component="employee" class="employee">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="employee__block">
+                        <div class="row justify-content-between align-items-center">
+                            {% if options.help_person %}
+                                <div class="col-md-5">
+                                    <div class="employee__image">
+                                        {{ image(options.help_person,[1080,1080]) }}
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if options.help_title or options.help_subtitle or options.help_phone_number or options.help_email_address or options.help_button %}
+                                <div class="col-md-7">
+                                    <div class="employee__text">
+                                        {% if options.help_title %}
+                                            <div class="employee__active">
+                                                {{ options.help_title }}
+                                            </div>
+                                        {% endif %}
+
+                                        {% if options.help_subtitle %}
+                                            <h3>{{ options.help_subtitle }}</h3>
+                                        {% endif %}
+
+                                        {% if options.help_phone_number %}
+                                            <div class="employee__tel">
+                                                <a href="tel:{{ options.help_phone_number |strip_phone_number }}">
+                                                    <i class="icon-phone"></i>
+                                                    {{ options.help_phone_number }}
+                                                </a>
+                                            </div>
+                                        {% endif %}
+
+                                        {% if options.help_email_address %}
+                                            <div class="employee__tel">
+                                                <a href="mailto:{{ options.help_email_address }}">
+                                                    <i class="icon-mail"></i>
+                                                    {{ options.help_email_address }}
+                                                </a>
+                                            </div>
+                                        {% endif %}
+
+                                        {% if options.help_button %}
+                                            <a href="{{ options.help_button.url }}" class="btn btn-full employee__btn"
+                                               target="{{ options.help_button.target }}">
+                                                <i class="icon-messages"></i>
+                                                {{ options.help_button.title }}
+                                            </a>
+                                        {% endif %}
+
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}
+

@@ -1,0 +1,43 @@
+@import '~assets/styles/variables';
+
+.articles {
+	margin-bottom: 60px;
+	width: 100%;
+	overflow: hidden;
+	@include media-breakpoint-up(md) {
+		margin-bottom: 108px;
+	}
+
+	&__container {
+		@include media-breakpoint-up(xxl) {
+			max-width: 1190px;
+		}
+	}
+
+	h2 {
+		margin-bottom: 35px;
+		letter-spacing: -0.5px;
+	}
+
+	&__slider {
+		padding-bottom: 2px;
+	}
+
+	&__item {
+		margin-bottom: 20px;
+		display: none;
+		width: 100%;
+		@include media-breakpoint-up(md) {
+			margin-right: 30px;
+			display: block;
+			width: 360px;
+		}
+
+		&:nth-child(1),
+		&:nth-child(2) {
+			display: block;
+			opacity: 1 !important;
+		}
+	}
+}
+

@@ -1,0 +1,68 @@
+// Table of Content
+// ===============================================
+// # Variables
+// # Elements */
+
+// # Variables
+// =============================================== */
+// No local variables available
+
+// # Elements
+// =============================================== */
+.composer-switch .logo-icon,
+.composer-switch .vc_spacer {
+	display: none !important;
+}
+
+.vc_welcome-brand {
+	display: none !important;
+}
+
+.composer-switch a.wpb_switch-to-composer {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.vc_navbar .vc_navbar-brand {
+	display: none !important;
+}
+
+.vc_panel {
+	width: 45% !important;
+	min-width: 600px;
+}
+
+.controls_row .vc_control-set-column.custom_columns {
+	display: none !important;
+}
+
+.controls_row .vc_row_layouts br {
+	display: none !important;
+}
+
+.controls_row .vc_control-set-column {
+	height: 16px !important;
+}
+
+.vc_welcome .icon {
+	margin: 0 !important;
+	height: 30px !important;
+	background: none !important;
+}
+
+.vc_admin_icon {
+	position: relative;
+	border-radius: 5px;
+	background-color: #75c044;
+	background-image: none !important;
+
+	&:before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-size: 20px;
+		text-align: center;
+		color: #fff;
+		transform: translateX(-50%) translateY(-50%);
+	}
+}

@@ -1,0 +1,11 @@
+{% if popular_products %}
+    <section data-component="sold-product" class="sold-product">
+        <h3>{{ __('3 best sold products') }}</h3>
+
+        {% for post in Post(popular_products) %}
+            <div class="sold-product__item">
+                {% include 'components/card-product' %}
+            </div>
+        {% endfor %}
+    </section>
+{% endif %}

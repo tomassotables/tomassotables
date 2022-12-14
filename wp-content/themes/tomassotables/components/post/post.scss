@@ -1,0 +1,16 @@
+@import '~assets/styles/variables';
+
+.post {
+	margin-bottom: 12px;
+	@include media-breakpoint-up(md) {
+		margin-bottom: 0;
+	}
+
+	&__pagination {
+		margin-top: 16px;
+		@include media-breakpoint-up(md) {
+			margin-top: 48px;
+		}
+	}
+}
+

@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/footer/footer.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/45.413db.chunk.js","sourcesContent":["import './footer.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

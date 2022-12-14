@@ -1,0 +1,16 @@
+{% if options.blog_editorial or options.blog_form %}
+    <section data-component="download" class="download">
+        {% if options.blog_editorial %}
+            <div class="download__image d-flex justify-content-center align-items-center">
+                {{ image(options.blog_editorial,[266,198]) }}
+            </div>
+        {% endif %}
+
+        {% if options.blog_form %}
+            <div class="download__form">
+                {{ options.blog_form }}
+            </div>
+        {% endif %}
+    </section>
+{% endif %}
+

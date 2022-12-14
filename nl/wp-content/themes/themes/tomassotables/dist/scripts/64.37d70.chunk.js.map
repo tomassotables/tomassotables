@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/text-section/text-section.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/64.37d70.chunk.js","sourcesContent":["import './text-section.scss';\n\nexport default () => {\n};\n"],"sourceRoot":""}

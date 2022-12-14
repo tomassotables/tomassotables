@@ -1,0 +1,52 @@
+@import '~assets/styles/variables';
+
+.trust {
+	margin-bottom: 75px;
+	width: 100%;
+	font-size: 0.75rem;
+	color: $secondary;
+
+	&__score {
+		width: 100%;
+		max-width: 264px;
+	}
+
+	&__image {
+		margin-bottom: 13px;
+
+		img {
+			height: 24px;
+		}
+	}
+
+	&__review {
+		position: relative;
+		height: 100%;
+
+		h6 {
+			width: 100%;
+			font-size: 0.875rem;
+			margin: {
+				bottom: 10px;
+			}
+		}
+
+		p {
+			strong {
+				display: block;
+				font-weight: 400;
+			}
+		}
+	}
+
+	&__star {
+		margin-bottom: 2px;
+		width: 100%;
+		font-size: 0.85rem;
+		color: $primary;
+		@include media-breakpoint-up(lg) {
+			width: auto;
+		}
+	}
+}
+

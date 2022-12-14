@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/description/description.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/38.c8d63.chunk.js","sourcesContent":["import './description.scss';\n\nexport default () => {\n};\n"],"sourceRoot":""}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/page-button/page-button.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/51.92a4c.chunk.js","sourcesContent":["import './page-button.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

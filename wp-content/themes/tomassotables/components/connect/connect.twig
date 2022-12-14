@@ -1,0 +1,57 @@
+{% if connect_form or connect_call_title or connect_call_text or connect_email_text or connect_email_title %}
+	<div data-component="connect" class="connect">
+		<div class="container">
+			<div class="row">
+				{% if connect_form %}
+					<div class="col-md-6 order-1 order-md-0">
+						<div class="connect__form">
+							{{ connect_form }}
+						</div>
+					</div>
+				{% endif %}
+
+				{% if connect_call_title or connect_call_text %}
+					<div class="col-md-6 mb-4 mb-md-0">
+						<div class="connect__block">
+							<div class="connect__detail d-flex">
+								<div class="connect__icon">
+									<i class="icon-phone"></i>
+								</div>
+								<div class="connect__text">
+									{% if connect_call_title %}
+										<h3>{{ connect_call_title }}</h3>
+									{% endif %}
+
+									{% if connect_call_text %}
+										<div class="connect__working">
+											{{ connect_call_text }}
+										</div>
+									{% endif %}
+								</div>
+							</div>
+							<div class="connect__detail d-flex">
+								<div class="connect__icon">
+									<i class="icon-mail"></i>
+								</div>
+								<div class="connect__text">
+									{% if connect_email_title %}
+										<h3>{{ connect_email_title }}</h3>
+									{% endif %}
+
+									{% if connect_email_text %}
+										<div class="connect__working">
+											{{ connect_email_text }}
+										</div>
+									{% endif %}
+
+								</div>
+							</div>
+						</div>
+					</div>
+				{% endif %}
+
+			</div>
+		</div>
+	</div>
+{% endif %}
+

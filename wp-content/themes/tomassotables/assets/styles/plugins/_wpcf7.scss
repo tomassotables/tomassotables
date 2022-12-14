@@ -1,0 +1,112 @@
+// Table of Content
+// ===============================================
+// # Variables
+// # Mixin */
+
+// # Variables
+// =============================================== */
+// No local variables available
+
+// # Mixin
+// =============================================== */
+
+.wpcf7 {
+	font-size: 0.875rem;
+
+	.screen-reader-response {
+		display: none;
+	}
+
+	.wpcf7-form-control-wrap {
+		display: block;
+		width: 100%;
+
+		input {
+			.download & {
+				height: 45px;
+				font-size: 0.875rem;
+				text-align: left;
+				color: $gray-300;
+				border: 1px solid $gray-200;
+				border-radius: 10px;
+				padding: {
+					right: 15px;
+					left: 15px;
+				}
+
+				&::placeholder {
+					color: $gray-300;
+				}
+			}
+		}
+
+		.wpcf7-not-valid-tip {
+			margin-top: 4px;
+			margin-bottom: 5px;
+			display: block;
+			color: $green;
+		}
+	}
+
+	.wpcf7-response-output {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		display: block;
+		color: $green;
+	}
+
+	.wpcf7-list-item {
+		margin-bottom: 15px;
+		position: relative;
+		display: block;
+
+		input {
+			margin-bottom: 0;
+			padding: 0;
+			display: none;
+			width: initial;
+			height: initial;
+			cursor: pointer;
+
+			&:checked {
+				+ {
+					.wpcf7-list-item-label {
+						&:before {
+							font-family: $font-family-icon;
+							color: $white;
+							border-color: $orange;
+							background-color: $orange;
+							content: '\e910';
+						}
+					}
+				}
+			}
+		}
+
+		.wpcf7-list-item-label {
+			padding-left: 36px;
+			position: relative;
+			display: block;
+			cursor: pointer;
+			color: $gray-600;
+
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 20px;
+				height: 20px;
+				font-size: 0.6rem;
+				border: 1px solid $secondary;
+				border-radius: 4px;
+				background-color: transparent;
+				appearance: none;
+				content: '';
+				cursor: pointer;
+			}
+		}
+	}
+}

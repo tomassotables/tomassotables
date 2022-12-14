@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[55],{142:function(n,t,c){"use strict";c.r(t),function(n){c(208);t.default=()=>{n(".showlogin").click((function(t){t.preventDefault(),n(this).parent().parent().slideUp()})),n(".js-update-cart").click((function(){n("form.woocommerce-cart-form").submit()}))}}.call(this,c(8))},208:function(n,t,c){}}]);
+//# sourceMappingURL=55.0d5c2.chunk.js.map

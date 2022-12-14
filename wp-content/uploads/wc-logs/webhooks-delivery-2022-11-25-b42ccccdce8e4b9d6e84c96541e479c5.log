@@ -1,0 +1,522 @@
+2022-11-25T04:04:16+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => e2afba85e77de18270c92ce07b78a74b
+            [Date] => Nov 25, 2022 @ 4:04
+            [URL] => https://production.rutterapi.com/woocommerce/webhooks/db4ea65d-79db-4363-91da-00933dae6b42
+            [Duration] => 0.35609
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.0 Hookshot (WordPress/6.1.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://test.tomassotables.com/nl/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => TczA8jY815UV9h0daGcsUHlfHh/t0hTxB3R32B+l0r4=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => e2afba85e77de18270c92ce07b78a74b
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Fri, 25 Nov 2022 04:04:16 GMT
+                                    [content-type] => text/plain; charset=utf-8
+                                    [content-length] => 2
+                                    [x-powered-by] => Express
+                                    [access-control-allow-origin] => *
+                                    [etag] => W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+                                    [via] => 1.1 vegur
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oBmzzemQr%2FtyKKPY5hYfP9dud8HQrRC9q4mrj8KfskbXhpi%2B%2FxsDg2EuSu2O1zZYvu19kyZF4kxh3VHq5eC8BWyquoZpPCQzE5qTZn0V%2F67p5ZndjCLdEwe6tLyBSWBtkkQkDp0syMxFqTIUUnCnC61PNJlf0w%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 76f77fd22d48b89c-AMS
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-25T04:18:16+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 8ca42133492ec25bc88db20cd58533f9
+            [Date] => Nov 25, 2022 @ 4:18
+            [URL] => https://production.rutterapi.com/woocommerce/webhooks/db4ea65d-79db-4363-91da-00933dae6b42
+            [Duration] => 0.1532
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.0 Hookshot (WordPress/6.1.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://test.tomassotables.com/nl/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => Jcy+L3WBYFImhFHbbjF+l78QHsND532Ge0YMvMABiyM=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 8ca42133492ec25bc88db20cd58533f9
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Fri, 25 Nov 2022 04:18:16 GMT
+                                    [content-type] => text/plain; charset=utf-8
+                                    [content-length] => 2
+                                    [x-powered-by] => Express
+                                    [access-control-allow-origin] => *
+                                    [etag] => W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+                                    [via] => 1.1 vegur
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2dACrar9TWEkDCKhcO%2FA%2Fd354E2x0xIDvXH8udSxR4n0lgI7mWaqgNYJR9KiIgCPBykHCvl3Xq%2BNxiyX3LNqve7SDle8SyhTOB4fkFBnMHKMQlLBFjq7hNWiwdtdVV1Eknr6bnBVgs9TsJoYXM%2Fu9VbEhoZGyA%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 76f794548cfb1b03-AMS
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-25T04:24:08+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 47c853c8fb5c192101c5ab41d7c58325
+            [Date] => Nov 25, 2022 @ 4:24
+            [URL] => https://production.rutterapi.com/woocommerce/webhooks/db4ea65d-79db-4363-91da-00933dae6b42
+            [Duration] => 0.34
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.0 Hookshot (WordPress/6.1.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://test.tomassotables.com/nl/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => dSzH/uxV1ZVd27GZP2tMJfID0RgY3oTiVv/y1idOLBg=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 47c853c8fb5c192101c5ab41d7c58325
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Fri, 25 Nov 2022 04:24:08 GMT
+                                    [content-type] => text/plain; charset=utf-8
+                                    [content-length] => 2
+                                    [x-powered-by] => Express
+                                    [access-control-allow-origin] => *
+                                    [etag] => W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+                                    [via] => 1.1 vegur
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=yEq5ZKsOSSLpWeR8Gf7YWfUnP%2FpYC63CI0Na5%2Bj%2BESnHrsy45flYxC%2FJpRhhIurVdhN0uSRtMqaR%2FHZfUVYEycdXVWG%2BNB7GCbjcGywhOuzDksmc9o5gw%2Fa5Bf50WbUe3sVjKOy%2BIbacqOJfKA2i%2FXta5aBZmA%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 76f79cea4a450bed-AMS
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-25T04:25:19+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 4a414a4b95e374fd916cbafaa18895e0
+            [Date] => Nov 25, 2022 @ 4:25
+            [URL] => https://production.rutterapi.com/woocommerce/webhooks/db4ea65d-79db-4363-91da-00933dae6b42
+            [Duration] => 0.13468
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.0 Hookshot (WordPress/6.1.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://test.tomassotables.com/nl/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => XVLI2q31xpVkieTZ6m1MYTkjSC3R3VJvmj6RHJbv0bc=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 4a414a4b95e374fd916cbafaa18895e0
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Fri, 25 Nov 2022 04:25:19 GMT
+                                    [content-type] => text/plain; charset=utf-8
+                                    [content-length] => 2
+                                    [x-powered-by] => Express
+                                    [access-control-allow-origin] => *
+                                    [etag] => W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+                                    [via] => 1.1 vegur
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KUJVH%2FbuwSk36v7T9uwPzwG7lV6IUKXE6uqcEZ3rCLsSxiT9YjxMeuLEZl1ZYuCSbepWRr7si7BwLo8CGUpXmpuLu%2Br3anJuX7QlaI%2BhCAUhLVz4rNslpdQ2x7pPl8MNlFVTaSOMcR70A%2FyC2CuUtyKHSzx7eQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 76f79eaa8d79b8ca-AMS
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-25T05:11:02+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 6aa9da59c1de2cb598989754e5693127
+            [Date] => Nov 25, 2022 @ 5:11
+            [URL] => https://production.rutterapi.com/woocommerce/webhooks/db4ea65d-79db-4363-91da-00933dae6b42
+            [Duration] => 0.15933
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.0 Hookshot (WordPress/6.1.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://test.tomassotables.com/nl/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => cA1390QA6nyTD8p4fLRjrycCjW3cCs07v/PvsXEhAu8=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 6aa9da59c1de2cb598989754e5693127
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Fri, 25 Nov 2022 05:11:02 GMT
+                                    [content-type] => text/plain; charset=utf-8
+                                    [content-length] => 2
+                                    [x-powered-by] => Express
+                                    [access-control-allow-origin] => *
+                                    [etag] => W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+                                    [via] => 1.1 vegur
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pMzUsn5qZQX6Hr9XPQ2%2Bls%2BTxha9Do9oTDKiHFYH0UhImd37ok9GXCO8%2BVn%2F%2F39M1kdQ7UAAZNQTfoYpqS%2FU1doq%2FtBhPXaAijpnfuPMMNefuFXx4Xbeb2o3xFUoOrNJnGplh8B3TwGucwS44stu%2FcOQaMDjSA%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 76f7e1a11d481c87-AMS
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-25T05:12:17+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 1dfc7e960210ac2e8ace7a8ce7d0ca23
+            [Date] => Nov 25, 2022 @ 5:12
+            [URL] => https://production.rutterapi.com/woocommerce/webhooks/db4ea65d-79db-4363-91da-00933dae6b42
+            [Duration] => 0.30569
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.0 Hookshot (WordPress/6.1.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://test.tomassotables.com/nl/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => r5+5GBxqkESmWWD1H+t0/hbnZ2/SO5e7g1UIAAPKQDw=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 1dfc7e960210ac2e8ace7a8ce7d0ca23
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Fri, 25 Nov 2022 05:12:17 GMT
+                                    [content-type] => text/plain; charset=utf-8
+                                    [content-length] => 2
+                                    [x-powered-by] => Express
+                                    [access-control-allow-origin] => *
+                                    [etag] => W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+                                    [via] => 1.1 vegur
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OtOlfCYrE9bcLoLZCc4aW7cmOZHWKKeAmauwgvtxtsxR0ipAVgeo5B0EpFyeKtgeQ%2B3SJK0iWZCIOaOxn4ic%2B61wsB63qTPSXRNF5UhIC6d%2FRH3RWTmaoJtQ%2F1%2FUbGkIAuC%2BR6CkW4BixiM7MAVR6E%2BIk4NxpQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 76f7e373fb17b98c-AMS
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-25T05:26:18+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => a4825b67aa2046905b152b0d68f4cae0
+            [Date] => Nov 25, 2022 @ 5:26
+            [URL] => https://production.rutterapi.com/woocommerce/webhooks/db4ea65d-79db-4363-91da-00933dae6b42
+            [Duration] => 0.15107
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.0 Hookshot (WordPress/6.1.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://test.tomassotables.com/nl/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => Db492ui50A3cJmAC1j2hakVjD4kkHXnCZTbytM+ft0M=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => a4825b67aa2046905b152b0d68f4cae0
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Fri, 25 Nov 2022 05:26:18 GMT
+                                    [content-type] => text/plain; charset=utf-8
+                                    [content-length] => 2
+                                    [x-powered-by] => Express
+                                    [access-control-allow-origin] => *
+                                    [etag] => W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+                                    [via] => 1.1 vegur
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gTUbOjtNiwwitUeBaMzJVREWCWLN8cFaPtiUNzvvigpMIyw2cW6cPhYKoqFzPdcHc0izHonfoOZN50oYbuc9OAM%2BaZ0nNWZ85%2BM5TKybzhdKBpY0DejXY%2FaeK3d%2Fz4sWVONcpQ%2BcIoIfci62a5bLovu%2FaqQVMg%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 76f7f7fb38d20a4f-AMS
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-25T09:01:10+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => d175e5711cb4271939a92b7d7164fa10
+            [Date] => Nov 25, 2022 @ 9:01
+            [URL] => https://production.rutterapi.com/woocommerce/webhooks/db4ea65d-79db-4363-91da-00933dae6b42
+            [Duration] => 0.15336
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.0 Hookshot (WordPress/6.1.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://test.tomassotables.com/nl/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => qxVj96MaPD19PuS/DIt31Jvx52XW6/rACaR7W+EFz08=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => d175e5711cb4271939a92b7d7164fa10
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Fri, 25 Nov 2022 09:01:10 GMT
+                                    [content-type] => text/plain; charset=utf-8
+                                    [content-length] => 2
+                                    [x-powered-by] => Express
+                                    [access-control-allow-origin] => *
+                                    [etag] => W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+                                    [via] => 1.1 vegur
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=iCn1j0vUop4Gy2kdsRGoILVge20X0LT1RNs9u3USCUUMb%2FR1jKjkPFe7PZ0hrsCNdERVplYXY3QR1fNUqhBQtL8uqvp75VyszyxtQgxFNfmaiG8fCB3tp5rrp3bBsCRQaqA259hIJbgD2Hn5nKohXS7czNymFQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 76f932bdddddb73d-AMS
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-25T10:29:12+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => deea9ce8dae560ea913a7d56166f07c1
+            [Date] => Nov 25, 2022 @ 10:29
+            [URL] => https://production.rutterapi.com/woocommerce/webhooks/db4ea65d-79db-4363-91da-00933dae6b42
+            [Duration] => 0.31938
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.0 Hookshot (WordPress/6.1.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://test.tomassotables.com/nl/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => Q9gbY+t8ceGtPzhm/vM7Qab9e2QFp/XrlKGmDPhzXCE=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => deea9ce8dae560ea913a7d56166f07c1
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Fri, 25 Nov 2022 10:29:12 GMT
+                                    [content-type] => text/plain; charset=utf-8
+                                    [content-length] => 2
+                                    [x-powered-by] => Express
+                                    [access-control-allow-origin] => *
+                                    [etag] => W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+                                    [via] => 1.1 vegur
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8kji89Fy%2FtZrdWQDDVVHAUfRh8aVjYiWPZLseLpdtA5Ua9MGJ%2F47frNzNENVfUMjCr7iM14jJTntr9KAmI2eGawBPeTcoM4xGrmL2nym2j6iEaW7b7BRe%2BgJSgtMgQgIsHJ9pg6r0XezPpV92S7DdCJnYJJ95g%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 76f9b3ae0b35b879-AMS
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+

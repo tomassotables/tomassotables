@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/card-product/card-product.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/25.21a92.chunk.js","sourcesContent":["import './card-product.scss';\n\nexport default () => {\n};\n"],"sourceRoot":""}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/about-section/about-section.js"],"names":[],"mappings":"+GAAA,cAEe","file":"scripts/6.e236b.chunk.js","sourcesContent":["import './about-section.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

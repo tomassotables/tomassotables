@@ -1,0 +1,40 @@
+@import '~assets/styles/variables';
+
+.text-section {
+	width: 100%;
+	@include media-breakpoint-up(md) {
+		margin: {
+			bottom: 117px;
+		}
+	}
+	margin: {
+		bottom: 62px;
+	}
+
+	.container {
+		@include media-breakpoint-up(xxl) {
+			max-width: 1171px;
+		}
+	}
+
+	h2 {
+		@include media-breakpoint-down(sm) {
+			font-size: 1.275rem;
+		}
+		@include media-breakpoint-up(md) {
+			min-height: 72px;
+			margin: {
+				bottom: 37px;
+			}
+		}
+		margin: {
+			bottom: 20px;
+		}
+	}
+
+	&__box {
+		@include media-breakpoint-down(sm) {
+			font-size: 0.75rem;
+		}
+	}
+}

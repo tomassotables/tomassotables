@@ -1,0 +1,19 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+    {% include 'components/banner' %}
+
+    {% if fn('is_cart') or fn('is_checkout') %}
+        {% include 'components/processing' %}
+
+        {% if fn('is_cart') %}
+            {% include 'components/similar' %}
+        {% endif %}
+    {% else %}
+        {% include 'components/description' %}
+    {% endif %}
+
+    {% include 'components/flexible' %}
+    {% include 'components/breadcrumbs' %}
+{% endblock %}
+

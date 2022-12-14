@@ -1,0 +1,61 @@
+@import '~assets/styles/variables';
+
+.favorite {
+	margin-bottom: 60px;
+	@include media-breakpoint-up(md) {
+		margin-bottom: 100px;
+	}
+
+	h2 {
+		margin-bottom: 22px;
+		position: relative;
+		letter-spacing: -0.7px;
+		padding: {
+			right: 102px;
+			bottom: 17px;
+		}
+
+		&:before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 60px;
+			height: 2px;
+			background-color: $gray-300;
+			content: '';
+		}
+	}
+
+	&__slider {
+		@include media-breakpoint-up(md) {
+			margin: {
+				right: -16px;
+				left: -16px;
+			}
+		}
+		margin: {
+			right: -32px;
+			left: -32px;
+		}
+	}
+
+	&__item {
+		@include media-breakpoint-up(md) {
+			padding: {
+				right: 16px;
+				bottom: 99px;
+				left: 16px;
+			}
+		}
+		@include media-breakpoint-up(xl) {
+			padding-bottom: 99px;
+		}
+		padding: {
+			top: 16px;
+			right: 32px;
+			bottom: 82px;
+			left: 32px;
+		}
+	}
+}
+

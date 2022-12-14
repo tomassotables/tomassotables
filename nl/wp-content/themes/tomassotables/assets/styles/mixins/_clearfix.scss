@@ -1,0 +1,19 @@
+// Table of Content
+// ===============================================
+// # Variables
+// # Mixin */
+
+// # Variables
+// =============================================== */
+// No local variables available
+
+// # Mixin
+// =============================================== */
+
+@mixin clearfix {
+	&:after {
+		display: block;
+		clear: both;
+		content: '';
+	}
+}

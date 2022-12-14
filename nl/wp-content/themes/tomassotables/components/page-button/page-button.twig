@@ -1,0 +1,13 @@
+<section data-component="page-button" class="page-button d-flex justify-content-center align-items-center">
+	{% if post.prev %}
+		<a href="{{ post.prev.link }}" class="page-button__prev {{post.prev.link|length ? '' : 'invisible'}}">
+			<i class="icon-angle-right"></i>
+		</a>
+	{% endif %}
+	{% if post.next %}
+		<a href="{{ post.next.link }}" class="page-button__next {{ post.next.link|length ? '' : 'invisible'}}">
+			<i class="icon-angle-right"></i>
+		</a>
+	{% endif %}
+</section>
+

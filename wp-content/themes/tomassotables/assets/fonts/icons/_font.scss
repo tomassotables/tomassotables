@@ -1,0 +1,200 @@
+// Table of Content
+// ===============================================
+// # Variables
+// # Font */
+
+// # Variables
+// =============================================== */
+$icomoon-code: '3xsj03';
+
+// # Font
+// =============================================== */
+
+@font-face {
+	font-family: 'icomoon';
+	font-weight: normal;
+	font-style: normal;
+	src: url('#{$fonts-path}/icons/icomoon.eot?#{$icomoon-code}');
+	src: url('#{$fonts-path}/icons/icomoon.eot?#{$icomoon-code}#iefix') format('embedded-opentype'), url('#{$fonts-path}/icons/icomoon.ttf?#{$icomoon-code}') format('truetype'), url('#{$fonts-path}/icons/icomoon.woff?#{$icomoon-code}') format('woff'), url('#{$fonts-path}/icons/icomoon.svg?#{$icomoon-code}#icomoon') format('svg');
+	font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-transform: none;
+	speak: never;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check-round:before {
+	content: '\e900';
+}
+
+.icon-message-2:before {
+	content: '\e901';
+}
+
+.icon-filter-square:before {
+	content: '\e902';
+}
+
+.icon-list:before {
+	content: '\e903';
+}
+
+.icon-installation:before {
+	content: '\e904';
+}
+
+.icon-cart:before {
+	content: '\e905';
+}
+
+.icon-pancil:before {
+	content: '\e906';
+}
+
+.icon-payment-card:before {
+	content: '\e907';
+}
+
+.icon-bag-2:before {
+	content: '\e908';
+}
+
+.icon-heart:before {
+	content: '\e909';
+}
+
+.icon-time:before {
+	content: '\e90a';
+}
+
+.icon-share:before {
+	content: '\e90b';
+}
+
+.icon-chat:before {
+	content: '\e90c';
+}
+
+.icon-twitter:before {
+	content: '\e90d';
+}
+
+.icon-location:before {
+	content: '\e90e';
+}
+
+.icon-call:before {
+	content: '\e90f';
+}
+
+.icon-check:before {
+	content: '\e910';
+}
+
+.icon-angle-down:before {
+	content: '\e911';
+}
+
+.icon-sms:before {
+	content: '\e912';
+}
+
+.icon-star:before {
+	content: '\e915';
+}
+
+.icon-play:before {
+	content: '\e916';
+}
+
+.icon-mail:before {
+	content: '\e917';
+}
+
+.icon-linkedin:before {
+	content: '\e918';
+}
+
+.icon-facebook:before {
+	content: '\e919';
+}
+
+.icon-phone:before {
+	content: '\e91a';
+}
+
+.icon-lock:before {
+	content: '\e91b';
+}
+
+.icon-heart-outline:before {
+	content: '\e91c';
+}
+
+.icon-bag:before {
+	content: '\e91d';
+}
+
+.icon-user:before {
+	content: '\e91e';
+}
+
+.icon-translate:before {
+	content: '\e91f';
+}
+
+.icon-search-normal:before {
+	content: '\e920';
+}
+
+.icon-menu:before {
+	content: '\e921';
+}
+
+.icon-messages:before {
+	content: '\e922';
+}
+
+.icon-clock:before {
+	content: '\e923';
+}
+
+.icon-search:before {
+	content: '\e924';
+}
+
+.icon-call-calling:before {
+	content: '\e925';
+}
+
+.icon-close:before {
+	content: '\e926';
+}
+
+.icon-book:before {
+	content: '\e927';
+}
+
+.icon-angle-right:before {
+	content: '\e928';
+}
+
+.icon-th-large:before {
+	content: '\f009';
+}
+.icon-truck:before {
+  content: "\e9b0";
+}

@@ -1,0 +1,30 @@
+<section data-component="pagination" class="pagination d-flex align-items-center">
+
+	<ul class="d-flex">
+		<li>
+			{% if posts.pagination.prev %}
+				<a href="{{ posts.pagination.prev.link }}" class="prev {{posts.pagination.prev.link|length ? '' : 'invisible'}}">
+					<i class="icon-angle-right"></i>
+				</a>
+			{% endif %}
+		</li>
+		{% for page in posts.pagination.pages %}
+			<li {% if page.title > 5 %} aria-hidden="true" {% endif %} class="{% if page.title > 5 %}ellipsis{% endif %} {% if page.current %}is-active{% endif %}">
+				{% if page.current %}
+					<span class="show-for-sr">{{ __("Je bent op pagina") }}</span>
+					{{ page.title }}
+				{% else %}
+					<a href="{{ page.link }}" aria-label="Page {{ page.title }}">{{ page.title }}</a>
+				{% endif %}
+			</li>
+		{% endfor %}
+		<li>
+			{% if posts.pagination.next %}
+				<a href="{{ posts.pagination.next.link }}" class="next {{ posts.pagination.next.link|length ? '' : 'invisible'}}">
+					<i class="icon-angle-right"></i>
+				</a>
+			{% endif %}
+		</li>
+	</ul>
+</section>
+

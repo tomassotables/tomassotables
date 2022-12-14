@@ -1,0 +1,38 @@
+{% if left_title or right_title or left_block or right_block %}
+	<div data-component="text-section" class="text-section">
+		<div class="container">
+			<div class="row">
+				{% if left_title or left_block %}
+					<div class="col-md-6 col-lg-6">
+						<div class="text-section__box w-100">
+							{% if left_title %}
+								<h2 class="text-uppercase">
+									{{ left_title }}
+								</h2>
+							{% endif %}
+
+							{{ left_block }}
+						</div>
+					</div>
+				{% endif %}
+
+				{% if right_title or right_block %}
+					<div class="col-md-6 col-lg-6">
+						<div class="text-section__box w-100">
+							{% if right_title %}
+								<h2 class="text-uppercase">
+									{{ right_title }}
+								</h2>
+							{% endif %}
+
+							{{ right_block }}
+
+						</div>
+					</div>
+				{% endif %}
+
+			</div>
+		</div>
+	</div>
+{% endif %}
+

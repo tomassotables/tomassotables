@@ -1,0 +1,20 @@
+{% if latest_title %}
+	<div data-component="blog" class="blog">
+		<div class="container">
+			{% if latest_title %}
+				<h2 class="text-center position-relative">{{ latest_title }}</h2>
+			{% endif %}
+
+			{% if latestNews %}
+				<div class="row">
+					{% for items in Post(latestNews) %}
+						<div class="col-md-6 col-lg-4">
+							{% include 'components/card-blog' %}
+						</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+{% endif %}
+

@@ -1,0 +1,369 @@
+2022-12-05T07:40:03+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/TokenParser/IfTokenParser.php(36): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Parser.php(184): Twig\TokenParser\IfTokenParser->parse()
+#5 /var/www/test.tomassotables.com/public_html/vendor in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:04+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/TokenParser/IfTokenParser.php(36): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Parser.php(184): Twig\TokenParser\IfTokenParser->parse()
+#5 /var/www/test.tomassotables.com/public_html/vendor in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:05+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/TokenParser/IfTokenParser.php(36): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Parser.php(184): Twig\TokenParser\IfTokenParser->parse()
+#5 /var/www/test.tomassotables.com/public_html/vendor in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:06+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/TokenParser/IfTokenParser.php(36): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Parser.php(184): Twig\TokenParser\IfTokenParser->parse()
+#5 /var/www/test.tomassotables.com/public_html/vendor in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:06+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/TokenParser/IfTokenParser.php(36): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Parser.php(184): Twig\TokenParser\IfTokenParser->parse()
+#5 /var/www/test.tomassotables.com/public_html/vendor in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:13+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:18+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:23+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:28+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:34+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:35+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:39+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:44+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:44+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:45+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:45+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:48+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:48+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:49+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:51+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:52+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:52+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:53+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:40:58+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:00+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:02+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:03+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:04+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:09+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:10+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:11+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:14+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:16+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:21+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:28+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:29+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:41:47+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:49
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(169): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#5 /var/www/test.tomassotables.com/public_html/vendor/tw in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 49
+
+2022-12-05T07:42:43+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:50
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/TokenParser/IfTokenParser.php(36): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Parser.php(184): Twig\TokenParser\IfTokenParser->parse()
+#5 /var/www/test.tomassotables.com/public_html/vendor in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 50
+
+2022-12-05T07:42:47+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:50
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/TokenParser/IfTokenParser.php(36): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Parser.php(184): Twig\TokenParser\IfTokenParser->parse()
+#5 /var/www/test.tomassotables.com/public_html/vendor in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 50
+
+2022-12-05T07:47:06+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:50
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/TokenParser/IfTokenParser.php(36): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Parser.php(184): Twig\TokenParser\IfTokenParser->parse()
+#5 /var/www/test.tomassotables.com/public_html/vendor in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 50
+
+2022-12-05T07:47:11+00:00 CRITICAL Uncaught Twig\Error\SyntaxError: Unexpected operator of value "=". Did you try to use "===" or "!==" for strict comparison? Use "is same as(value)" instead. in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig:50
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#1 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#2 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/ExpressionParser.php(83): Twig\ExpressionParser->parseExpression()
+#3 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/TokenParser/IfTokenParser.php(36): Twig\ExpressionParser->parseExpression()
+#4 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Parser.php(184): Twig\TokenParser\IfTokenParser->parse()
+#5 /var/www/test.tomassotables.com/public_html/vendor in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables/components/card-product/card-product.twig op de lijn 50
+

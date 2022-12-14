@@ -1,0 +1,29 @@
+{% set category_popular_image = fn('get_field', 'category_popular_image', queried_object) %}
+{% set category_popular_content = fn('get_field', 'category_popular_content', queried_object) %}
+{% set category_popular_button = fn('get_field', 'category_popular_button', queried_object) %}
+
+{% if category_popular_image or category_popular_content or category_popular_button %}
+	<a name="product-detail"></a>
+    <section data-component="product-detail" class="product-detail">
+        <div class="container">
+            <div class="row">
+                {% if category_popular_image %}
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="product-detail__image">
+                            {{ image(category_popular_image, [262, 220]) }}
+                        </div>
+                    </div>
+                {% endif %}
+                <div class="col-md-{% if category_popular_image %}8{% else %}12{% endif %}">
+                    {{ category_popular_content }}
+
+                    {% if category_popular_button %}
+                        <a href="{{ category_popular_button.url }}" class="btn btn-outline-primary" target="{{ category_popular_button.target }}">
+                            {{ category_popular_button.title }}
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}

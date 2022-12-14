@@ -1,0 +1,16 @@
+{
+    "name": "wordpress-premium/permalink-manager-pro",
+    "description": "A WordPress permalink manager with game-changing versatility",
+    "type": "wordpress-plugin",
+    "version": "2.2.9.6",
+    "license": "GPLv2 or later",
+    "authors": [
+        {
+            "name": "Maciej Bis",
+            "email": "contact@permalinkmanager.pro"
+        }
+    ],
+    "require": {
+        "composer/installers": ">=1.6"
+    }
+}

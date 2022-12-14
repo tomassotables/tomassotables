@@ -1,0 +1,379 @@
+@import '~assets/styles/variables';
+
+.category-section {
+	width: 100%;
+
+	&__top {
+		margin-bottom: 23px;
+		position: relative;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	&__heading {
+		margin-bottom: 20px;
+		width: 100%;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 0;
+			width: calc(100% - 210px);
+		}
+	}
+
+	h1 {
+		margin-bottom: 20px;
+		padding-top: 6px;
+		width: calc(100% - 55px);
+		@include media-breakpoint-up(md) {
+			margin-bottom: 0.5rem;
+			padding-top: 0;
+			width: 100%;
+		}
+	}
+
+	&__talk {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: auto;
+		@include media-breakpoint-up(md) {
+			position: relative;
+			width: auto;
+		}
+
+		.btn {
+			align-items: center;
+			width: 45px;
+			min-height: 44px;
+			font-size: 0.75rem;
+			@include media-breakpoint-up(md) {
+				width: auto;
+				padding: {
+					right: 15px;
+					left: 15px;
+				}
+			}
+
+			i {
+				margin: 0;
+				font-size: 0.75rem;
+				@include media-breakpoint-up(md) {
+					margin-right: 8px;
+				}
+			}
+
+			span {
+				display: none;
+				@include media-breakpoint-up(md) {
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	&__slider {
+		@include media-breakpoint-up(md) {
+			margin: {
+				right: -13px;
+				bottom: 34px;
+				left: -13px;
+			}
+		}
+		margin: {
+			right: -8px;
+			bottom: 27px;
+			left: -8px;
+		}
+	}
+
+	&__item {
+		@include media-breakpoint-up(md) {
+			padding: {
+				right: 13px;
+				bottom: 14px;
+				left: 13px;
+			}
+		}
+		padding: {
+			top: 15px;
+			right: 8px;
+			bottom: 14px;
+			left: 8px;
+		}
+	}
+
+	&__description {
+		font-size: 0.75rem;
+		color: rgba($secondary, 0.7);
+	}
+
+	&__button {
+		margin-bottom: 44px;
+		flex-wrap: wrap;
+		width: 100%;
+
+		.btn-outline-secondary {
+			width: 100%;
+			@include media-breakpoint-up(md) {
+				width: auto;
+				font-size: 0.75rem;
+			}
+			@include media-breakpoint-up(xl) {
+				font-size: 1rem;
+			}
+
+			+ .btn {
+				@include media-breakpoint-up(md) {
+					margin: {
+						top: 0;
+						left: 20px;
+					}
+				}
+				margin: {
+					top: 20px;
+					left: 0;
+				}
+			}
+		}
+	}
+
+	&__view {
+		margin-bottom: 15px;
+		flex-wrap: wrap;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 20px;
+		}
+
+		.woocommerce-result-count {
+			margin-bottom: 0;
+		}
+	}
+
+	&__left {
+		flex-wrap: wrap;
+		font-size: 0.875rem;
+		color: $secondary;
+	}
+
+	&__select {
+		width: 150px;
+		@include media-breakpoint-up(sm) {
+			width: 195px;
+		}
+		margin: {
+			right: 20px;
+			bottom: 0;
+		}
+
+		.woocommerce & {
+			margin-bottom: 0;
+		}
+
+		select {
+			width: 100%;
+			height: 50px;
+			font-size: 0.875rem;
+			color: $secondary;
+			border: 1px solid $light-gray-200;
+			border-radius: 10px;
+			background-color: $white;
+			appearance: none;
+			@include background-image(select-arrow, png, right 18px center, no-repeat);
+			@include media-breakpoint-up(sm) {
+				font-size: 1rem;
+				padding: {
+					left: 20px;
+				}
+			}
+			padding: {
+				right: 30px;
+				left: 10px;
+			}
+		}
+	}
+
+	.woocommerce-result-count {
+		strong {
+			margin: 0 20px;
+		}
+	}
+
+	&__view-text {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		font-size: 0.875rem;
+		color: $secondary;
+		@include media-breakpoint-up(md) {
+			justify-content: flex-end;
+		}
+
+		.woocommerce-result-count {
+			display: block !important;
+			font-size: 1rem;
+			font-weight: 600;
+			@include media-breakpoint-up(md) {
+				margin: 0;
+			}
+			margin: {
+				top: 0;
+				right: 0;
+				bottom: 15px;
+				left: 0;
+			};
+
+			strong {
+				margin: 0;
+				font-weight: 600;
+			}
+		}
+	}
+
+	&__list {
+		margin-bottom: 0;
+		flex-wrap: wrap;
+
+		li {
+			margin: {
+				left: 15px;
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 32px;
+				height: 32px;
+				color: $light-gray-200;
+				border: 1px solid $gray-100;
+				border-radius: 4px;
+
+				&:hover {
+					text-decoration: none;
+					color: $white;
+					border-color: $secondary;
+					background-color: $secondary;
+				}
+			}
+
+			&.is-active {
+				a {
+					text-decoration: none;
+					color: $white;
+					border-color: $secondary;
+					background-color: $secondary;
+				}
+			}
+		}
+	}
+
+	&__notfound {
+		max-width: 700px;
+		margin: {
+			right: auto;
+			left: auto;
+		};
+
+		h3 {
+			line-height: 1.5;
+			color: $gray-600;
+			@include media-breakpoint-up(md) {
+				font-size: 25px;
+				margin: {
+					right: 20px;
+					left: 20px;
+				};
+			}
+		}
+
+		hr {
+			margin: {
+				top: 40px;
+				bottom: 40px;
+			};
+		}
+	}
+
+	.products .col-md-4 {
+		+ .col-md-12 {
+			display: none;
+		}
+	}
+
+	.woocommerce-pagination {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		@include media-breakpoint-up(md) {
+			margin-left: 22px;
+			justify-content: flex-end;
+			width: auto;
+		}
+
+		ul {
+			margin: 0 !important;
+			padding: 0 !important;
+			border: 0 !important;
+
+			li {
+				padding: 0 !important;
+				border: 0 !important;
+				@include media-breakpoint-up(md) {
+					margin: {
+						right: 0 !important;
+						left: 8px !important;
+					};
+				}
+				margin: {
+					right: 4px !important;
+					left: 4px !important;
+				};
+
+				span {
+					&.current {
+						color: $primary !important;
+						border-color: $primary;
+						background-color: transparent !important;
+					}
+				}
+
+				a,
+				span {
+					padding: 0;
+					display: flex !important;
+					align-items: center;
+					justify-content: center;
+					width: 32px;
+					height: 32px;
+					color: $secondary;
+					border: 1px solid $gray-100;
+					border-radius: 4px;
+					background-color: transparent;
+
+					&.next {
+						color: $white;
+						text-indent: -9999px;
+						border-color: rgba($light-gray-300, 0.5);
+						background-color: rgba($light-gray-300, 0.5);
+
+						&:before {
+							font-family: $font-family-icon;
+							font-size: 0.35rem;
+							text-indent: 0;
+							transform: rotate(-90deg);
+							content: '\e911';
+						}
+					}
+
+					&:hover {
+						color: $primary !important;
+						border-color: $primary;
+						background-color: transparent !important;
+					}
+				}
+			}
+		}
+	}
+}

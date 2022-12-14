@@ -1,0 +1,58 @@
+ul.qa_btn_list li, ul.bb_btn_list li  {
+    display: inline-block;
+    padding: 0 5px;
+}
+.ipb_hide{
+    display: none !important;
+}
+.bb_list_items .cbxwpbkmarkwrap-post {
+    display: block !important;
+}
+
+.doc-content div#follow-button-1 {
+    border: 1px solid #333;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+}
+
+ul.share-post-privacy li {
+    border: 1px solid #000;
+    color: #000;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+div#share-box-12538 {
+    margin: 10px 5px;
+}
+div.share-box {
+    width: 50%;
+}
+.share-post-privacy li.active {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+ul.share-post-privacy {
+    margin: 10px 0;
+}
+div#share-box-16159 {
+    margin: 15px auto;
+    width: 100%;
+}
+.share-box p {
+    text-align: right;
+}
+ul.wiki_btns {
+    list-style: none;
+    display: flex;
+}
+li.wikis_list_items {
+    margin: 0 10px !important;
+    border: 1px solid #000 !important;
+    padding: 3px 10px !important;
+    height: 32px;
+}

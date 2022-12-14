@@ -1,0 +1,139 @@
+@import '~assets/styles/variables';
+
+.accordion-section {
+	margin-bottom: 78px;
+	padding-top: 43px;
+	width: 100%;
+	@include media-breakpoint-up(md) {
+		margin-bottom: 105px;
+		padding-top: 50px;
+	}
+
+	.container {
+		@include media-breakpoint-up(xxl) {
+			max-width: 1171px;
+		}
+	}
+
+	h1 {
+		@include media-breakpoint-down(sm) {
+			font-size: 1.185rem;
+		}
+		@include media-breakpoint-up(md) {
+			margin: {
+				bottom: 35px;
+			}
+		}
+		margin: {
+			bottom: 17px;
+		}
+	}
+
+	ul {
+		margin: 0 0 18px;
+		padding-top: 2px;
+		list-style: none;
+		@include media-breakpoint-up(md) {
+			padding-top: 14px;
+		}
+
+		li {
+			padding-bottom: 2px;
+			padding-left: 36px;
+			position: relative;
+			font-size: 0.75rem;
+			color: $gray-600;
+			@include media-breakpoint-up(md) {
+				padding-bottom: 12px;
+				font-size: 1.125rem;
+				color: $gray-500;
+			}
+
+			&:after {
+				position: absolute;
+				top: 4px;
+				left: 1px;
+				width: 10px;
+				height: 10px;
+				border-radius: $rounded-pill;
+				background-color: $orange;
+				content: '';
+				@include media-breakpoint-up(md) {
+					top: 9px;
+				}
+			}
+		}
+	}
+
+	p {
+		font-size: 0.875rem;
+		@include media-breakpoint-up(md) {
+			font-size: 1.125rem;
+		}
+
+		strong {
+			font-weight: $font-weight-light;
+			color: $black;
+		}
+	}
+
+	&__accordions {
+		padding-top: 14px;
+	}
+
+	&__cards {
+		margin-bottom: 19px;
+		border: 0;
+		border-radius: 0;
+	}
+
+	&__card-item {
+		padding: 0;
+		position: relative;
+		border-bottom: 0;
+		border-radius: 10px !important;
+
+		button {
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+
+	&__text {
+		font-size: 0.875rem;
+	}
+
+	&__accordion-btn {
+		position: relative;
+
+		&:before {
+			position: absolute;
+			top: 12px;
+			right: 20px;
+			font-family: $font-family-icon;
+			font-size: 0.884rem;
+			color: $light-gray-200;
+			transform: rotate(90deg);
+			transition: $transition-base;
+			content: '\e928';
+		}
+
+		&.collapsed {
+			&:before {
+				transform: rotate(0deg);
+			}
+		}
+	}
+
+	.btn {
+		padding: 0.804rem 5.248rem 0.554rem 1.248rem;
+		justify-content: unset;
+		min-height: auto;
+		font-size: 0.915rem;
+		font-weight: $font-weight-light;
+		text-decoration: $link-decoration;
+		color: $gray-900;
+		background-color: $light-gray;
+	}
+}

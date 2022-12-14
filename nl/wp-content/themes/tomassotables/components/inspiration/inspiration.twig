@@ -1,0 +1,67 @@
+{% if image_text_title or image_text_image or image_text_content or image_text_button or image_text_position or image_text_video %}
+	<div data-component="inspiration" class="inspiration">
+		<div class="container">
+			<div class="row">
+			
+				
+				{% if image_text_image or image_text_video %}
+					<div class="col-md-6 col-lg-6{% if image_text_position == 'right' %} order-2{% endif %}">
+						<div class="inspiration__image{% if image_text_video %} inspiration__image--video{% endif %} w-100 h-100 position-relative">
+							{{ image(image_text_image,[556,471]) }}
+
+							{% if image_text_video %}
+								<a href="{{ image_text_video }}" class="inspiration__play-btn js-popup-video">
+									<i class="icon-play"></i>
+								</a>
+							{% endif %}
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-6{% if image_text_position == 'right' %} order-1{% endif %}">
+						<div class="inspiration__content w-100 h-100 position-relative">
+							{% if image_text_title %}
+								<h2 class="text-uppercase">
+									{{ image_text_title }}
+								</h2>
+							{% endif %}
+	
+							{{ image_text_content }}
+	
+							{% if image_text_button %}
+								<a href="{{ image_text_button.url }}" class="btn btn-primary" target="{{ image_text_button.target }}">
+									{{ image_text_button.title }}
+								</a>
+							{% endif %}
+	
+						</div>
+					</div>
+					
+				{% else %}	
+					
+
+					<div class="col-md-9 col-lg-9" style="margin:0 auto;">
+						<div class="inspiration__content w-100 h-100 position-relative">
+							{% if image_text_title %}
+								<h2 class="text-uppercase">
+									{{ image_text_title }}
+								</h2>
+							{% endif %}
+	
+							{{ image_text_content }}
+	
+							{% if image_text_button %}
+								<a href="{{ image_text_button.url }}" class="btn btn-primary" target="{{ image_text_button.target }}">
+									{{ image_text_button.title }}
+								</a>
+							{% endif %}
+	
+						</div>
+					</div>
+					
+					
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endif %}
+

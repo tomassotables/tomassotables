@@ -1,0 +1,56 @@
+{% if review_title or reviews %}
+	<section data-component="quote" class="quote">
+		<div class="container">
+			<div class="quote__slider js-quote-slider">
+				{% for item in reviews %}
+					<div class="quote__item">
+						
+
+						<div class="quote__content">
+							{% if review_title %}
+								<h2>{{ review_title }}</h2>
+							{% endif %}
+
+							{% if item.review_star %}
+								<div class="quote__star">
+									<i class="icon-star fill"></i>
+									<i class="icon-star{% if item.review_star != 1 %} fill{% endif %}"></i>
+									<i class="icon-star{% if item.review_star != 1 and (item.review_star == 3 or item.review_star == 4 or item.review_star == 5) %} fill{% endif %}"></i>
+									<i class="icon-star{% if item.review_star != 1 and (item.review_star == 4 or item.review_star == 5) %} fill{% endif %}"></i>
+									<i class="icon-star{% if item.review_star == 5 %} fill{% endif %}"></i>
+								</div>
+							{% endif %}
+
+							{% if item.quote %}
+								<blockquote>
+									{{ item.quote }}
+								</blockquote>
+							{% endif %}
+
+							{% if item.name %}
+								<div class="quote__name">
+									{{ item.name }}
+								</div>
+							{% endif %}
+
+
+							{% if item.position or item.place %}
+								<div class="quote__place">
+									{% if item.position %}
+										{{ item.position }}
+									{% endif %}
+									{{ __(', ')}}
+									{% if item.place %}
+										{{ item.place }}
+									{% endif %}
+								</div>
+							{% endif %}
+
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+{% endif %}
+

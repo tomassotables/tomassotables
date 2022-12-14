@@ -1,0 +1,9 @@
+<section data-component="releted" class="releted">
+    <h4>{{ __('Releted Article') }}</h4>
+
+    {% for post in Post(related_articles) %}
+        <div class="releted__item">
+            {% include 'components/card-post' %}
+        </div>
+    {% endfor %}
+</section>

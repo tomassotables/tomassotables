@@ -1,0 +1,14 @@
+2022-11-22T00:05:19+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore::get_attribute_taxonomies() must be an instance of WC_Product, bool given, called in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php on line 378 and defined in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php:516
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(378): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->get_attribute_taxonomies()
+#1 /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(283): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->create_data_for_variation()
+#2 /var/www/test.tomassotables.com/ in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php op de lijn 516
+
+2022-11-22T03:46:18+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore::get_attribute_taxonomies() must be an instance of WC_Product, bool given, called in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php on line 378 and defined in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php:516
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(378): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->get_attribute_taxonomies()
+#1 /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php(283): Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore->create_data_for_variation()
+#2 /var/www/test.tomassotables.com/ in /var/www/test.tomassotables.com/public_html/wp-content/plugins/woocommerce/src/Internal/ProductAttributesLookup/LookupDataStore.php op de lijn 516
+
+2022-11-22T05:39:22+00:00 CRITICAL syntax error, unexpected end of file in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php op de lijn 459
+

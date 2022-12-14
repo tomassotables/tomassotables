@@ -1,0 +1,82 @@
+@import '~assets/styles/variables';
+
+.customer-link {
+	&__top {
+		position: relative;
+	}
+
+	&__title {
+		font-size: 1.25rem;
+		font-weight: 600;
+		text-align: center;
+		color: $secondary;
+		padding: {
+			right: 35px;
+			left: 35px;
+		}
+	}
+
+	&__angle {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+		font-size: 0.875rem;
+		color: $light-gray-200;
+		border-radius: 50%;
+		background-color: $light-gray;
+		transform: rotate(180deg);
+
+		&:hover {
+			text-decoration: none;
+			color: $primary;
+		}
+	}
+
+	&__item {
+		margin-bottom: 20px;
+		padding-bottom: 5px;
+		width: 100%;
+		border-radius: 10px;
+		background-color: $light-gray;
+	}
+
+	h6 {
+		margin-bottom: 13px;
+		font-size: 0.875rem;
+		font-weight: 600;
+		border-bottom: 1px solid $gray-100;
+		padding: {
+			top: 14px;
+			right: 15px;
+			bottom: 9px;
+			left: 15px;
+		}
+	}
+
+	&__link {
+		margin-bottom: 0;
+		padding: {
+			right: 15px;
+			left: 15px;
+		};
+
+		li {
+			margin-bottom: 5px;
+
+			a {
+				font-size: 0.875rem;
+				color: $gray-600;
+
+				&:hover {
+					text-decoration: none;
+					color: $primary;
+				}
+			}
+		}
+	}
+}

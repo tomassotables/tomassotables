@@ -1,0 +1,14 @@
+<section data-component="articles" class="articles">
+	<div class="container articles__container">
+		<h2>{{ __('Related Articles') }}</h2>
+
+		<div class="articles__slider js-articles-slider">
+			{% for post in Post(related_posts) %}
+				<div class="articles__item">
+					{% include 'components/card-post' %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+

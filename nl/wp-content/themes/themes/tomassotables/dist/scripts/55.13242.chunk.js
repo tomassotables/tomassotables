@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[55],{142:function(t,c,e){"use strict";e.r(c),function(t){e(208);c.default=()=>{t(".showlogin").click((function(c){c.preventDefault(),t(this).parent().parent().slideUp()})),t(".js-update-cart").click((function(){t("form.woocommerce-cart-form").submit()})),t(".wc-cart-toggle").click((function(c){c.preventDefault(),t(this).toggleClass("is-active").next().toggleClass("is-active")}))}}.call(this,e(8))},208:function(t,c,e){}}]);
+//# sourceMappingURL=55.13242.chunk.js.map

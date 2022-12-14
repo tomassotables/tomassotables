@@ -1,0 +1,22 @@
+2022-11-19T10:27:38+00:00 DEBUG mollie_wc_gateway_klarnapaylater: Mollie payment object ord_9kukjb (test) webhook call for order 79717.
+2022-11-19T10:27:38+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrderService::orderNeedsPayment mollie_wc_gateway_klarnapaylater: Order 79717 orderNeedsPayment check: yes, order not previously processed by Mollie gateway.
+2022-11-19T10:27:38+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrder::onWebhookAuthorized called for order 79717
+2022-11-19T10:27:38+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrder::onWebhookAuthorized WooCommerce payment_complete() processed and returned to Mollie\WooCommerce\Payment\MollieOrder::onWebhookAuthorized for order 79717
+2022-11-19T10:27:38+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrder::onWebhookAuthorized processing order status update via Mollie plugin fully completed for order 79717
+2022-11-19T10:27:38+00:00 DEBUG Mollie\WooCommerce\Gateway\MolliePaymentGateway::getReturnRedirectUrlForOrder 79717: Determine what the redirect URL in WooCommerce should be.
+2022-11-19T10:27:38+00:00 DEBUG Mollie\WooCommerce\Payment\PaymentModule::onMollieReturn: Redirect url on return order mollie_wc_gateway_klarnapaylater, order 79717: https://test.tomassotables.com/nl/afrekenen/order-received/79717/?key=wc_order_csEBG6ohSgznY&utm_nooverride=1
+2022-11-19T10:29:08+00:00 DEBUG mollie_wc_gateway_ideal: Mollie payment object ord_wdmcs9 (test) webhook call for order 79718.
+2022-11-19T10:29:08+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrderService::orderNeedsPayment mollie_wc_gateway_ideal: Order 79718 orderNeedsPayment check: yes, order not previously processed by Mollie gateway.
+2022-11-19T10:29:08+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrder::onWebhookPaid called for order 79718
+2022-11-19T10:29:08+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrder::onWebhookPaid WooCommerce payment_complete() processed and returned to Mollie\WooCommerce\Payment\MollieOrder::onWebhookPaid for order 79718
+2022-11-19T10:29:08+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrder::onWebhookPaid processing paid order via Mollie plugin fully completed for order 79718
+2022-11-19T10:29:09+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrder::onWebhookPaid updated payment with webhook and metadata 
+2022-11-19T10:29:09+00:00 DEBUG Mollie\WooCommerce\Gateway\MolliePaymentGateway::getReturnRedirectUrlForOrder 79718: Determine what the redirect URL in WooCommerce should be.
+2022-11-19T10:29:09+00:00 DEBUG Mollie\WooCommerce\Payment\PaymentModule::onMollieReturn: Redirect url on return order mollie_wc_gateway_ideal, order 79718: https://test.tomassotables.com/nl/afrekenen/order-received/79718/?key=wc_order_dodTJ0hlThkbd&utm_nooverride=1
+2022-11-19T10:36:34+00:00 DEBUG mollie_wc_gateway_klarnapaylater: Mollie payment object ord_e181iz (test) webhook call for order 79719.
+2022-11-19T10:36:34+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrderService::orderNeedsPayment mollie_wc_gateway_klarnapaylater: Order 79719 orderNeedsPayment check: yes, order not previously processed by Mollie gateway.
+2022-11-19T10:36:34+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrder::onWebhookAuthorized called for order 79719
+2022-11-19T10:36:35+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrder::onWebhookAuthorized WooCommerce payment_complete() processed and returned to Mollie\WooCommerce\Payment\MollieOrder::onWebhookAuthorized for order 79719
+2022-11-19T10:36:35+00:00 DEBUG Mollie\WooCommerce\Payment\MollieOrder::onWebhookAuthorized processing order status update via Mollie plugin fully completed for order 79719
+2022-11-19T10:36:35+00:00 DEBUG Mollie\WooCommerce\Gateway\MolliePaymentGateway::getReturnRedirectUrlForOrder 79719: Determine what the redirect URL in WooCommerce should be.
+2022-11-19T10:36:35+00:00 DEBUG Mollie\WooCommerce\Payment\PaymentModule::onMollieReturn: Redirect url on return order mollie_wc_gateway_klarnapaylater, order 79719: https://test.tomassotables.com/nl/afrekenen/order-received/79719/?key=wc_order_WLsPbyNRbaxuv&utm_nooverride=1

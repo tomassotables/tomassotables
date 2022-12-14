@@ -1,0 +1,11 @@
+2022-11-15T04:53:27+00:00 CRITICAL Uncaught Error: Class 'Xoo_CP_Core' not found in /var/www/test.tomassotables.com/public_html/wp-content/plugins/added-to-cart-popup-woocommerce/includes/class-xoo-cp.php:27
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/wp-content/plugins/added-to-cart-popup-woocommerce/includes/class-xoo-cp.php(14): Xoo_CP->__construct()
+#1 /var/www/test.tomassotables.com/public_html/wp-content/plugins/added-to-cart-popup-woocommerce/xoo-cp-main.php(40): Xoo_CP::get_instance()
+#2 /var/www/test.tomassotables.com/public_html/wp-includes/class-wp-hook.php(308): xoo_cp_rock_the_world()
+#3 /var/www/test.tomassotables.com/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#4 /var/www/test.tomassotables.com/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#5 /var/www/test.tomassotables.com/public_html/wp-settings.php(480): do_action()
+#6 /var/www/test.tomassotables.com/public_html/wp-config.php(81): require_once('/var/www/test.t...')
+#7 /var/www/test.tomassotables.com/public_html/wp-l in /var/www/test.tomassotables.com/public_html/wp-content/plugins/added-to-cart-popup-woocommerce/includes/class-xoo-cp.php op de lijn 27
+

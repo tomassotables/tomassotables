@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/post/post.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/52.8dedf.chunk.js","sourcesContent":["import './post.scss';\n\nexport default () => {\n};\n"],"sourceRoot":""}

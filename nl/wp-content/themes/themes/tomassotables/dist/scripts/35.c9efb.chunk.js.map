@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/customers/customers.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/35.c9efb.chunk.js","sourcesContent":["import './customers.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

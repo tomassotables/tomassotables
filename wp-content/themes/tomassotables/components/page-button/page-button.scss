@@ -1,0 +1,36 @@
+@import '~assets/styles/variables';
+
+.page-button {
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 74px;
+		height: 74px;
+		font-size: 1.5rem;
+		color: $light-gray-200;
+		border: 1px solid $gray-100;
+		border-radius: 50%;
+		background-color: transparent;
+		margin: {
+			right: 20px;
+			left: 20px;
+		}
+
+		&:hover {
+			text-decoration: none;
+			background-color: $white;
+			box-shadow: 0 4px 54px rgba($black, 0.04);
+		}
+	}
+
+	&__prev {
+		i {
+			transform: rotate(180deg);
+		}
+	}
+}
+

@@ -1,0 +1,83 @@
+{% for section in content_section %}
+	{% if section.acf_fc_layout == 'score_block' %}
+		{% set shopping_icon, score_text, review_title, review_star, review_text, shopping_icon2, shopping_text2 = section.shopping_icon, section.shopping_text,section.review_title, section.review_star, section.review_text, section.shopping_icon2, section.shopping_text2 %}
+		{% include 'components/score' %}
+
+	{% elseif section.acf_fc_layout == 'best_category' %}
+		{% set best_title = section.title %}
+		{% include 'components/categorie' %}
+
+	{% elseif section.acf_fc_layout == 'favorite_sale' %}
+		{% set fav_title, fav_products = section.title, section.products %}
+		{% include 'components/favorite' %}
+
+	{% elseif section.acf_fc_layout == 'new_collection' %}
+		{% set fav_title, fav_products, fav_button = section.title, section.products, section.button %}
+		{% include 'components/collection' %}
+
+	{% elseif section.acf_fc_layout == 'about_section' %}
+		{% set about_title, about_image, about_content, about_button = section.title, section.image, section.content, section.button %}
+		{% include 'components/about-section' %}
+
+	{% elseif section.acf_fc_layout == 'why_us' %}
+		{% set why_title, why_stats = section.title, section.stats %}
+		{% include 'components/buy' %}
+
+	{% elseif section.acf_fc_layout == 'review_block' %}
+		{% set review_title, reviews = section.title, section.reviews %}
+		{% include 'components/quote' %}
+
+	{% elseif section.acf_fc_layout == 'advise_block' %}
+		{% set advise_title, advise_number, advise_email, advise_chat_button, advise_image = section.title, section.number, section.email, section.chat_button, section.image %}
+		{% include 'components/advise' %}
+
+	{% elseif section.acf_fc_layout == 'brands_section' %}
+		{% set brands_title, brands = section.title, section.brands %}
+		{% include 'components/brand-logo' %}
+
+	{% elseif section.acf_fc_layout == 'latest_blog' %}
+		{% set latest_title = section.title %}
+		{% include 'components/blog' %}
+
+	{% elseif section.acf_fc_layout == 'question_block' %}
+		{% set block_question, block_answer = section.question, section.answer %}
+		{% include 'components/question' %}
+
+	{% elseif section.acf_fc_layout == 'image_text_block' %}
+		{% set image_text_title, image_text_image, image_text_content, image_text_button, image_text_position, image_text_video = section.title, section.image, section.content, section.button,section.position, section.video %}
+		{% include 'components/inspiration' %}
+
+	{% elseif section.acf_fc_layout == 'interior_block' %}
+		{% set interior_title, interior_subtitle, interior_gallery = section.title, section.subtitle, section.gallery %}
+		{% include 'components/interior' %}
+
+	{% elseif section.acf_fc_layout == 'divided_block' %}
+		{% set left_title, right_title, left_block, right_block = section.left_title, section.right_title, section.left_block, section.right_block %}
+		{% include 'components/text-section' %}
+
+	{% elseif section.acf_fc_layout == 'contact_form' %}
+		{% set connect_form, connect_call_title, connect_call_text, connect_email_text, connect_email_title = section.form, section.call_title, section.call_text, section.email_text, section.email_title %}
+		{% include 'components/connect' %}
+
+	{% elseif section.acf_fc_layout == 'visit_block' %}
+		{% set visit_title, visit_content, visit_button, visit_addresses = section.title, section.content, section.button, section.addresses %}
+		{% include 'components/visit' %}
+
+	{% elseif section.acf_fc_layout == 'popular_block' %}
+		{% set popular_image, popular_content, popular_button = section.image, section.content, section.button %}
+		{% include 'components/popular' %}
+
+	{% elseif section.acf_fc_layout == 'terms_faq' %}
+		{% set terms = section.terms %}
+		{% include 'components/accordion-section' %}
+
+	{% elseif section.acf_fc_layout == 'magazine_block' %}
+		{% set magazine_title, magazine_image, magazine_subtitle, magazine_form, magazine_content = section.title, section.image, section.subtitle, section.form, section.content %}
+		{% include 'components/magazine' %}
+
+	{% elseif section.acf_fc_layout == 'trust_block' %}
+		{% set trust_icon, trust_text, trust_title, trust_star, trust_text2, trust_icon2, trust_text3 = section.icon, section.text,section.title, section.star, section.text2, section.icon2, section.text3 %}
+		{% include 'components/trust' %}
+	{% endif %}
+{% endfor %}
+

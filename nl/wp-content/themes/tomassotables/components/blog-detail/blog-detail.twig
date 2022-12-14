@@ -1,0 +1,20 @@
+<section data-component="blog-detail" class="blog-detail">
+	<h1>{{ post.title }}</h1>
+	<div class="blog-detail__breadcrumb">
+		{% include 'components/breadcrumbs' %}
+	</div>
+	<div class="blog-detail__author d-flex align-items-center">
+
+		{{ fn('get_avatar',user_email,16) }}
+
+		{{ post.author.name }}
+        
+	</div>
+
+
+	
+
+	{{ post.content }}
+
+</section>
+

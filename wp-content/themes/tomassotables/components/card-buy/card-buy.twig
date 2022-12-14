@@ -1,0 +1,15 @@
+<div data-component="card-buy" class="card-buy text-center">
+	{% if item.icon %}
+		<div class="card-buy__icon d-flex justify-content-center">
+			<picture>
+				<img src="{{ Image(item.icon).src }}" alt="{{ Image(item.icon).alt }}">
+			</picture>
+		</div>
+	{% endif %}
+
+	<h3>{{ item.title }}</h3>
+
+	{{ item.text |wpautop }}
+
+</div>
+

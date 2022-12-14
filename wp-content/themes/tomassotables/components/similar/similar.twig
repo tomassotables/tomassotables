@@ -1,0 +1,19 @@
+{% if similar_posts %}
+    <div data-component="similar" class="similar">
+        <div class="container">
+            {% if similar_title %}
+                <h3>{{ similar_title }}</h3>
+            {% endif %}
+
+            <div class="similar__block">
+                <div class="row">
+                    {% for post in Post(similar_posts) %}
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+                            {% include 'components/card-product' %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}

@@ -1,0 +1,21 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+	<div class="layout mt-5 layout--blog-detail">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					{% include 'components/blog-detail' %}
+				</div>
+				<div class="col-lg-4 d-none d-lg-block">
+					{% include 'components/share' %}
+					{% include 'components/download' %}
+					{% include 'components/unique' %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include 'components/bio' %}
+	{% include 'components/articles' %}
+{% endblock %}
+

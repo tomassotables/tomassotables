@@ -1,0 +1,43 @@
+@import '~assets/styles/variables';
+
+.popular {
+	font-size: 1rem;
+	color: $gray-600;
+	background-color: $light-gray;
+	@include media-breakpoint-up(md) {
+		padding: {
+			bottom: 100px;
+		}
+	}
+	padding: {
+		bottom: 60px;
+	}
+
+	.container {
+		@include media-breakpoint-up(xxl) {
+			max-width: 1170px;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		overflow: hidden;
+		border-radius: 15px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	p {
+		margin-bottom: 47px;
+	}
+
+	&__btn {
+		width: 100%;
+		@include media-breakpoint-up(md) {
+			width: auto;
+		}
+	}
+}

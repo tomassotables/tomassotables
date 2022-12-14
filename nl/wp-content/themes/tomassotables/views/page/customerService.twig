@@ -1,0 +1,20 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+    <div class="layout mt-3">
+        <div class="container">
+            <div class="row">
+                <!--
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    {% include 'components/customer-link' %}
+                </div>
+				-->
+                <div class="col-lg-12">
+                    {% include 'components/customer' %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'components/breadcrumbs' %}
+
+{% endblock %}

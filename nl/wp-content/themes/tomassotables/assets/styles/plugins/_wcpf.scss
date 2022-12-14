@@ -1,0 +1,147 @@
+// Table of Content
+// ===============================================
+// # Variables
+// # Mixin */
+
+// # Variables
+// =============================================== */
+// No local variables available
+
+// # Mixin
+// =============================================== */
+
+.wcpf-filter {
+	.wcpf-field-item {
+		&:not(.wcpf-field-button) {
+			margin-bottom: 20px;
+			width: 100%;
+			border-radius: 10px;
+			background-color: $light-gray;
+			padding: {
+				top: 0;
+				right: 0;
+				bottom: 12px;
+				left: 0;
+			};
+		}
+
+		.wcpf-field-title {
+			position: relative;
+			font-size: 0.875rem;
+			font-weight: 600;
+			text-transform: none;
+			color: $secondary;
+			transition: all 0.3s ease-in-out;
+			@include media-breakpoint-up(lg) {
+				border-bottom: 1px solid $gray-100;
+				padding: {
+					top: 9px;
+					right: 15px;
+					bottom: 8px;
+				}
+			}
+			padding: {
+				top: 14px;
+				right: 35px;
+				bottom: 0;
+				left: 15px;
+			};
+		}
+
+		.wcpf-content {
+			padding: 10px 15px;
+			font-size: 0.875rem;
+			font-weight: 400;
+			color: $gray-600;
+
+			.wcpf-item {
+				margin-bottom: 5px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.wcpf-checkbox-label {
+				color: $gray-600;
+
+				.wcpf-product-counts {
+					display: none;
+				}
+
+				.wcpf-input-container {
+					border-color: $gray-600;
+				}
+			}
+
+			&.wcpf-price-slider {
+				.ui-widget-content {
+					background-color: rgba($primary, 0.5);
+				}
+
+				.ui-slider-range {
+					background-color: $primary;
+				}
+
+				.ui-slider-handle {
+					top: -11px;
+					width: 20px;
+					height: 25px;
+					border: 0;
+					border-radius: 0;
+					background-color: transparent;
+					@include background-image(range-bg, svg, center center, no-repeat);
+				}
+
+				.priceLabel {
+					display: flex;
+					justify-content: space-between;
+					font-size: 0.875rem;
+					color: $secondary;
+
+					input {
+						margin: 0;
+						padding: 0;
+						display: block;
+						width: 40px;
+						height: auto;
+						color: $secondary;
+						border: 0;
+						background: none;
+					}
+
+					#max_price {
+						text-align: right;
+					}
+
+					.price-text,
+					.delimiter {
+						display: none;
+					}
+				}
+
+				.wcpf-price-slider-min-max-inputs {
+					display: none;
+				}
+			}
+
+			&.wcpf-color-list {
+				.wcpf-color-item {
+					margin-bottom: 10px;
+
+					&:before {
+						position: absolute;
+						top: 110%;
+						left: 50%;
+						display: block;
+						font-size: 60%;
+						white-space: nowrap;
+						text-transform: uppercase;
+						transform: translateX(-50%);
+						content: attr(data-title);
+					}
+				}
+			}
+		}
+	}
+}

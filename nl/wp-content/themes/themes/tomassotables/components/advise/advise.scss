@@ -1,0 +1,115 @@
+@import '~assets/styles/variables';
+
+.advise {
+	margin-bottom: 70px;
+	position: relative;
+	width: 100%;
+	min-height: 360px;
+	overflow: hidden;
+	@include media-breakpoint-up(md) {
+		margin-bottom: 145px;
+	}
+
+	&__block {
+		@include media-breakpoint-up(md) {
+			position: relative;
+			width: 100%;
+		}
+	}
+
+	&__content {
+		z-index: 2;
+		@include media-breakpoint-up(md) {
+			padding: {
+				right: 20px;
+				left: 50px;
+			}
+		}
+		@include media-breakpoint-up(lg) {
+			padding: {
+				top: 65px;
+				right: 20px;
+				bottom: 20px;
+				left: 96px;
+			}
+		}
+		padding: {
+			top: 52px;
+			bottom: 20px;
+		}
+
+		ul {
+			margin: 0 0 13px;
+			list-style: none;
+
+			li {
+				padding-bottom: 17px;
+
+				a {
+					padding-left: 40px;
+					position: relative;
+					font-size: 1rem;
+					color: $white;
+
+					&:hover {
+						text-decoration: $link-decoration;
+					}
+
+					i {
+						position: absolute;
+						top: 0;
+						left: 0;
+						font-size: 1.398rem;
+					}
+				}
+			}
+		}
+	}
+
+	h2 {
+		margin-bottom: 28px;
+		padding-bottom: 17px;
+		color: $white;
+
+		&:after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 60px;
+			height: 2px;
+			background-color: $white;
+			content: '';
+		}
+	}
+
+	&__image {
+		margin-left: -15px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: calc(100% + 30px);
+		height: 334px;
+		@include media-breakpoint-up(md) {
+			margin-left: 0;
+			width: 100%;
+			height: 360px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center center;
+			@include media-breakpoint-up(md) {
+				border-radius: 20px;
+			}
+		}
+	}
+
+	.btn {
+		i {
+			margin-right: 10px;
+			font-size: 1.598rem;
+		}
+	}
+}

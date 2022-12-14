@@ -1,0 +1,100 @@
+@import '~assets/styles/variables';
+
+.processing {
+	&__title {
+		position: relative;
+		background: $white;
+		padding: {
+			top: 30px;
+			bottom: 30px;
+		};
+
+		p {
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			left: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 500;
+			text-align: center;
+			color: $primary;
+			transform: translateY(-50%);
+			@include media-breakpoint-down(sm) {
+				padding-right: 15px;
+				justify-content: flex-end;
+			}
+
+			i {
+				margin-right: 10px;
+			}
+		}
+
+		h3 {
+			margin-bottom: 0;
+			position: relative;
+			z-index: 1;
+
+			a {
+				padding-left: 50px;
+				position: relative;
+				display: inline-block;
+				color: inherit;
+
+				i {
+					position: absolute;
+					top: 50%;
+					left: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 40px;
+					height: 40px;
+					color: $gray-600;
+					border-radius: 50%;
+					background: $light-gray;
+					transform: rotate(180deg) translateY(50%);
+				}
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+
+			span {
+				margin-top: 5px;
+				display: block;
+				font-size: 14px;
+				font-weight: normal;
+				@include media-breakpoint-up(md) {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	&__holder {
+		margin-bottom: 50px;
+		background: $light-gray;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 100px;
+			padding: {
+				top: 50px;
+				bottom: 50px;
+			};
+		}
+		padding: {
+			top: 25px;
+			bottom: 25px;
+		};
+
+		.woocommerce {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+}
+

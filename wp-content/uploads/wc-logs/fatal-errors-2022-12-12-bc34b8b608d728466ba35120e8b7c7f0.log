@@ -1,0 +1,82 @@
+2022-12-12T10:43:36+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in /var/www/test.tomassotables.com/public_html/wp-content/plugins/vince-manager/vince_manager.php on line 396
+
+2022-12-12T10:43:38+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in /var/www/test.tomassotables.com/public_html/wp-content/plugins/vince-manager/vince_manager.php on line 396
+
+2022-12-12T10:43:38+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in /var/www/test.tomassotables.com/public_html/wp-content/plugins/vince-manager/vince_manager.php on line 396
+
+2022-12-12T10:46:58+00:00 CRITICAL syntax error, unexpected ';', expecting '(' in /var/www/test.tomassotables.com/public_html/wp-content/plugins/vince-manager/vince_manager.php on line 379
+
+2022-12-12T10:47:00+00:00 CRITICAL syntax error, unexpected ';', expecting '(' in /var/www/test.tomassotables.com/public_html/wp-content/plugins/vince-manager/vince_manager.php on line 379
+
+2022-12-12T10:47:01+00:00 CRITICAL syntax error, unexpected ';', expecting '(' in /var/www/test.tomassotables.com/public_html/wp-content/plugins/vince-manager/vince_manager.php on line 379
+
+2022-12-12T10:47:24+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /var/www/test.tomassotables.com/public_html/wp-content/plugins/vince-manager/vince_manager.php on line 379
+
+2022-12-12T10:47:26+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /var/www/test.tomassotables.com/public_html/wp-content/plugins/vince-manager/vince_manager.php on line 379
+
+2022-12-12T10:47:26+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /var/www/test.tomassotables.com/public_html/wp-content/plugins/vince-manager/vince_manager.php on line 379
+
+2022-12-12T10:48:01+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in /var/www/test.tomassotables.com/public_html/wp-content/plugins/vince-manager/vince_manager.php on line 491
+
+2022-12-12T10:48:03+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in /var/www/test.tomassotables.com/public_html/wp-content/plugins/vince-manager/vince_manager.php on line 491
+
+2022-12-12T10:48:03+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in /var/www/test.tomassotables.com/public_html/wp-content/plugins/vince-manager/vince_manager.php on line 491
+
+2022-12-12T12:34:38+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php op de lijn 700
+
+2022-12-12T12:34:38+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php op de lijn 700
+
+2022-12-12T12:34:40+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php op de lijn 700
+
+2022-12-12T12:34:42+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php op de lijn 700
+
+2022-12-12T12:34:45+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php op de lijn 700
+
+2022-12-12T12:39:17+00:00 CRITICAL Uncaught Error: Call to a member function get_var() on null in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php:685
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/wp-includes/shortcodes.php(355): livingfun_downloadcsv()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/test.tomassotables.com/public_html/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/test.tomassotables.com/public_html/wp-includes/class-wp-hook.php(308): do_shortcode()
+#4 /var/www/test.tomassotables.com/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#5 /var/www/test.tomassotables.com/public_html/vendor/timber/timber/lib/Post.php(1228): apply_filters()
+#6 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Extension/CoreExtension.php(1566): Timber\Post->content()
+#7 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Environment.php(418) : eval()'d code(37): twig_get_attribute()
+#8 /var/www/test.tomassotables.com/pu in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php op de lijn 685
+
+2022-12-12T12:39:20+00:00 CRITICAL Uncaught Error: Call to a member function get_var() on null in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php:685
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/wp-includes/shortcodes.php(355): livingfun_downloadcsv()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/test.tomassotables.com/public_html/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/test.tomassotables.com/public_html/wp-includes/class-wp-hook.php(308): do_shortcode()
+#4 /var/www/test.tomassotables.com/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#5 /var/www/test.tomassotables.com/public_html/vendor/timber/timber/lib/Post.php(1228): apply_filters()
+#6 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Extension/CoreExtension.php(1566): Timber\Post->content()
+#7 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Environment.php(418) : eval()'d code(37): twig_get_attribute()
+#8 /var/www/test.tomassotables.com/pu in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php op de lijn 685
+
+2022-12-12T12:40:39+00:00 CRITICAL Uncaught Error: Call to a member function get_var() on null in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php:685
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/wp-includes/shortcodes.php(355): livingfun_downloadcsv()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/test.tomassotables.com/public_html/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/test.tomassotables.com/public_html/wp-includes/class-wp-hook.php(308): do_shortcode()
+#4 /var/www/test.tomassotables.com/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#5 /var/www/test.tomassotables.com/public_html/vendor/timber/timber/lib/Post.php(1228): apply_filters()
+#6 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Extension/CoreExtension.php(1566): Timber\Post->content()
+#7 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Environment.php(418) : eval()'d code(37): twig_get_attribute()
+#8 /var/www/test.tomassotables.com/pu in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php op de lijn 685
+
+2022-12-12T12:40:51+00:00 CRITICAL Uncaught Error: Call to a member function get_var() on null in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php:685
+Stack trace:
+#0 /var/www/test.tomassotables.com/public_html/wp-includes/shortcodes.php(355): livingfun_downloadcsv()
+#1 [internal function]: do_shortcode_tag()
+#2 /var/www/test.tomassotables.com/public_html/wp-includes/shortcodes.php(227): preg_replace_callback()
+#3 /var/www/test.tomassotables.com/public_html/wp-includes/class-wp-hook.php(308): do_shortcode()
+#4 /var/www/test.tomassotables.com/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters()
+#5 /var/www/test.tomassotables.com/public_html/vendor/timber/timber/lib/Post.php(1228): apply_filters()
+#6 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Extension/CoreExtension.php(1566): Timber\Post->content()
+#7 /var/www/test.tomassotables.com/public_html/vendor/twig/twig/src/Environment.php(418) : eval()'d code(37): twig_get_attribute()
+#8 /var/www/test.tomassotables.com/pu in /var/www/test.tomassotables.com/public_html/wp-content/themes/tomassotables-child/functions.php op de lijn 685
+

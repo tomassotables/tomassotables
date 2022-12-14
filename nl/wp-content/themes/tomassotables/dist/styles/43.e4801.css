@@ -1,0 +1,3 @@
+.favorite{margin-bottom:60px}@media(min-width: 768px){.favorite{margin-bottom:80px}}.favorite h2{margin-bottom:22px;position:relative;letter-spacing:-0.7px;padding-right:102px;padding-bottom:17px}.favorite h2:before{position:absolute;bottom:0;left:0;width:60px;height:2px;background-color:#aebecd;content:""}.favorite__slider{margin-right:-32px;margin-left:-32px}@media(min-width: 768px){.favorite__slider{margin-right:-16px;margin-left:-16px}}.favorite__item{padding-top:16px;padding-right:32px;padding-bottom:82px;padding-left:32px}@media(min-width: 768px){.favorite__item{padding-right:16px;padding-bottom:99px;padding-left:16px}}@media(min-width: 1200px){.favorite__item{padding-bottom:99px}}
+
+/*# sourceMappingURL=43.e4801.css.map*/

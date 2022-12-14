@@ -1,0 +1,24 @@
+@import '~assets/styles/variables';
+
+.share {
+	margin-bottom: 40px;
+	flex-wrap: wrap;
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 35px;
+		height: 35px;
+		font-size: 0.75rem;
+		color: $light-gray-200;
+		border-radius: 50%;
+		background-color: $gray-100;
+
+		&:hover {
+			text-decoration: none;
+			color: $primary;
+		}
+	}
+}
+

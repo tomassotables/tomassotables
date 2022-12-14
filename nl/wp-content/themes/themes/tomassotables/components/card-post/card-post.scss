@@ -1,0 +1,140 @@
+@import '~assets/styles/variables';
+
+.card-post {
+	display: block;
+	height: 100%;
+	border: 1px solid $gray-200;
+	border-radius: 15px;
+	overflow: hidden;
+
+	p {
+		margin-bottom: 20px;
+		height: 41px;
+		overflow: hidden;
+	}
+
+	h6 {
+		height: 48px;
+		font-size: 1rem;
+		font-weight: 600;
+		line-height: 1.5;
+		overflow: hidden;
+	}
+
+	&:hover {
+		text-decoration: none;
+		border-color: $gray-100;
+		box-shadow: 5px 5px 20px rgba($black, 0.08);
+
+		.btn {
+			color: $white;
+			background-color: $primary;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		border-radius: 15px 15px 0 0;
+		overflow: hidden;
+		margin: {
+			top: 0;
+			bottom: 12px;
+			left: 0;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__text {
+		position: relative;
+		width: 100%;
+		font-size: 0.75rem;
+		line-height: 1.7;
+		color: $gray-700;
+		padding: {
+			right: 14px;
+			bottom: 13px;
+			left: 14px;
+		}
+	}
+
+	&__date {
+		margin-bottom: 10px;
+		position: relative;
+		font-size: 0.75rem;
+		color: $gray-600;
+		padding: {
+			right: 85px;
+			left: 22px;
+		}
+
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-family: $font-family-icon;
+			content: '\e90a';
+		}
+	}
+
+	&__time {
+		padding-left: 22px;
+		position: absolute;
+		top: 0;
+		right: 15px;
+		font-size: 0.75rem;
+		color: $gray-600;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-family: $font-family-icon;
+			color: $primary;
+			content: '\e927';
+		}
+	}
+
+	&__block {
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__author {
+		flex-wrap: wrap;
+		align-items: center;
+		line-height: 1.5;
+	}
+
+	&__img {
+		margin-right: 10px;
+		width: 30px;
+		border-radius: 10px;
+		overflow: hidden;
+
+		img {
+			width: 30px;
+			height: auto;
+		}
+	}
+
+	&__author-text {
+		width: calc(100% - 40px);
+	}
+
+	&__author-name {
+		color: $gray-800;
+	}
+
+	&__author-post {
+		color: $gray-600;
+	}
+
+	.releted & {
+		background-color: $white;
+	}
+}
+

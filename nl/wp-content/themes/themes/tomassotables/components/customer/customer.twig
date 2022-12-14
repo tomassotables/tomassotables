@@ -1,0 +1,208 @@
+{% set bestellen = fn('get_field', 'Bestellen') %}
+{% set betalen = fn('get_field', 'Betalen') %}
+{% set bezorging = fn('get_field', 'Bezorging') %}
+{% set retourneren = fn('get_field', 'Retourneren') %}
+{% set garantie = fn('get_field', 'Garantie & Voorwaarden') %}
+{% set klantenservice = fn('get_field', 'Klantenservice') %}
+
+<div data-component="customer" class="customer">
+	<h1>{{ post.title }}</h1>
+
+	{{ post.content }}
+
+	<div class="customer__faq" id="accordionExample">
+		<!--
+		<div class="customer__top">
+			<h3>{{ __('FAQ') }}</h3>
+
+			{% if post.faq_button %}
+				<a href="{{ post.faq_button.url }}" class="btn btn-view customer__view">{{ post.faq_button.title }}</a>
+			{% endif %}
+		</div>
+		-->
+		<div class="accordion customer__accordion">
+			<h3>{{ __('Bestellen') }}</h3>
+			{% for item in bestellen %}
+				<div class="card customer__card">
+					{% if item.question %}
+						<div class="card-header customer__card-header" id="heading{{ loop.index }}_1">
+							<h6 class="mb-0">
+								<button class="customer__btn collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ loop.index }}_1" aria-expanded="true" aria-controls="collapse{{ loop.index }}_1">
+									{{ loop.index }}.
+									{{ item.question }}
+								</button>
+							</h6>
+						</div>
+					{% endif %}
+
+					{% if item.answer %}
+						<div id="collapse{{ loop.index }}_1" class="collapse customer__collapse collapse" aria-labelledby="heading{{ loop.index }}_1" data-parent="#accordionExample">
+							<div class="card-body customer__card-body">
+								{{ item.answer }}
+							</div>
+						</div>
+					{% endif %}
+
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div style="clear:both;height:0px;"></div>
+	<div class="customer__faq">
+		
+		<div class="accordion customer__accordion">
+			<h3>{{ __('Betalen') }}</h3>
+			{% for item in betalen %}
+				<div class="card customer__card">
+					{% if item.question %}
+						<div class="card-header customer__card-header" id="heading{{ loop.index }}_2">
+							<h6 class="mb-0">
+								<button class="customer__btn collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ loop.index }}_2" aria-expanded="true" aria-controls="collapse{{ loop.index }}_2">
+									{{ loop.index }}.
+									{{ item.question }}
+								</button>
+							</h6>
+						</div>
+					{% endif %}
+
+					{% if item.answer %}
+						<div id="collapse{{ loop.index }}_2" class="collapse customer__collapse collapse" aria-labelledby="heading{{ loop.index }}_2" data-parent="#accordionExample">
+							<div class="card-body customer__card-body">
+								{{ item.answer }}
+							</div>
+						</div>
+					{% endif %}
+
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div style="clear:both;height:0px;"></div>
+	<div class="customer__faq">
+		
+		
+		<div class="accordion customer__accordion">
+			<h3>{{ __('Bezorging') }}</h3>
+			{% for item in bezorging %}
+				<div class="card customer__card">
+					{% if item.question %}
+						<div class="card-header customer__card-header" id="heading{{ loop.index }}_3">
+							<h6 class="mb-0">
+								<button class="customer__btn collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ loop.index }}_3" aria-expanded="true" aria-controls="collapse{{ loop.index }}_3">
+									{{ loop.index }}.
+									{{ item.question }}
+								</button>
+							</h6>
+						</div>
+					{% endif %}
+
+					{% if item.answer %}
+						<div id="collapse{{ loop.index }}_3" class="collapse customer__collapse collapse" aria-labelledby="heading{{ loop.index }}_3" data-parent="#accordionExample">
+							<div class="card-body customer__card-body">
+								{{ item.answer }}
+							</div>
+						</div>
+					{% endif %}
+
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div style="clear:both;height:0px;"></div>
+	<div class="customer__faq">
+		
+		
+		<div class="accordion customer__accordion">
+			<h3>{{ __('Retourneren') }}</h3>
+			{% for item in retourneren %}
+				<div class="card customer__card">
+					{% if item.question %}
+						<div class="card-header customer__card-header" id="heading{{ loop.index }}_4">
+							<h6 class="mb-0">
+								<button class="customer__btn collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ loop.index }}_4" aria-expanded="true" aria-controls="collapse{{ loop.index }}_4">
+									{{ loop.index }}.
+									{{ item.question }}
+								</button>
+							</h6>
+						</div>
+					{% endif %}
+
+					{% if item.answer %}
+						<div id="collapse{{ loop.index }}_4" class="collapse customer__collapse collapse" aria-labelledby="heading{{ loop.index }}_4" data-parent="#accordionExample">
+							<div class="card-body customer__card-body">
+								{{ item.answer }}
+							</div>
+						</div>
+					{% endif %}
+
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div style="clear:both;height:0px;"></div>
+	<div class="customer__faq">
+		
+		
+		<div class="accordion customer__accordion">
+			<h3>{{ __('Garantie & Voorwaarden') }}</h3>
+			{% for item in garantie %}
+				<div class="card customer__card">
+					{% if item.question %}
+						<div class="card-header customer__card-header" id="heading{{ loop.index }}_5">
+							<h6 class="mb-0">
+								<button class="customer__btn collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ loop.index }}_5" aria-expanded="true" aria-controls="collapse{{ loop.index }}_5">
+									{{ loop.index }}.
+									{{ item.question }}
+								</button>
+							</h6>
+						</div>
+					{% endif %}
+
+					{% if item.answer %}
+						<div id="collapse{{ loop.index }}_5" class="collapse customer__collapse collapse" aria-labelledby="heading{{ loop.index }}_5" data-parent="#accordionExample">
+							<div class="card-body customer__card-body">
+								{{ item.answer }}
+							</div>
+						</div>
+					{% endif %}
+
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div style="clear:both;height:0px;"></div>
+	<div class="customer__faq">
+		
+		
+		<div class="accordion customer__accordion">
+			<h3>{{ __('Klantenservice') }}</h3>
+			{% for item in klantenservice %}
+				<div class="card customer__card">
+					{% if item.question %}
+						<div class="card-header customer__card-header" id="heading{{ loop.index }}_6">
+							<h6 class="mb-0">
+								<button class="customer__btn collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ loop.index }}_6" aria-expanded="true" aria-controls="collapse{{ loop.index }}_6">
+									{{ loop.index }}.
+									{{ item.question }}
+								</button>
+							</h6>
+						</div>
+					{% endif %}
+
+					{% if item.answer %}
+						<div id="collapse{{ loop.index }}_6" class="collapse customer__collapse collapse" aria-labelledby="heading{{ loop.index }}_6" data-parent="#accordionExample">
+							<div class="card-body customer__card-body">
+								{{ item.answer }}
+							</div>
+						</div>
+					{% endif %}
+
+				</div>
+			{% endfor %}
+		</div>	
+		
+		
+		
+	</div>
+</div>
+

@@ -1,0 +1,20 @@
+// Table of Content
+// ===============================================
+// # Variables
+// # Mixin */
+
+// # Variables
+// =============================================== */
+// No local variables available
+
+// # Mixin
+// =============================================== */
+
+@mixin background-image( $name, $extension: 'png', $position: left center, $repeat: no-repeat, $size: false ) {
+	background-image: url(#{$image-path}/#{$name}.#{$extension});
+	background-repeat: $repeat;
+	background-position: $position;
+	@if ($size) {
+		background-size: $size;
+	}
+}

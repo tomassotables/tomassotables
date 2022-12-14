@@ -1,0 +1,160 @@
+@import '~assets/styles/variables';
+
+.quote {
+	margin-bottom: 60px;
+	position: relative;
+	@include media-breakpoint-up(md) {
+		margin-bottom: 124px;
+	}
+
+	h2 {
+		margin-bottom: 39px;
+		padding-bottom: 17px;
+		position: relative;
+		letter-spacing: -0.7px;
+		text-align: center;
+		@include media-breakpoint-up(md) {
+			text-align: left;
+		}
+
+		&:before {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 60px;
+			height: 2px;
+			background-color: $gray-300;
+			transform: translateX(-50%);
+			content: '';
+			@include media-breakpoint-up(md) {
+				left: 0;
+				transform: translateX(0);
+			}
+		}
+	}
+
+	&__image {
+		order: 1;
+		width: 100%;
+		text-align: center;
+		border-radius: 10px;
+		overflow: hidden;
+		@include media-breakpoint-up(md) {
+			order: unset;
+			width: 34.78%;
+		}
+
+		img {
+			@include media-breakpoint-up(md) {
+				margin: 0;
+			}
+			margin: {
+				right: auto;
+				bottom: 20px;
+				left: auto;
+			}
+		}
+
+		.quote__name {
+			display: flex;
+			justify-content: center;
+			@include media-breakpoint-up(md) {
+				display: none;
+			}
+		}
+
+		.quote__place {
+			display: block;
+			@include media-breakpoint-up(md) {
+				display: none;
+			}
+		}
+	}
+
+	&__slider {
+		padding-bottom: 65px;
+		@include media-breakpoint-up(md) {
+			padding-bottom: 0;
+		}
+	}
+
+	&__item {
+		display: flex !important;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__content {
+		width: 100%;
+		@include media-breakpoint-up(md) {
+			width: 57.21%;
+		}
+	}
+
+	&__star {
+		margin-bottom: 18px;
+		font-size: 1.25rem;
+		text-align: center;
+		color: $light-orange;
+		@include media-breakpoint-up(md) {
+			text-align: left;
+		}
+
+		i {
+			margin-right: 7px;
+		}
+	}
+
+	blockquote {
+		margin-bottom: 20px;
+		font-size: 1.125rem;
+		font-weight: 400;
+		font-style: normal;
+		text-align: center;
+		color: $gray-700;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 41px;
+			font-size: 1.25rem;
+			font-weight: 600;
+			line-height: 1.4;
+			text-align: left;
+		}
+		@include media-breakpoint-up(lg) {
+			font-size: 1.5rem;
+		}
+	}
+
+	&__name {
+		margin-bottom: 8px;
+		position: relative;
+		display: none;
+		font-size: 1rem;
+		font-weight: 600;
+		color: $secondary;
+		@include media-breakpoint-up(md) {
+			display: flex;
+		}
+
+		&:before {
+			width: 20px;
+			height: 1px;
+			background-color: $secondary;
+			content: '';
+			margin: {
+				top: 12px;
+				right: 5px;
+			}
+		}
+	}
+
+	&__place {
+		display: none;
+		font-size: 1rem;
+		color: $gray-600;
+		@include media-breakpoint-up(md) {
+			display: block;
+		}
+	}
+}
+

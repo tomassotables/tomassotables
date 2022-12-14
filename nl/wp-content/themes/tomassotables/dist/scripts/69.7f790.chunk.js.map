@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/visit/visit.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/69.7f790.chunk.js","sourcesContent":["import './visit.scss';\n\nexport default () => {\n};\n"],"sourceRoot":""}

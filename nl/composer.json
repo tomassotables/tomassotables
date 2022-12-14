@@ -1,0 +1,68 @@
+{
+	"type": "project",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"require": {
+		"composer/installers": "*",
+		"ext-json": "*",
+		"johnpbloch/wordpress": "*",
+		"timber/timber": "*",
+		"db-plugin/advanced-custom-fields-pro": "*",
+		"db-plugin/woocommerce-product-filters": "*",
+		"db-plugin/woocommerce-checkout-field-editor-pro": "*",
+		"wpackagist-plugin/acf-content-analysis-for-yoast-seo": "*",
+		"wpackagist-plugin/autoptimize": "*",
+		"wpackagist-plugin/disable-gutenberg": "*",
+		"wpackagist-plugin/better-internal-link-search": "*",
+		"wpackagist-plugin/duplicate-post": "*",
+		"wpackagist-plugin/svg-support": "*",
+		"wpackagist-plugin/wordpress-seo": "*",
+		"wpackagist-plugin/woocommerce": "*",
+		"wpackagist-plugin/mailchimp-for-wp": "*",
+		"wpackagist-plugin/ajax-search-for-woocommerce": "*",
+		"wpackagist-plugin/wc-quantity-plus-minus-button": "*",
+		"wpackagist-plugin/yith-woocommerce-wishlist": "*",
+		"wpackagist-plugin/contact-form-7": "*",
+		"wpackagist-plugin/mollie-payments-for-woocommerce": "*",
+		"wpackagist-plugin/added-to-cart-popup-woocommerce": "*"
+	},
+	"require-dev": {
+		"wp-sync-db/wp-sync-db": "master",
+		"wp-sync-db/wp-sync-db-media-files": "master"
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "wp-content/themes/tomassotables/app"
+		}
+	},
+	"extra": {
+		"wordpress-install-dir": "wp",
+		"installer-paths": {
+			"wp-content/plugins/{$name}": [
+				"type:wordpress-plugin"
+			],
+			"wp-content/mu-plugins/": [
+				"type:wordpress-muplugin"
+			],
+			"wp-content/themes/{$name}": [
+				"type:wordpress-theme"
+			]
+		}
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		},
+		{
+			"type": "composer",
+			"url": "https://composer.directbasing.com"
+		}
+	],
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"johnpbloch/wordpress-core-installer": true
+		}
+	}
+}

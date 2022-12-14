@@ -1,0 +1,143 @@
+{% set product = fn('wc_get_product', post.ID) %}
+{% set snel_in_huis_icon = fn('get_field', 'snel_in_huis_icon', 'option') %}
+{% set snel_in_huis_enable = fn('get_field', 'show_snel_in_huis_badge', post.ID) %}
+
+<div data-component="card-product" class="card-product">
+    <div class="card-product__main">
+        {% if product.is_featured %}
+            <span class="card-product__recommended label">{{ __('Aanbevolen') }}</span>
+        {% endif %}
+
+        <div class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+            
+           
+            <div class="tablet_top">
+	           	{% if product.is_on_sale %}
+	            	<div class="sale_label">SALE</div>
+	            {% else %}
+	            	<div class="empty_label"></div>
+	            {% endif %}
+	            
+	            {{ fn('do_shortcode', '[yith_wcwl_add_to_wishlist product_id="' ~ post.ID ~ '"]') }}
+            
+            
+	            <img src="{{ post.thumbnail|letterbox(330, 330, '#FFFFFF') }}" />
+	
+	            <h2 class="woocommerce-loop-product__title">
+	                {{ post.title }}
+	            </h2>
+            </div>
+            <div class="tablet_bottom">
+				<div class="tablet_footer">
+					<div class="tablet_footer_links">
+						<ul>
+						{% for usp in fn('get_field', 'product_usps', post.ID) %}
+			            	{% if usp.usp %}
+				            	<li>
+				            		{{ usp.usp }}
+								</li>
+			            	{% endif %}
+			            {% endfor %}
+			            </ul>
+		            </div>
+					<div class="tablet_footer_rechts">
+						{% if product.get_stock_quantity > 0 %}
+						    <span class="in-stock-badge">Op voorraad</span>
+						{% endif %}
+			            <span class="price">
+			                {{ product.get_price_html }}
+			            </span>
+			            {% if snel_in_huis_enable == 1 or snel_in_huis_enable == '' %}
+				            <div class="snel_in_huis_label">
+				            	<img class="snel_in_huis_img" src="{{ snel_in_huis_icon }}" alt="" /> Snel in huis
+				            </div>
+				        {% endif %}
+		            </div>
+				</div>
+				<a href="{{ post.link }}" class="button add_to_cart_button add_mobile_btn">	
+	            	{{ __('Bekijken') }}
+				</a>
+			</div>
+        </div>
+    </div>
+
+    <div class="card-product__hover">
+        <div class="card-product__hover-holder">
+            {% if product.is_featured %}
+                <span class="card-product__recommended label">{{ __('Aanbevolen') }}</span>
+            {% endif %}
+
+            {{ fn('do_shortcode', '[yith_wcwl_add_to_wishlist product_id="' ~ post.ID ~ '"]') }}
+			
+			{% if product.is_on_sale %}
+            	<div class="sale_label">SALE</div>
+            {% else %}
+            	<div class="empty_label"></div>
+            {% endif %}
+			
+			
+            <a href="{{ post.link }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                <div class="card-product__image-hover">
+                    <div class="card-product__figure">
+						<img src="{{ post.thumbnail|letterbox(500, 500, '#FFFFFF') }}" />
+                    </div>
+
+                    {% if product.get_gallery_image_ids %}
+                        <div class="card-product__figure-hover">
+                            {% for item in product.get_gallery_image_ids | slice(0, 1) %}
+								<img src="{{ image_url(item)|letterbox(500, 500, '#FFFFFF') }}" />
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+
+                <h2 class="woocommerce-loop-product__title">
+                {{ post.title }}
+	            </h2>
+				
+            </a>
+        </div>
+
+        {% if product.get_gallery_image_ids %}
+            <div class="card-product__hover-gallery">
+                <ul>
+                    {% for item in product.get_gallery_image_ids | slice(1, 4) %}
+                        <li>
+							{{ image(item, [100, 100]) }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        <div class="tablet_footer">
+			<div class="tablet_footer_links">
+					<ul>
+					{% for usp in fn('get_field', 'product_usps', post.ID) %}
+		            	{% if usp.usp %}
+			            	<li>
+			            		{{ usp.usp }}
+							</li>
+		            	{% endif %}
+		            {% endfor %}
+		            </ul>
+            </div>
+			<div class="tablet_footer_rechts">
+				{% if(product.get_stock_quantity > 0) %}
+				    <span class="in-stock-badge">Op voorraad</span>
+				{% endif %}
+	            <span class="price">
+	                {{ product.get_price_html }}
+	            </span>
+	            {% if snel_in_huis_enable == 1 or snel_in_huis_enable == '' %}
+		            <div class="snel_in_huis_label">
+			            <img class="snel_in_huis_img" src="{{ snel_in_huis_icon }}" alt="" /> Snel in huis
+		            </div>
+		        {% endif %}
+            </div>
+		</div>
+        <a href="{{ post.link }}" class="button add_to_cart_button add_desktop_btn">	
+            {{ __('Product bekijken') }}
+        </a>
+    </div>
+</div>

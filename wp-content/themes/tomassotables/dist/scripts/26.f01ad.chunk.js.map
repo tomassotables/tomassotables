@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/card-favorite/card-favorite.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/26.f01ad.chunk.js","sourcesContent":["import './card-favorite.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

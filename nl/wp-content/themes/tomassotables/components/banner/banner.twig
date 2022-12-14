@@ -1,0 +1,28 @@
+{% if fn('is_home') %}
+	{% set banner_title, banner_image = blog_title, blog_image %}
+{% else %}
+	{% set banner_title, banner_image = post.banner_title, post.banner_image %}
+{% endif %}
+
+{% if banner_title or banner_image %}
+	<section data-component="banner" class="banner{% if not fn('is_home') %} banner--inner{% endif %}">
+		<div class="container">
+			{% if banner_title %}
+				<div class="banner__text d-flex flex-wrap justify-content-center align-items-center">
+					<div class="banner__title">{{ banner_title }}</div>
+				</div>
+			{% endif %}
+		</div>
+
+		{% if banner_image %}
+			<div class="banner__image">
+				{% if fn('is_home') %}
+					{{ banner_image }}
+				{% else %}
+					{{ image(banner_image,[1905,651]) }}
+				{% endif %}
+			</div>
+		{% endif %}
+	</section>
+{% endif %}
+

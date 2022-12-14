@@ -1,0 +1,47 @@
+// Table of Content
+// ===============================================
+// # Variables
+// # Mixins */
+
+// # Variables
+// =============================================== */
+// No local variables available
+
+// # Mixins
+// =============================================== */
+
+@mixin base-alignment {
+	.align-none,
+	.alignnone {
+		display: inline;
+	}
+
+	.align-center,
+	.aligncenter {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.align-left,
+	.alignleft {
+		margin: 0 20px 20px 0;
+		float: left;
+	}
+
+	.align-right,
+	.alignright {
+		margin: 0 0 20px 20px;
+		float: right;
+	}
+
+	.wp-caption,
+	figure {
+		margin: 0 0 20px;
+
+		.wp-caption-text,
+		figcaption {
+			margin: 5px;
+			font-style: italic;
+		}
+	}
+}

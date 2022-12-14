@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/collection/collection.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/33.268fe.chunk.js","sourcesContent":["import './collection.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

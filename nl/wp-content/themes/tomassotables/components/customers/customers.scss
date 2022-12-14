@@ -1,0 +1,21 @@
+@import '~assets/styles/variables';
+
+.customers {
+	padding-top: 60px;
+	padding-bottom: 20px;
+
+	h3 {
+		margin-bottom: 30px;
+		font-weight: 600;
+		letter-spacing: -0.5px;
+	}
+
+	&__holder-slide {
+		margin-right: 14px;
+		width: 280px;
+		@include media-breakpoint-up(md) {
+			margin-right: 24px;
+			width: 380px;
+		}
+	}
+}

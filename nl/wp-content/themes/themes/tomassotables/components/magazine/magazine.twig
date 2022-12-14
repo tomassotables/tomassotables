@@ -1,0 +1,43 @@
+{% if magazine_title or magazine_image or magazine_subtitle or magazine_form or magazine_content %}
+	<div data-component="magazine" class="magazine">
+		<div class="container">
+
+			{% if magazine_title or magazine_subtitle %}
+				<div class="magazine__box w-100">
+					{% if magazine_title %}
+						<h1>{{ magazine_title }}</h1>
+					{% endif %}
+
+					{{ magazine_subtitle |wpautop }}
+				</div>
+			{% endif %}
+
+			<div class="row">
+				<div class="col-md-6 col-lg-6"> 
+					{% if magazine_form %}
+						<div class="magazine__left w-100">
+							{{ magazine_form }}
+						</div>
+					{% endif %}
+				</div>
+
+				{% if magazine_image or magazine_content %}
+					<div class="col-md-6 col-lg-6">
+						<div class="magazine__right w-100">
+
+							{% if magazine_image %}
+								<div class="magazine__image d-flex align-items-center justify-content-center w-100">
+									{{ image(magazine_image,[367,266]) }}
+								</div>
+							{% endif %}
+
+							{{ magazine_content }}
+
+						</div>
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endif %}
+

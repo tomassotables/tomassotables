@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/releted/releted.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/59.06d48.chunk.js","sourcesContent":["import './releted.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

@@ -1,0 +1,85 @@
+<section data-component="product-single" class="product-single">
+	<div class="row mb-5 data-sticky-container">
+		<div class="col-md-6 mb-4 mb-md-0">
+			{% do action('woocommerce_before_single_product_summary') %}
+		</div>
+
+		<div class="col-md-6">
+			<div class="js-selector">
+				{% do action('woocommerce_single_product_summary') %}
+
+				<div class="sticky-anchor"></div>
+			</div>
+
+			{% set product = fn('wc_get_product', post.ID) %}
+		</div>
+	</div>
+
+	<div class="row" id="description">
+		<div class="col-md-6 mb-5 mb-md-0">
+			<div class="product-block product_content">
+				<h3>{{ __('Productomschrijving') }}</h3>
+
+				{{ post.content | wpautop }}
+			</div>
+			
+			
+			{% if product.stock_status != "outofstock" %}
+				<div class="product-sticky sticky-topbar">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 d-none d-lg-flex align-items-center">
+								<div class="product-img">
+									{{ image(post.thumbnail, [90, 99]) }}
+								</div>
+								<div class="product-detail">
+									<div class="product-sub">
+										{{ post.terms( {query:{taxonomy:'pa_brand'}} )|join(', ') }}
+									</div>
+	
+									<div class="product-title">
+										{{ post.title }}
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 d-flex justify-content-md-end align-items-center">
+								<div class="product-price d-none d-lg-block">
+									{{ product.get_price_html }}
+								</div>
+	
+								<a href="#" class="btn js-add-card">
+									<i class="icon-cart"></i>Toevoegen aan winkelwagen
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endif %}
+			
+		</div>
+
+		<div class="col-md-6">
+			{% if options.installation_service %}
+				<div class="product-block product_installation">
+					<h3>{{ __('Verzending en Retourneren') }}</h3>
+
+					{{ options.installation_service | wpautop }}
+				</div>
+			{% endif %}
+
+			<div class="product-block product_specifications">
+				<h3>{{ __('Specificaties') }}</h3>
+
+				<ul>
+					{% if product.get_sku %}
+						<li><span>{{ __('SKU') }}</span>{{ product.get_sku }}</li>
+					{% endif %}
+
+					{% for item in fn('get_field', 'product_specifications', post.ID) %}
+						<li><span>{{ item.name }}</span>{{ item.value }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,30 @@
+<section data-component="shopping" class="shopping">
+    <div class="shopping__title">
+        <div class="container">
+            <h3>
+                <a href="{{ fn('get_permalink', wc_shop) }}">
+                    <i class="icon-angle-right"></i>{{ post.title }}
+
+                    {% if fn('is_checkout') %}
+                        <span>{{ __('Rond eenvoudig af binnen 4 stappen') }}</span>
+                    {% endif %}
+                </a>
+            </h3>
+
+            {% if fn('is_cart') %}
+                <p><i class="icon-clock"></i> {{ __('2 minutes') }}</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="shopping__holder">
+        <div class="container">
+            {{ post.content }}
+        </div>
+
+        {% if fn('is_cart') %}
+            {% include 'components/customers' %}
+        {% endif %}
+    </div>
+</section>
+

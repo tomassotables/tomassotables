@@ -1,0 +1,27 @@
+{% set product = fn('wc_get_product', post.ID) %}
+
+<div data-component="card-collecion" class="card-collecion">
+    <a href="{{ post.link }}" class="card-collecion__image d-flex justify-content-center">
+        {{ image(post.thumbnail, [210, 210]) }}
+    </a>
+
+    {% if product.get_gallery_image_ids %}
+        <a href="{{ post.link }}" class="card-collecion__image d-flex justify-content-center">
+            {% for item in product.get_gallery_image_ids | slice(0, 1) %}
+                {{ image(item, [210, 210]) }}
+            {% endfor %}
+        </a>
+    {% endif %}
+
+    <div class="card-collecion__like">
+        {{ fn('do_shortcode', '[yith_wcwl_add_to_wishlist product_id="' ~ post.ID ~ '"]') }}
+    </div>
+
+    <div class="card-collecion__text text-center">
+        <h3><a href="{{ post.link }}">{{ post.title }}</a></h3>
+
+        <div class="card-collecion__price">
+            {{ product.get_price_html }}
+        </div>
+    </div>
+</div>

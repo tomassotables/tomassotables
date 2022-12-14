@@ -1,0 +1,7 @@
+<form class="search-form" role="search" method="get" id="searchform" action="{{ site.link }}">
+    <fieldset>
+        <label for="s">{{ __('Search') }}:</label>
+        <input type="text" value="{{ function('get_search_query') }}" name="s" id="s" />
+        <button class="button" type="submit" id="searchsubmit">{{ __('Search') }}</button>
+    </fieldset>
+</form>

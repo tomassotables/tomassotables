@@ -1,0 +1,14 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+    <section class="container">
+        {% do action('woocommerce_before_single_product') %}
+        {% include 'components/product-single' %}
+        {% include 'components/similar' %}
+        {% do action('woocommerce_after_single_product_summary') %}
+        {% include 'components/employee' %}
+        {% do action('woocommerce_after_single_product') %}
+    </section>
+    {% include 'components/breadcrumbs' %}
+
+{% endblock %}

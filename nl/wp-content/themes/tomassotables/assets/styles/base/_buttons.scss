@@ -1,0 +1,221 @@
+// Table of Content
+// ===============================================
+// # Variables
+// # Elements */
+
+// # Variables
+// =============================================== */
+
+// # Elements
+// =============================================== */
+
+.btn {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	min-width: 169px;
+	min-height: 48px;
+	font-weight: 700;
+	border-radius: 5px;
+	@include media-breakpoint-up(md) {
+		min-width: 197px;
+		min-height: 55px;
+		border-radius: 10px;
+	}
+
+	&.primary {
+		color: $white;
+		text-shadow: 1px 1px $dark-orange;
+		background-color: $primary;
+		box-shadow: 1px 1px $dark-orange;
+
+		&:after {
+			font-family: $font-family-icon;
+			font-size: 1rem;
+			content: '\e928';
+			@include media-breakpoint-up(md) {
+				font-size: 1.125rem;
+			}
+			margin: {
+				left: 15px;
+			}
+		}
+
+		&:hover {
+			background-color: darken($primary, 15%);
+		}
+	}
+
+	&.btn-primary {
+		text-shadow: 1px 1px $dark-orange;
+		box-shadow: 1px 1px $dark-orange;
+	}
+
+	&.btn-link {
+		min-width: unset;
+		font-weight: 700;
+		text-decoration: underline;
+	}
+
+	&.secondary {
+		width: 100%;
+		min-height: 43px;
+		font-size: 0.875rem;
+		color: $white;
+		text-shadow: 1px 1px $dark-orange;
+		border-radius: 10px;
+		background-color: $primary;
+		box-shadow: 1px 1px $dark-orange;
+		@include media-breakpoint-up(md) {
+			min-height: 40px;
+			font-size: 1rem;
+		}
+
+		&:hover {
+			background-color: darken($primary, 15%);
+		}
+	}
+
+	&.btn-outline-primary {
+		&:after {
+			font-family: $font-family-icon;
+			font-size: 1rem;
+			content: '\e928';
+			@include media-breakpoint-up(md) {
+				font-size: 1.125rem;
+			}
+			margin: {
+				left: 15px;
+			}
+		}
+
+		&:hover {
+			box-shadow: 1px 1px $dark-orange;
+		}
+	}
+
+	&.btn-small {
+		min-width: unset;
+		min-height: 30px;
+		font-size: 0.75rem;
+		border-radius: 4px;
+		padding: {
+			top: 5px;
+			right: 14px;
+			bottom: 5px;
+			left: 14px;
+		}
+
+		&:after {
+			display: none;
+		}
+	}
+
+	&.btn-full {
+		width: 100%;
+		min-width: unset;
+		min-height: 55px;
+		font-size: 1rem;
+		color: $white;
+		text-shadow: 1px 1px $dark-orange;
+		border-radius: 10px;
+		background-color: $primary;
+		box-shadow: 1px 1px $dark-orange;
+
+		i {
+			margin-right: 15px;
+			font-size: 1.25rem;
+		}
+
+		&:after {
+			display: none;
+		}
+
+		&:hover {
+			font-weight: 700;
+			text-shadow: 1px 1px $dark-orange;
+			background-color: darken($primary, 15%);
+			box-shadow: 1px 1px $dark-orange;
+		}
+	}
+
+	&.btn-outline {
+		width: 100%;
+		min-width: unset;
+		min-height: 48px;
+		font-size: 1rem;
+		color: $primary;
+		border: 1px solid $primary;
+
+		.sidebar & {
+			min-height: 44px;
+			font-size: 0.75rem;
+			border-radius: 8px;
+		}
+
+		&:hover {
+			font-weight: 700;
+			color: $white;
+			text-shadow: 1px 1px $dark-orange;
+			background-color: $primary;
+			box-shadow: 1px 1px $dark-orange;
+		}
+	}
+
+	&.btn-view {
+		padding: 0;
+		min-width: unset;
+		min-height: unset;
+		font-size: 1rem;
+		font-weight: 600;
+		color: $primary;
+
+		&:hover {
+			text-decoration: none;
+			color: $secondary;
+		}
+	}
+
+	&.btn-outline-secondary {
+		min-height: 54px;
+		font-size: 1rem;
+		font-weight: 600;
+		border-radius: 74px;
+	}
+
+	+ .btn {
+		margin-left: 10px;
+		@include media-breakpoint-up(md) {
+			margin-left: 23px;
+		}
+	}
+
+	.advise & {
+		min-width: 214px;
+		@include media-breakpoint-up(md) {
+			min-width: 234px;
+		}
+
+		&:hover {
+			font-weight: 700;
+			text-shadow: 1px 1px $dark-orange;
+			box-shadow: 1px 1px $dark-orange;
+		}
+	}
+
+	.description & {
+		font-size: 1rem;
+		font-weight: $font-weight-bold;
+	}
+
+	.inspiration & {
+		width: 100%;
+		min-height: 49px;
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
+}

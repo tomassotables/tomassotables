@@ -1,0 +1,20 @@
+{% if fav_title or fav_products %}
+    <section data-component="favorite" class="favorite">
+        <div class="container">
+            {% if fav_title %}
+                <h2>{{ fav_title }}</h2>
+            {% endif %}
+
+            {% if fav_products %}
+                <div class="row">
+                    {% for post in Post(fav_products) | slice(0, 3) %}
+                        <div class="col-md-6 col-lg-4">
+                            {% include 'components/card-product' %}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </section>
+{% endif %}
+

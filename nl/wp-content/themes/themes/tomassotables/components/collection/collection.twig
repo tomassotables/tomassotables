@@ -1,0 +1,30 @@
+{% if fav_title or fav_button or fav_products %}
+    <section data-component="collection" class="collection">
+        <div class="container">
+            <h2>{{ fav_title }}</h2>
+
+            {% if fav_products %}
+                <div class="row">
+                    {% for post in Post(fav_products) %}
+                        <div class="col-md-4 mb-3">
+                            {% include 'components/card-collecion' %}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            {% if fav_button %}
+                <div class="collection__button d-flex justify-content-center mt-4">
+                    <a href="{{ fav_button.url }}" class="d-none d-md-flex btn btn-outline-primary">
+                        {{ fav_button.title }}
+                    </a>
+
+                    <a href="{{ fav_button.url }}" class="d-md-none btn btn-outline-primary w-100">
+                        {{ fav_button.title }}
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+{% endif %}
+

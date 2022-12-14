@@ -1,0 +1,15 @@
+{% extends 'layout/app.twig' %}
+
+{% block content %}
+    <section class="search centered">
+        <h1 class="search__title">{{ __('Search results for: &ldquo;%s&rdquo;')|format(function('get_search_query')) }}</h1>
+
+        <p>{{ __('Found %s results')|format(results) }}</p>
+
+        {% for post in posts %}
+            <h2>{{ post.title }}</h2>
+        {% endfor %}
+
+        {{ paginateLinks }}
+    </section>
+{% endblock %}

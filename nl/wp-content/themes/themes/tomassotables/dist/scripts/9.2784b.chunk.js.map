@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/accordion-section/accordion-section.js"],"names":[],"mappings":"+GAAA,cAEe","file":"scripts/9.2784b.chunk.js","sourcesContent":["import './accordion-section.scss';\n\nexport default () => {\n};\n"],"sourceRoot":""}

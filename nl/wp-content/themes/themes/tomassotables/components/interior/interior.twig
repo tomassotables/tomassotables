@@ -1,0 +1,27 @@
+{% if interior_title or interior_subtitle or interior_gallery %}
+	<div data-component="interior" class="interior">
+		<div class="container">
+			<div class="interior__box w-100">
+				{% if interior_title %}
+					<h2>{{ interior_title }}</h2>
+				{% endif %}
+				{% if interior_subtitle %}
+					{{ interior_subtitle |wpautop }}
+				{% endif %}
+			</div>
+
+			{% if interior_gallery %}
+				<div class="interior__slider js-interior-slider">
+					{% for image in interior_gallery %}
+						<div class="interior__item">
+							<div class="interior__image w-100 h-100">
+								{{ image(image,[361,361]) }}
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+{% endif %}
+

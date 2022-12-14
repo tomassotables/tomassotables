@@ -1,0 +1,58 @@
+<section data-component="bio" class="bio">
+	<div class="container bio__container">
+		<div class="bio__block">
+			<div class="bio__author">
+				<div class="bio__image">
+					{% if fn('get_avatar',user_email,96) %}
+						{{ fn('get_avatar',user_email,96) }}
+					{% else %}
+						<picture>
+							<img src="{{ fn('get_template_directory_uri') }}/dist/images/appointment-img.png" alt="">
+						</picture>
+					{% endif %}
+				</div>
+				
+				<div class="bio__text">
+					<div class="bio__description">{{ post.author.roles.administrator }}</div>	
+
+					{% if post.author %}
+						<div class="bio__name">{{ post.author }}</div>
+					{% endif %}
+
+					<ul class="bio__social">
+
+						<li>
+							<a href="{{ fn('get_the_author_meta','url',facebook) }}">
+								<picture>
+									<img src="{{ fn('get_template_directory_uri') }}/dist/images/facebook.svg" alt="">
+								</picture>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<picture>
+									<img src="{{ fn('get_template_directory_uri') }}/dist/images/instagram.svg" alt="">
+								</picture>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<picture>
+									<img src="{{ fn('get_template_directory_uri') }}/dist/images/linkedin.svg" alt="">
+								</picture>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="tab-content bio__content">
+				{{ fn('get_field','contributor_description')  }}
+			</div>
+
+
+		</div>
+	</div>
+</section>
+

@@ -1,0 +1,23 @@
+@import '~assets/styles/variables';
+
+.breadcrumbs {
+	margin-bottom: 60px;
+	font-family: $font-family-montserrat;
+	font-size: 0.75rem;
+	color: rgba($secondary, 0.7);
+
+	a {
+		color: rgba($secondary, 0.7);
+
+		&:hover {
+			text-decoration: none;
+			color: $secondary;
+		}
+	}
+
+	span {
+		.breadcrumb_last {
+			color: rgba($secondary, 0.7);
+		}
+	}
+}

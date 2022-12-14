@@ -1,0 +1,14 @@
+<section data-component="post" class="post">
+	<div class="row">
+		{% for post in posts %}
+			<div class="col-lg-6 mb-4">
+				{% include 'components/card-post' %}
+			</div>
+		{% endfor %}
+	</div>
+
+	<div class="post__pagination d-flex justify-content-center justify-content-md-end">
+		{% include 'components/pagination' %}
+	</div>
+</section>
+

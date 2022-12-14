@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[46],{134:function(e,n,i){"use strict";i.r(n),function(e){i(198),i(157);n.default=()=>{e(".js-popup-video").magnificPopup({disableOn:700,type:"iframe",mainClass:"mfp-fade",removalDelay:160,preloader:!1,fixedContentPos:!1})}}.call(this,i(8))},198:function(e,n,i){}}]);
+//# sourceMappingURL=46.1a630.chunk.js.map

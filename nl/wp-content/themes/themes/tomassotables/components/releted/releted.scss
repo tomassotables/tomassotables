@@ -1,0 +1,16 @@
+@import '~assets/styles/variables';
+
+.releted {
+	margin-bottom: 33px;
+
+	h4 {
+		margin-bottom: 24px;
+		font-weight: 600;
+		letter-spacing: -0.5px;
+	}
+
+	&__item {
+		margin-bottom: 20px;
+	}
+}
+

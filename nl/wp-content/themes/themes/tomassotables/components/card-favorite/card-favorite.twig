@@ -1,0 +1,42 @@
+<a href="#" data-component="card-favorite" class="card-favorite">
+    <div class="card-favorite__left position-relative">
+        <div class="card-favorite__image d-flex justify-content-center">
+            <picture>
+                <img src="{{ fn('get_template_directory_uri') }}/dist/images/favorite-img.jpg" alt="">
+            </picture>
+        </div>
+
+        <div class="card-favorite__recommend">Recommended</div>
+
+        <div class="card-favorite__like"><i class="icon-heart"></i></div>
+
+        <h3>Table for diining Room</h3>
+
+        <div class="card-favorite__price"><span>39.00</span> 29.00</div>
+    </div>
+
+    <div class="card-favorite__right">
+        <div class="card-favorite__small-img">
+            <picture>
+                <img src="{{ fn('get_template_directory_uri') }}/dist/images/favorite-small-img.jpg" alt="">
+            </picture>
+        </div>
+        <div class="card-favorite__small-img">
+            <picture>
+                <img src="{{ fn('get_template_directory_uri') }}/dist/images/favorite-small-img1.jpg" alt="">
+            </picture>
+        </div>
+        <div class="card-favorite__small-img">
+            <picture>
+                <img src="{{ fn('get_template_directory_uri') }}/dist/images/favorite-small-img2.jpg" alt="">
+            </picture>
+        </div>
+        <div class="card-favorite__small-img">
+            <picture>
+                <img src="{{ fn('get_template_directory_uri') }}/dist/images/favorite-small-img3.jpg" alt="">
+            </picture>
+        </div>
+    </div>
+
+    <div class="btn secondary d-none">Add to Cart <i class="icon-bag-2"></i></div>
+</a>

@@ -1,0 +1,30 @@
+@import '~assets/styles/variables';
+
+.gform {
+	.gform_heading {
+		.gform_description {
+			margin-bottom: 20px;
+			display: block;
+		}
+	}
+
+	.gform_body {
+		.gfield {
+			margin-bottom: 15px;
+		}
+
+		.gform_validation_container {
+			display: none;
+		}
+	}
+
+	.gform_footer {
+		margin-top: 35px;
+
+		.gform_button {
+			padding: 17.5px 30px;
+			font-size: 20px;
+			border-radius: 30px;
+		}
+	}
+}

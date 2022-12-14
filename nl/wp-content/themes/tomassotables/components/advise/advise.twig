@@ -1,0 +1,46 @@
+{% if advise_title or advise_number or advise_email or advise_chat_button or advise_image %}
+	<div data-component="advise" class="advise">
+		<div class="container">
+			<div class="advise__block">
+				<div class="advise__content position-relative">
+					{% if advise_title %}
+						<h2 class="position-relative">
+							{{ advise_title }}
+						</h2>
+					{% endif %}
+					<ul class="p-0">
+						{% if advise_number %}
+							<li>
+								<a href="tel:{{ advise_number |print_r }}">
+									<i class="icon-call-calling"></i>
+									{{ advise_number }}
+								</a>
+							</li>
+						{% endif %}
+						{% if advise_email %}
+							<li>
+								<a href="mailto:{{ advise_email }}">
+									<i class="icon-sms"></i>
+									{{ advise_email }}</a>
+							</li>
+						{% endif %}
+					</ul>
+
+					{% if advise_chat_button %}
+						<a href="{{ advise_chat_button.url }}" class="btn btn-primary" target="{{ advise_chat_button.target }}">
+							<i class="icon-message-2"></i>
+							{{ advise_chat_button.title }}
+						</a>
+					{% endif %}
+				</div>
+
+				{% if advise_image %}
+					<div class="advise__image">
+						{{ image(advise_image,[1110,360]) }}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endif %}
+

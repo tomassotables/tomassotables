@@ -1,0 +1,28 @@
+@import '~assets/styles/variables';
+
+.categorie {
+	margin-bottom: 65px;
+	@include media-breakpoint-up(md) {
+		margin-bottom: 127px;
+	}
+
+	h2 {
+		margin-bottom: 40px;
+		padding-bottom: 17px;
+		position: relative;
+		letter-spacing: -0.7px;
+		text-align: center;
+
+		&:before {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 60px;
+			height: 2px;
+			background-color: $gray-300;
+			transform: translateX(-50%);
+			content: '';
+		}
+	}
+}
+

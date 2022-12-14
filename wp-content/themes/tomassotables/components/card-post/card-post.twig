@@ -1,0 +1,42 @@
+<a href="{{ post.link }}" data-component="card-post" class="card-post">
+	{% if post.thumbnail %}
+		<div class="card-post__image">
+			{{ image(post.thumbnail,[358,220]) }}
+		</div>
+	{% endif %}
+
+
+	<div class="card-post__text">
+
+		{% set time = fn('get_the_time','U') %}
+		{% set timestamp = fn('current_time','timestamp' ) %}
+
+
+		{% if post.title %}
+			<h6>{{ post.title }}</h6>
+		{% endif %}
+
+		{{ post.content |excerpt(15) |wpautop }}
+
+		<div class="card-post__block d-flex justify-content-between">
+			<div class="card-post__author d-flex">
+				<div class="card-post__img">
+					<img src="{{ post.author.avatar({ size: 150 }) }}" alt="">
+				</div>
+
+				<div class="card-post__author-text">
+					<div class="card-post__author-name">
+						{{ post.author }}
+					</div>
+
+					<div class="card-post__author-post">
+						{{ post.author.roles.administrator }}
+					</div>
+				</div>
+			</div>
+
+			<div class="btn btn-small btn-outline-primary">{{ __('Lees Meer') }}</div>
+		</div>
+	</div>
+</a>
+

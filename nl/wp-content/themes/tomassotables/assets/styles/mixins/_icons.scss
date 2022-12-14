@@ -1,0 +1,33 @@
+// Table of Content
+// ===============================================
+// # Variables
+// # Mixin */
+
+// # Variables
+// =============================================== */
+// No local variables available
+
+// # Mixin
+// =============================================== */
+
+@mixin icon-font($icon) {
+	font-family: 'icomoon', sans-serif !important;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	speak: none;
+
+	@if $icon == 'arrow' {
+		content: '\e900';
+	}
+	@else if $icon == 'checkmark' {
+		content: '\e901';
+	}
+}
+.icon-truck:before {
+  content: "\e9b0";
+}

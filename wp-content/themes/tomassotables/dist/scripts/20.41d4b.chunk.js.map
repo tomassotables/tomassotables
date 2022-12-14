@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/breadcrumbs/breadcrumbs.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/20.41d4b.chunk.js","sourcesContent":["import './breadcrumbs.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[47],{135:function(i,s,n){"use strict";n.r(s),function(i){n(199),n(156);s.default=()=>{i(".js-interior-slider").slick({rows:0,dots:!1,infinite:!0,arrows:!1,slidesToShow:3,responsive:[{breakpoint:575,settings:{infinite:!1,slidesToShow:2,variableWidth:!0}}]})}}.call(this,n(8))},199:function(i,s,n){}}]);
+//# sourceMappingURL=47.b14fd.chunk.js.map

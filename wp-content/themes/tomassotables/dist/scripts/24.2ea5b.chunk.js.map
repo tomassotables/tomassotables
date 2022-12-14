@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/card-collecion/card-collecion.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/24.2ea5b.chunk.js","sourcesContent":["import './card-collecion.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

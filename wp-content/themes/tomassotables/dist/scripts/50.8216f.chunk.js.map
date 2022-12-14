@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/magazine/magazine.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/50.8216f.chunk.js","sourcesContent":["import './magazine.scss';\n\nexport default () => {\n};\n"],"sourceRoot":""}

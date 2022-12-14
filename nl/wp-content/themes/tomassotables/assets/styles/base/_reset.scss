@@ -1,0 +1,54 @@
+// Table of Content
+// ===============================================
+// # Variables
+// # Elements */
+
+// # Variables
+// =============================================== */
+// No local variables available
+
+// # Elements
+// =============================================== */
+
+:focus {
+	outline: none;
+}
+
+input,
+textarea,
+select {
+	border-radius: 0;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+}
+
+img {
+	display: block;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+figure {
+	margin: 0;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}

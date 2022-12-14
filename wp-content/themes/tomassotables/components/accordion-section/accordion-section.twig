@@ -1,0 +1,24 @@
+{% if terms %}
+	<div data-component="accordion-section" class="accordion-section">
+		<div class="container">
+			<div class="accordion accordion-section__accordions" id="accordionExample">
+				{% for items in terms %}
+					<div class="card accordion-section__cards">
+						<div class="card-header accordion-section__card-item" id="heading{{ loop.index }}">
+							<button class="btn btn-link btn-block text-left accordion-section__accordion-btn" type="button" data-toggle="collapse" data-target="#collapse{{ loop.index }}" aria-expanded="true" aria-controls="collapse{{ loop.index }}">
+								{{ items.question }}
+							</button>
+						</div>
+
+						<div id="collapse{{ loop.index }}" class="collapse{% if loop.index == 1 %} show{% endif %}" aria-labelledby="heading{{ loop.index }}" data-parent="#accordionExample">
+							<div class="card-body accordion-section__text">
+								{{ items.answer }}
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endif %}
+

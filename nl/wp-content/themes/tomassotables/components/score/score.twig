@@ -1,0 +1,52 @@
+{% if shopping_icon or score_text or review_title or review_star or review_text or shopping_icon2 or shopping_text2 %}
+	<section data-component="score" class="score">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-1 mb-md-0">
+					<div class="score__score text-center">
+						{% if shopping_icon %}
+							<div class="score__image d-flex justify-content-center">
+								{{ image(shopping_icon,[192,189]) }}
+							</div>
+						{% endif %}
+
+						{{ score_text |wpautop }}
+
+					</div>
+				</div>
+				<div class="col-md-4 mb-3 mb-md-0">
+					<div class="score__review text-center">
+						{% if review_title %}
+							<h6>{{ review_title }}</h6>
+						{% endif %}
+
+						{% if review_star %}
+							<div class="score__star">
+								<i class="icon-star fill"></i>
+								<i class="icon-star{% if review_star != 1 %} fill{% endif %}"></i>
+								<i class="icon-star{% if review_star != 1 and (review_star == 3 or review_star == 4 or review_star == 5) %} fill{% endif %}"></i>
+								<i class="icon-star{% if review_star != 1 and (review_star == 4 or review_star == 5) %} fill{% endif %}"></i>
+								<i class="icon-star{% if review_star == 5 %} fill{% endif %}"></i>
+							</div>
+						{% endif %}
+
+						{{ review_text |wpautop }}
+
+					</div>
+				</div>
+				<div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+					<div class="score__score text-center">
+                    {% if shopping_icon2 %}
+						<div class="score__image d-flex justify-content-center">
+							{{ image(shopping_icon2,[69,24]) }}
+						</div>
+                    {% endif %}
+
+						{{ shopping_text2 |wpautop }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endif %}
+

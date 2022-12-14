@@ -1,0 +1,43 @@
+@import '~assets/styles/variables';
+
+.unique {
+	margin-bottom: 34px;
+	border-radius: 10px;
+	background-color: $white;
+	padding: {
+		top: 29px;
+		right: 35px;
+		bottom: 18px;
+		left: 35px;
+	}
+
+	h6 {
+		margin-bottom: 11px;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.5;
+		color: $gray-600;
+	}
+
+	ul {
+		margin-bottom: 0;
+
+		li {
+			margin-bottom: 12px;
+			padding-left: 20px;
+			position: relative;
+			font-size: 0.75rem;
+
+			&:before {
+				position: absolute;
+				top: 3px;
+				left: 0;
+				font-family: $font-family-icon;
+				font-size: 0.5rem;
+				color: $light-green;
+				content: '\e910';
+			}
+		}
+	}
+}
+

@@ -1,0 +1,90 @@
+@import '~assets/styles/variables';
+
+.question {
+	width: 100%;
+	@include media-breakpoint-up(md) {
+		margin: {
+			bottom: 96px;
+		}
+	}
+	margin: {
+		bottom: 40px;
+	}
+
+	&__box {
+		margin-top: -91px;
+		z-index: 2;
+		width: 100%;
+		font-size: 1rem;
+		border-radius: 10px;
+		box-shadow: 0 4px 21px rgba($secondary, 0.08);
+		@include media-breakpoint-up(md) {
+			margin-top: -140px;
+			border-radius: 40px;
+			padding: {
+				top: 24px;
+				right: 5%;
+				bottom: 11px;
+				left: 5%;
+			}
+		}
+		@include media-breakpoint-up(lg) {
+			margin-top: -177px;
+			margin-left: -8px;
+			width: calc(100% + 15px);
+		}
+		@include media-breakpoint-up(xl) {
+			padding: {
+				right: 10%;
+				left: 10%;
+			}
+		}
+		padding: {
+			top: 24px;
+			right: 10%;
+			bottom: 11px;
+			left: 10%;
+		}
+	}
+
+	h3 {
+		font-family: $font-family-heading;
+		font-size: 1rem;
+		font-weight: $font-weight-semibold;
+		@include media-breakpoint-up(md) {
+			font-size: 1.545rem;
+			margin: {
+				bottom: 18px;
+			}
+		}
+		margin: {
+			bottom: 31px;
+		}
+	}
+
+	&__text {
+		padding: 0 2%;
+		@include media-breakpoint-up(md) {
+			padding: 0 5%;
+		}
+		@include media-breakpoint-up(xl) {
+			padding: 0 10%;
+		}
+		@include media-breakpoint-down(sm) {
+			font-size: 0.745rem;
+		}
+	}
+
+	+ .connect {
+		margin-top: -178px;
+		padding-top: 178px;
+		@include media-breakpoint-up(md) {
+			margin-top: -204px;
+			padding-top: 204px;
+		}
+		@include media-breakpoint-up(lg) {
+			margin-top: -178px;
+			padding-top: 133px;
+		}
+	}
+}

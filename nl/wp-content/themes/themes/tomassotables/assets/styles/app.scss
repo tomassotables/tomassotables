@@ -1,0 +1,83 @@
+// Table of Content
+// ===============================================
+// # Welcome
+// # Variables
+// # Base
+// # Critical
+// # Fonts
+// # Plugins
+// # Vendors
+//
+// # Welcome
+//   This file is used to centralize the imports
+// =============================================== */
+//
+// Most of the following guidelines used to write css:
+// http://cssguidelin.es
+//
+// # Variables
+//   Globally-available variables and configs
+// =============================================== */
+
+@import 'variables';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/bootstrap';
+
+//
+// # Base
+// Resets, grids, wrappers, body, typography and forms
+// =============================================== */
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/buttons';
+@import 'base/form';
+@import 'base/alignment';
+@import 'base/wrapper';
+
+//
+// # Critical
+//   The critical components to load inline
+// =============================================== */
+
+@import '~components/header/header';
+@import '~components/breadcrumbs/breadcrumbs';
+@import '~components/hero/hero';
+@import '~components/banner/banner';
+@import '~components/score/score';
+@import '~components/sidebar/sidebar';
+@import '~components/category-section/category-section';
+
+//
+// # Fonts
+//   Load custom fonts
+// =============================================== */
+
+@import '../fonts/**/_font.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+//
+// # Plugins
+//   Apply theme styling to plugins
+// =============================================== */
+@import 'plugins/*.scss';
+
+//
+// # Vendors
+//   Vendor includes
+// =============================================== */
+
+@import 'vendor/**/*.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	&:before,
+	&:after {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+}

@@ -1,0 +1,22 @@
+{% if why_title or why_stats %}
+	<section data-component="buy" class="buy">
+		<div class="container">
+			{% if why_title %}
+				<h2>{{ why_title }}</h2>
+			{% endif %}
+
+			{% if why_stats %}
+				<div class="row">
+					{% for item in why_stats %}
+						<div class="col-md-4 col-lg-3 mb-3">
+							<div class="buy__item">
+								{% include 'components/card-buy' %}
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+		</div>
+	</section>
+{% endif %}
+

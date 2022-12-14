@@ -1,0 +1,39 @@
+@import '~assets/styles/variables';
+
+.download {
+	margin-bottom: 49px;
+	border: 1px solid $gray-100;
+	border-radius: 16px;
+	background: $white;
+	padding: {
+		top: 15px;
+		right: 15px;
+		bottom: 15px;
+		left: 15px;
+	}
+
+	&__image {
+		margin-bottom: 16px;
+		width: 100%;
+		border-radius: 10px;
+		background-color: $seashell;
+		@include media-breakpoint-up(lg) {
+			min-height: 235px;
+		}
+		padding: {
+			top: 15px;
+			right: 10px;
+			bottom: 15px;
+			left: 10px;
+		}
+
+		img {
+			border-radius: 10px;
+		}
+	}
+
+	&__input {
+		margin-bottom: 16px;
+	}
+}
+

@@ -1,0 +1,23 @@
+{% if post.content %}
+	<div data-component="description" class="description{% if not content_section %} description--space {% endif %}">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					{% if post.banner_title %}
+						<h1>{{ post.banner_title }}</h1>
+					{% else %}
+						<h1>{{ post.title }}</h1>
+					{% endif %}
+
+					{{ post.content |wpautop }}
+
+					{% if not content_section %}
+						<a href="{{ function ('home_url') }}" class="btn btn-outline-primary">{{ __('Terug naar het overzicht') }}</a>
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+	</div>
+{% endif %}
+

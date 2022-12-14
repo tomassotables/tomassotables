@@ -1,0 +1,369 @@
+{% set trust_pilot_logo = fn('get_field', 'trustpilot_logo', 'option') %}
+<header data-component="header" class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__block">
+                <div class="header__usp">
+                    {% for item in options.usp_list %}
+                        <div class="header__usp-item">
+                            {{ item.usp }}
+                        </div>
+                    {% endfor %}
+                </div>
+                
+				{% if options.review_title or options.review_star or options.score_link or options.review_link %}
+                	<div class="header__image">
+                    	<div>
+							<div class="flex-img">
+								<div class="header__review">
+									{% if options.review_star %}
+										<h6><img id="trust_pilot_logo" src="{{ trust_pilot_logo }}" alt="Trustpilot" /></h6>
+									{% endif %}
+									<div class="header__review_stars">
+										{% if options.review_star %}
+											<div class="header__star">
+											{% if options.review_star > 0 %} <i class="icon-star"></i>{% endif %}
+											{% if options.review_star > 1 %} <i class="icon-star"></i>{% endif %}
+											{% if options.review_star > 2 %} <i class="icon-star"></i>{% endif %}
+											{% if options.review_star > 3 %} <i class="icon-star"></i>{% endif %}
+											{% if options.review_star > 4 %} <i class="icon-star"></i>{% endif %}
+											</div>
+											<div class="trust_score"> {{ options.review_star }} </div>
+										{% endif %}
+									</div>
+								</div>
+								<img src="https://test.tomassotables.com/wp-content/uploads/img-team.jpg" alt="team" />
+							</div>                            
+                        </div>
+					</div>
+                {% endif %}
+
+                {% if options.help_number %}
+                    <div class="header__help">
+                        <i class="icon-phone"></i>{{ __('Hulp nodig?') }}
+
+                        <a href="tel:{{ options.help_number | strip_phone_number }}">
+                            {{ options.help_number }}
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="header__sticky">
+        <div class="header__header">
+            <div class="container">
+                <div class="row d-none d-md-flex">
+                    {% if options.review_title or options.review_star or options.score_link or options.review_link %}
+                        <div class="col-4">
+							<div class="flex-img">
+								<div class="header__review">
+                                {% if options.review_star %}
+                                    <h6><img id="trust_pilot_logo" src="{{ trust_pilot_logo }}" alt="Trustpilot" /></h6>
+                                {% endif %}
+								<div class="header__review_stars">
+                                {% if options.review_star %}
+                                    <div class="header__star">
+                                       {% if options.review_star > 0 %} <i class="icon-star"></i>{% endif %}
+                                       {% if options.review_star > 1 %} <i class="icon-star"></i>{% endif %}
+                                       {% if options.review_star > 2 %} <i class="icon-star"></i>{% endif %}
+                                       {% if options.review_star > 3 %} <i class="icon-star"></i>{% endif %}
+                                       {% if options.review_star > 4 %} <i class="icon-star"></i>{% endif %}
+                                    </div>
+                                   <div class="trust_score"> {{ options.review_star }} </div>
+                                {% endif %}
+                                </div>
+								<!--
+                                {% if options.score_link or options.review_link %}
+                                    <ul class="header__review-link">
+                                        {% if options.score_link %}
+                                            <li>
+                                                <a href="{{ options.score_link.url }}"
+                                                   target="{{ options.score_link.target }}">
+                                                    {{ options.score_link.title }}
+                                                </a>
+                                            </li>
+                                        {% endif %}
+
+                                        {% if options.review_link %}
+                                            <li>
+                                                <a href="{{ options.review_link.url }}"
+                                                   target="{{ options.review_link.target }}">
+                                                    {{ options.review_link.title }}
+                                                </a>
+                                            </li>
+                                        {% endif %}
+                                    </ul>
+                                {% endif %}
+                                -->
+                            </div>
+								<img src="https://test.tomassotables.com/wp-content/uploads/img-team.jpg" alt="team" />
+							</div> 
+                        </div>
+                    {% endif %}
+
+                    <div class="col-3 d-flex justify-content-md-end">
+                        <a href="{{ function ('home_url') }}" class="header__logo">
+                            {% if options.header_logo.filename %}
+                                {{ inline_svg(uploads ~ '/' ~ options.header_logo.filename) }}
+                            {% else %}
+                                {{ site.name }}
+                            {% endif %}
+                        </a>
+                    </div>
+
+                    <div class="col-5 d-flex justify-content-end align-items-center">
+                        <ul class="header__icon-link">
+                        	<li class="header--full--small">
+                                <a href="#" class="header__search-icon">
+                                    <i class="icomoon icon-search"></i>
+                                </a>
+								<div class="header__search">
+                                    {{ fn('do_shortcode', '[fibosearch]') }}
+                                </div>
+                            </li>
+                            <li class="header--full-search">
+                                <a href="#" class="header__search-icon">
+                                    <i class="icomoon icon-search"></i>
+                                </a>
+								{{ fn('do_shortcode', '[fibosearch]') }}
+                                <!--div class="header__search">
+                                    {//{ fn('do_shortcode', '[fibosearch]') }}
+                                </div-->
+                            </li>
+                            {% if wishlist_url %}
+                                <li>
+                                    <a href="{{ wishlist_url }}">
+                                        <i class="icon-heart-outline"></i>
+                                        <div class="header__number" id="heart_count">{{ fn('do_shortcode', '[yith_wcwl_items_count]') }}</div>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if wc_cart %}
+                                <li>
+                                    <a href="{{ fn('get_permalink', wc_cart) }}">
+                                        <i class="icon-bag"></i>
+                                        <div class="header__number">{{ wc_cart_count }}</div>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if wc_account %}
+                                <li>
+                                    <a href="{{ fn('get_permalink', wc_account) }}">
+                                        <i class="icon-user"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header__mobile d-flex d-md-none justify-content-between align-items-center">
+                    <a href="#nav" class="header__toggle">
+                        <span></span>{{ __('Menu') }}
+                    </a>
+					 <ul class="header__icon-link">
+                    	 <li>
+                             <a href="#" class="header__search-icon">
+                                <i class="icomoon icon-search"></i>
+                             </a>
+                         </li>
+                         {% if wishlist_url %}
+                         <li>
+                           <a href="{{ wishlist_url }}">
+                               <i class="icon-heart-outline"></i>
+                         	   <div class="header__number" id="heart_count">{{ fn('do_shortcode', '[yith_wcwl_items_count]') }}</div>
+                                    </a>
+                                </li>
+                            {% endif %}
+                    </ul>
+                    <a href="{{ function ('home_url') }}" class="header__logo-mobile">
+                        {% if options.mobile_logo.filename %}
+                            {{ inline_svg(uploads ~ '/' ~ options.mobile_logo.filename) }}
+                        {% else %}
+                            {{ site.name }}
+                        {% endif %}
+                    </a>
+
+                    <ul class="header__icon-link">
+                        {% if wc_account %}
+                            <li>
+                                <a href="{{ fn('get_permalink', wc_account) }}">
+                                    <i class="icon-user"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if wc_cart %}
+                            <li>
+                                <a href="{{ fn('get_permalink', wc_cart) }}">
+                                    <i class="icon-bag"></i>
+
+                                    <div class="header__number">
+                                        {{ wc_cart_count }}
+                                    </div>
+                                </a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__main-menu">
+            <div class="container">
+            	{% set megamenu = fn('get_field', 'megamenu', 'option') %}
+				{% if megamenu == "origineel" %}
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        {% for item in headerMenu.items %}
+                            <li class="header__menu-item {{ item.classes|join(' ') }}">
+                                <a class="header__menu-link" href="{{ item.link }}">
+                                    {{ item.title }}
+                                </a>
+
+                                {% if item.children %}
+                                    <ul class="header__menu-subitems">
+                                        {% for child in item.children %}
+                                            <li class="header__menu-subitem {{ child.classes|join(' ') }}">
+                                                <a class="header__menu-sublink" href="{{ child.link }}">
+                                                    {{ child.title }}
+                                                </a>
+
+                                                {% if child.children %}
+                                                    <div class="header__submenu">
+                                                        <ul class="header__sub-submenu">
+                                                            {% for sub_child in child.children %}
+                                                                <li class="{{ sub_child.classes|join(' ') }}">
+                                                                    <a href="{{ sub_child.link }}">
+                                                                        {{ sub_child.title }}
+                                                                    </a>
+                                                                </li>
+                                                            {% endfor %}
+                                                        </ul>
+
+                                                        <div class="header__desk">
+                                                            <div class="header__see">
+                                                                <i class="icon-menu"></i>
+                                                                <a href="{{ item.link }}">
+                                                                    See All {{ item.title }}
+                                                                </a>
+                                                            </div>
+
+                                                            {% if options.advisor_button %}
+                                                                <div class="header__see">
+                                                                    <i class="icon-call-calling"></i>
+                                                                    <a href="{{ options.advisor_button.url }}"
+                                                                       target="{{ options.advisor_button.target }}">
+                                                                        Talk To An Interior Advisor
+                                                                    </a>
+                                                                </div>
+                                                            {% endif %}
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+                {% else %}
+                <nav class="beperkt_header_menu">
+                	<ul class="beperkt_header_menu_ul">
+						{% for item in headerMenu.items %}
+							<li class="beperkt_header_items">
+								<a class="beperkt_header_menu_link" href="{{ item.link }}">
+                                    {{ item.title }}
+                                </a>
+                                {% if item.children %}
+                                	<div class="sub_menu_holder">
+                                		<div class="sub_menu_items">
+		                                	<ul class="beperkt_header_menusub_menu_ul">
+												{% for child in item.children %}
+													<li class="beperkt_header_submenu_item">
+														<a class="beperkt_header_submenu_link" href="{{ child.link }}">
+						                                    {{ child.title }}
+						                                </a>
+						                                {% if child.children %}
+						                                	<ul class="beperkt_header_menusubmenu_ul">
+																{% for sub_child in child.children %}
+																<li class="beperkt_header_subsubmenu_item">
+																	<a class="beperkt_header_subsubmenu_link" href="{{ sub_child.link }}">
+									                                    {{ sub_child.title }}
+									                                </a>
+																</li>
+																{% endfor %}
+															</ul>
+						                                {% endif %}
+													</li>
+												{% endfor %}
+											</ul>
+										</div>
+										{% set menuafbeelding = fn('get_field', 'afbeelding',item) %}
+										{% if item.children %}
+		                                    <div class="menu_afbeelding" style="background-image:url({{ menuafbeelding.url }});">
+		                                    </div>
+	                                    {% endif %}
+									</div>
+                                {% endif %}
+							</li>
+						{% endfor %}
+					</ul>
+                </nav>
+                {% endif %}
+                
+                
+            </div>
+        </div>
+
+        <nav id="nav" class="header__mobile">
+            <ul>
+                {% for item in headerMenu.items %}
+                    <li class="{{ item.classes|join(' ') }}">
+                        <a href="{{ item.link }}">
+                            {{ item.title }}
+                        </a>
+
+                        {% if item.children %}
+                            <ul>
+                                {% for child in item.children %}
+                                    <li class="{{ child.classes|join(' ') }}">
+                                        <a href="{{ child.link }}">
+                                            {{ child.title }}
+                                        </a>
+
+                                        {% if child.children %}
+                                            <ul>
+                                                {% for sub_child in child.children %}
+                                                    <li class="{{ sub_child.classes|join(' ') }}">
+                                                        <a href="{{ sub_child.link }}">
+                                                            {{ sub_child.title }}
+                                                        </a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        {% if not (fn('is_cart') or fn('is_checkout')) %}
+        	<div class="header__search">
+				{{ fn('do_shortcode', '[fibosearch]') }}
+			</div>
+            <div class="header__finder">
+                <div class="container-fluid">
+                    {{ fn('do_shortcode', '[fibosearch]') }}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</header>

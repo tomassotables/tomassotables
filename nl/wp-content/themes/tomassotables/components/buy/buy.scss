@@ -1,0 +1,43 @@
+@import '~assets/styles/variables';
+
+.buy {
+	margin-bottom: 42px;
+	position: relative;
+	@include media-breakpoint-up(md) {
+		margin-bottom: 124px;
+	}
+
+	h2 {
+		margin-bottom: 40px;
+		padding-bottom: 16px;
+		position: relative;
+		letter-spacing: -0.7px;
+		text-align: center;
+
+		&:before {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 60px;
+			height: 2px;
+			background-color: $gray-300;
+			transform: translateX(-50%);
+			content: '';
+		}
+	}
+
+	&__item {
+		width: 255px;
+		@include media-breakpoint-up(md) {
+			margin: 0;
+			width: auto;
+			height: 100%;
+		}
+		margin: {
+			right: auto;
+			bottom: 5px;
+			left: auto;
+		}
+	}
+}
+

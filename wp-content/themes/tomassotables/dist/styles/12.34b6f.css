@@ -1,0 +1,3 @@
+.articles{margin-bottom:60px;width:100%;overflow:hidden}@media(min-width: 768px){.articles{margin-bottom:108px}}@media(min-width: 1260px){.articles__container{max-width:1190px}}.articles h2{margin-bottom:35px;letter-spacing:-0.5px}.articles__slider{padding-bottom:2px}.articles__item{margin-bottom:20px;display:none;width:100%}@media(min-width: 768px){.articles__item{margin-right:30px;display:block;width:360px}}.articles__item:nth-child(1),.articles__item:nth-child(2){display:block;opacity:1 !important}
+
+/*# sourceMappingURL=12.34b6f.css.map*/

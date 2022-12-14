@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/brand-logo/brand-logo.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/19.86bce.chunk.js","sourcesContent":["import './brand-logo.scss';\n\nexport default () => {\n};\n"],"sourceRoot":""}

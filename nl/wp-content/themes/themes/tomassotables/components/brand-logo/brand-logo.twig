@@ -1,0 +1,24 @@
+{% if brands_title or brands %}
+	<div data-component="brand-logo" class="brand-logo">
+		<div class="container">
+			{% if brands_title %}
+				<h2 class="text-center position-relative">
+					{{ brands_title }}
+				</h2>
+			{% endif %}
+
+			{% if brands %}
+				<div class="row align-items-center">
+					{% for brand in brands %}
+						<div class="col-6 col-md-4 col-lg-2">
+							<picture>
+								<img src="{{ Image(brand).src }}" alt="{{ Image(brand).alt }}">
+							</picture>
+						</div>
+					{% endfor  %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+{% endif %}
+

@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/favorite/favorite.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/41.08a31.chunk.js","sourcesContent":["import './favorite.scss';\n\nexport default () => {\n\n};\n"],"sourceRoot":""}

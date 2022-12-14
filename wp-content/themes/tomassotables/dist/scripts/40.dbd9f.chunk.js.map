@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./wp-content/themes/tomassotables/components/faq/faq.js"],"names":[],"mappings":"2FAAA,cAEe,kB","file":"scripts/40.dbd9f.chunk.js","sourcesContent":["import './faq.scss';\n\nexport default () => {\n};\n"],"sourceRoot":""}

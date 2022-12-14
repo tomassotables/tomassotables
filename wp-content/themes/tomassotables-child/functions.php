@@ -705,24 +705,36 @@ add_action( 'dropship_csv', 'product_sync_dropshipping');
 
 function dropship_call_schedullar($filename) {
 	global $wpdb;
-
+	//$filename= "dropship-part-9.csv";
 	$outputFile = get_stylesheet_directory_uri()  . '/dropship/'.$filename;
 	$data = file_get_contents($outputFile);
 	$rows = explode("\n",$data);
 	unset($rows[0]);
 	unset($rows[0]);
+	$prdID=array();
+
+	// echo "<pre>";
+	// print_r($rows);
+	// die();
+
 	foreach($rows as $stocks){
-    	$explode=explode(";", $stocks);
+    	$explode= explode(";", $stocks);
+    	
+
     	$prd_sku= $explode[0];
     	$prd_stock= $explode[1];
+
+    	//echo $prd_sku." - ". $prd_stock. "<br/>";
+
 
     	$productId = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM $wpdb->postmeta WHERE meta_key='_sku' AND meta_value='%s' LIMIT 1", $prd_sku ) );
     	if($productId){
     		$prdID[]=$productId;
-    		if($stock==0){
+    		if($prd_stock==0){
                 update_post_meta($productId, '_stock', NULL);
                 update_post_meta($productId, '_stock_status', "outofstock");
             } else {
+            	//echo "Product ID: ".$productId." SKU: ".$prd_sku." - ". $prd_stock. "<br/>";
                 update_post_meta($productId, '_stock_status', "instock");
                 update_post_meta($productId, '_stock', $prd_stock);
             }
@@ -741,6 +753,8 @@ function dropship_call_schedullar($filename) {
     );
     return $result;
 }
+
+//add_shortcode('sync_dropship', 'dropship_call_schedullar');
 	
 
 //End Drop Ship Scheduler

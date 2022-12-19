@@ -1,6 +1,5 @@
 <div data-component="sidebar" class="sidebar">
-    <div class="sidebar__top">
-    	
+    <div class="sidebar__top">    	
     	<div id="sb_mobile_top">
 	    	<div class="category-section__heading">
 	            <h1>{{ fn('woocommerce_page_title') }}</h1>
@@ -25,16 +24,13 @@
         </a>
 
         <div class="sidebar__sort">
-            <h6>{{ __('Sort by:') }}</h6>
-
+            <p>{{ __('Sort by:') }}</p>
             {% do action('woocommerce_sort_by_filter') %}
         </div>
     </div>
 
-    <div class="sidebar__filter mfp-hide" id="filter-popup">
-    	
-        <h6 class="sidebar__heading">{{ __('Filter Option') }}</h6>
-
+    <div class="sidebar__filter mfp-hide" id="filter-popup">    	
+        <p class="sidebar__heading">{{ __('Filter Option') }}</p>
         <div class="sidebar__filter-holder">
             {% do fn('dynamic_sidebar', 'filter_sidebar') %}
 

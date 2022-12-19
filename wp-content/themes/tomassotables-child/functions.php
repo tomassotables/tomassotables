@@ -238,7 +238,56 @@ function your_function() {
 				
 		});	
 	</script>
-    <?php
+    <?php if ( is_product() ){ 
+    	$prd_id=  get_the_id();
+    	$product = wc_get_product($prd_id);
+    	if ( $product->is_on_sale() ) {
+	    	$percentage=0;
+	    	if( $product->is_type('simple')){
+	    		$regular_price = (float) $product->get_regular_price();
+		        $sale_price    = (float) $product->get_sale_price();
+		        $percentage    = round(100 - ($sale_price / $regular_price * 100));
+			}
+
+			?>
+			<script>
+				jQuery(function($){
+					var get_percent="<?= $percentage; ?>";
+					var single_prd_badges="";
+					single_prd_badges+='<div class="singleprd_badges">';
+					single_prd_badges+='<div class="single_product free_delivery">GRATIS BEZORGD</div>';
+					if(get_percent!=0){
+						single_prd_badges+='<div class="single_product discount_percentage">'+get_percent+'% korting</div>';
+					}
+					single_prd_badges+='</div>';
+					
+
+					if($('.woocommerce-product-gallery').length > 0){
+						$('.woocommerce-product-gallery').before(single_prd_badges);
+					}
+				});
+			</script>
+			<?php
+		} else {
+			?>
+			<script>
+				jQuery(function($){
+					var get_percent="<?= $percentage; ?>";
+					var single_prd_badges="";
+					single_prd_badges+='<div class="singleprd_badges">';
+					single_prd_badges+='<div class="single_product free_delivery">GRATIS BEZORGD</div>';
+					single_prd_badges+='</div>';
+
+					if($('.woocommerce-product-gallery').length > 0){
+						$('.woocommerce-product-gallery').before(single_prd_badges);
+					}
+				});
+			</script>
+			<?php
+		}
+    }
+
+    
 }
 add_action( 'wp_footer', 'your_function' );
 
@@ -754,10 +803,92 @@ function dropship_call_schedullar($filename) {
     return $result;
 }
 
-//add_shortcode('sync_dropship', 'dropship_call_schedullar');
+
 	
 
+
+
+
+//Drop ship Testing Function
+function dropship_call_schedullar_shortcode($filename) {
+	global $wpdb;
+	$filename= "dropship-part-7.csv";
+	$outputFile = get_stylesheet_directory_uri()  . '/dropship/'.$filename;
+	$data = file_get_contents($outputFile);
+	$rows = explode("\n",$data);
+	unset($rows[0]);
+	unset($rows[0]);
+	$prdID=array();
+
+	// echo "<pre>";
+	// print_r($rows);
+	// die();
+
+	foreach($rows as $stocks){
+    	$explode= explode(";", $stocks);
+    	
+
+    	$prd_sku= $explode[0];
+    	$prd_stock= $explode[1];
+
+    	//echo $prd_sku." - ". $prd_stock. "<br/>";
+
+
+    	$productId = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM $wpdb->postmeta WHERE meta_key='_sku' AND meta_value='%s' LIMIT 1", $prd_sku ) );
+    	if($productId){
+    		$prdID[]=$productId;
+    		if($prd_stock==0){
+                update_post_meta($productId, '_stock', NULL);
+                update_post_meta($productId, '_stock_status', "outofstock");
+            } else {
+            	//echo "Product ID: ".$productId." SKU: ".$prd_sku." - ". $prd_stock. "<br/>";
+                update_post_meta($productId, '_stock_status', "instock");
+                update_post_meta($productId, '_stock', $prd_stock);
+            }
+    	}
+	}
+
+
+    $count= count($prdID);
+    $import_ids=implode(", ", $prdID);
+    
+    $result=array(
+        "code" => 200,
+        "count_products" => $count,
+        "message" => "Import successful and its affected on $import_ids",
+        "product_match_id" => $import_ids, 
+    );
+    return $result;
+}
+
+add_shortcode('sync_dropship', 'dropship_call_schedullar_shortcode');
 //End Drop Ship Scheduler
 
-?>
 
+
+add_filter( 'woocommerce_sale_flash', 'add_percentage_to_sale_badge', 20, 3 );
+function add_percentage_to_sale_badge( $html, $post, $product ) {
+    if( $product->is_type('variable')){
+        $percentages = array();
+
+        // Get all variation prices
+        $prices = $product->get_variation_prices();
+
+        // Loop through variation prices
+        foreach( $prices['price'] as $key => $price ){
+            // Only on sale variations
+            if( $prices['regular_price'][$key] !== $price ){
+                // Calculate and set in the array the percentage for each variation on sale
+                $percentages[] = round(100 - ($prices['sale_price'][$key] / $prices['regular_price'][$key] * 100));
+            }
+        }
+        $percentage = max($percentages) . '%';
+    } else {
+        $regular_price = (float) $product->get_regular_price();
+        $sale_price    = (float) $product->get_sale_price();
+
+        $percentage    = round(100 - ($sale_price / $regular_price * 100)) . '%';
+    }
+    return '<span class="onsale">' . esc_html__( 'SALE', 'woocommerce' ) . ' ' . $percentage . '</span>';
+}
+?>

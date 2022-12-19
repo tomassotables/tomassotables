@@ -242,7 +242,7 @@ class WooCommerce extends \App\Provider {
 	public function wc_product_detail_description() {
 		if ( '' !== get_post()->post_content ) {
 			echo '<div class="product_description">';
-			echo '<p>' . wp_trim_words( get_the_content(), 25, '...' ) . ' <a href="#description" class="js-scroll-down">Laat meer zien</a></p>';
+			echo '<p>' . wp_trim_words( get_the_content(),15, '...' ) . ' <a href="#description" class="js-scroll-down">Laat meer zien</a></p>';
 			echo '</div>';
 		}
 	}

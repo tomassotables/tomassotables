@@ -1,6 +1,10 @@
 {% set product = fn('wc_get_product', post.ID) %}
 {% set snel_in_huis_icon = fn('get_field', 'snel_in_huis_icon', 'option') %}
 {% set snel_in_huis_enable = fn('get_field', 'show_snel_in_huis_badge', post.ID) %}
+{% set stocks = fn('get_field', '_stock_status', post.ID) %}
+{% set instock = fn('get_field', '_stock', post.ID) %}
+{% set percentages = [] %}
+
 
 <div data-component="card-product" class="card-product">
     <div class="card-product__main">
@@ -10,22 +14,32 @@
 
         <div class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
             
-           
-            <div class="tablet_top">
-	           	{% if product.is_on_sale %}
-	            	<div class="sale_label">SALE</div>
-	            {% else %}
-	            	<div class="empty_label"></div>
-	            {% endif %}
+        	<div class="tablet_top">
+        		<div class="sale_label free_delivery">GRATIS BEZORGD</div>
+
+        		{% if product.is_on_sale %}
+	        		{% if product.get_type is same as("simple") %}
+	        			
+	    				{% set regular_price = product.get_regular_price %}
+	    				{% set sale_price = fn('get_field', '_price', post.ID) %}
+
+	    				<div class="sale_label discount_percentage">{{ 100 - (sale_price / regular_price * 100)|round }}% korting</div>
+
+	    				
+	    			{% endif %}
+    			{% endif %}
+
+    			
+	           	
 	            
 	            {{ fn('do_shortcode', '[yith_wcwl_add_to_wishlist product_id="' ~ post.ID ~ '"]') }}
             
             
 	            <img src="{{ post.thumbnail|letterbox(330, 330, '#FFFFFF') }}" />
 	
-	            <h2 class="woocommerce-loop-product__title">
+	            <p class="woocommerce-loop-product__title">
 	                {{ post.title }}
-	            </h2>
+	            </p>
             </div>
             <div class="tablet_bottom">
 				<div class="tablet_footer">
@@ -41,17 +55,13 @@
 			            </ul>
 		            </div>
 					<div class="tablet_footer_rechts">
-						{% if product.get_stock_quantity > 0 %}
-						    <span class="in-stock-badge">Op voorraad</span>
-						{% endif %}
+						
 			            <span class="price">
 			                {{ product.get_price_html }}
 			            </span>
-			            {% if snel_in_huis_enable == 1 or snel_in_huis_enable == '' %}
-				            <div class="snel_in_huis_label">
-				            	<img class="snel_in_huis_img" src="{{ snel_in_huis_icon }}" alt="" /> Snel in huis
-				            </div>
-				        {% endif %}
+			            {% if product.get_stock_quantity > 0 %}
+						    <span class="in-stock-badge">Op voorraad</span>
+						{% endif %}
 		            </div>
 				</div>
 				<a href="{{ post.link }}" class="button add_to_cart_button add_mobile_btn">	
@@ -69,11 +79,19 @@
 
             {{ fn('do_shortcode', '[yith_wcwl_add_to_wishlist product_id="' ~ post.ID ~ '"]') }}
 			
+			<div class="sale_label free_delivery">GRATIS BEZORGD</div>
+
 			{% if product.is_on_sale %}
-            	<div class="sale_label">SALE</div>
-            {% else %}
-            	<div class="empty_label"></div>
-            {% endif %}
+        		{% if product.get_type is same as("simple") %}
+        			
+    				{% set regular_price = product.get_regular_price %}
+    				{% set sale_price = fn('get_field', '_price', post.ID) %}
+
+    				<div class="sale_label discount_percentage">{{ 100 - (sale_price / regular_price * 100)|round }}% korting</div>
+
+    				
+    			{% endif %}
+			{% endif %}
 			
 			
             <a href="{{ post.link }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
@@ -91,9 +109,9 @@
                     {% endif %}
                 </div>
 
-                <h2 class="woocommerce-loop-product__title">
+                <p class="woocommerce-loop-product__title">
                 {{ post.title }}
-	            </h2>
+	            </p>
 				
             </a>
         </div>
@@ -123,17 +141,12 @@
 		            </ul>
             </div>
 			<div class="tablet_footer_rechts">
-				{% if(product.get_stock_quantity > 0) %}
-				    <span class="in-stock-badge">Op voorraad</span>
-				{% endif %}
-	            <span class="price">
+				<span class="price">
 	                {{ product.get_price_html }}
 	            </span>
-	            {% if snel_in_huis_enable == 1 or snel_in_huis_enable == '' %}
-		            <div class="snel_in_huis_label">
-			            <img class="snel_in_huis_img" src="{{ snel_in_huis_icon }}" alt="" /> Snel in huis
-		            </div>
-		        {% endif %}
+	            {% if product.get_stock_quantity > 0 %}
+				    <span class="in-stock-badge">Op voorraad</span>
+				{% endif %}
             </div>
 		</div>
         <a href="{{ post.link }}" class="button add_to_cart_button add_desktop_btn">	

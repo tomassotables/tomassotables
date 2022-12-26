@@ -71,10 +71,6 @@
 				<h3>{{ __('Specificaties') }}</h3>
 
 				<ul>
-					{% if product.get_sku %}
-						<li><span>{{ __('SKU') }}</span>{{ product.get_sku }}</li>
-					{% endif %}
-
 					{% for item in fn('get_field', 'product_specifications', post.ID) %}
 						<li><span>{{ item.name }}</span>{{ item.value }}</li>
 					{% endfor %}

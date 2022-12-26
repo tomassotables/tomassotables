@@ -33,6 +33,38 @@ jQuery('.beperkt_header_items').hover(function(){
     jQuery("body").removeClass('menu-hover');
 });
 
+
+jQuery('#billing_country').change(function(){
+	// jQuery(".includes_tax").css('visibility', "hidden");
+
+	// setTimeout(function(){
+	// 	var teset=jQuery(".includes_tax").text().substring(jQuery(".includes_tax").text());
+		
+	// 	var get_text= teset.substr(0, 18);
+	// 	var last= get_text.substring(get_text.length - 7);
+	// 	var total_intlength= 
+	// 	if(last.substring(last.length - 2)!= "00"){
+	// 		var text_render= last.replace(',-','');
+	// 	} else {
+	// 		var text_render= last.replace('00',',-');
+	// 	}
+	// 	var get_cntry_text=jQuery("#billing_country").find(":selected").text();
+	// 	var get_cntry_val= jQuery("#billing_country").find(":selected").val();
+	// 	if(get_cntry_val=="BE"){
+	// 		var fill_text= "(Inclusief "+text_render+" BTW geschat voor België)";
+	// 	} else if(get_cntry_val=="LU"){
+	// 		var fill_text= "(Inclusief "+text_render+" BTW geschat voor Luxemburg)";
+	// 	} else {
+	// 		var fill_text= "(Inclusief "+text_render+" BTW)"
+	// 	}
+	// 	console.log(fill_text);
+	// 	jQuery(".includes_tax").text(fill_text);
+	// 	jQuery(".includes_tax").css('visibility', "visible");
+	// }, 2500)
+
+});
+
+
 	function change_priceformatt(){
 		
 		if(jQuery(".woocommerce-Price-amount").length > 0){
@@ -58,21 +90,29 @@ jQuery('.beperkt_header_items').hover(function(){
 		    });
 		}
 
-		if(jQuery(".includes_tax").length > 0){ 
+		if(jQuery("body").on(".includes_tax").length > 0){ 
+		//if(jQuery(".includes_tax").length > 0){ 
+			
+			
+
 			if(jQuery(".includes_tax").text().substring(jQuery(".includes_tax").text().length - 4) == 'BTW)'){
+				
 			    var total_cart_text= jQuery(".includes_tax").text().replace('(Inclusief','').replace('BTW)','').trim();
 			    var new_total_price = total_cart_text+",-"
 			   if (total_cart_text.substring(total_cart_text.length - 3) == ',00') {
-			        
-			            jQuery(".includes_tax").text('(Inclusief '+ total_cart_text.substring(0,total_cart_text.length - 3)+',-'+ ' BTW)' );
-			    } else if (total_cart_text.substring(total_cart_text.length - 2) == ',-'){}
-			    else {
-			            jQuery(".includes_tax").text('(Inclusief '+ new_total_price + ' BTW)');
+			        jQuery(".includes_tax").text('(Inclusief '+ total_cart_text.substring(0,total_cart_text.length - 3)+',-'+ ' BTW)' );
+			    } else if (total_cart_text.substring(total_cart_text.length - 2) == ',-'){
+			    	
+			    } else {
+			    	
+		            jQuery(".includes_tax").text('(Inclusief '+ new_total_price + ' BTW)');
 			    }
 			    jQuery("small.includes_tax").text(jQuery("small.includes_tax").text().replace(/\s\s+/g, ' '));
-			}else{
+			} else{
+				
 				var total_cart_text= jQuery(".includes_tax").text().replace('(Inclusief','').trim();
 			    var new_total_price = total_cart_text;
+			    
 			  
 			    jQuery(".includes_tax").text('(Inclusief '+ new_total_price);
 			    jQuery("small.includes_tax").text(jQuery("small.includes_tax").text().replace(/\s\s+/g, ' '));
@@ -237,7 +277,7 @@ jQuery('.beperkt_header_items').hover(function(){
 		$( '.cart_totals' ).replaceWith( html_str );
 		$( document.body ).trigger( 'updated_cart_totals' );
 		setTimeout(function(){
-			change_priceformatt();
+			//change_priceformatt();
 			},700);
 	};
 

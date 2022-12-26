@@ -254,7 +254,7 @@ function your_function() {
 				jQuery(function($){
 					var get_percent="<?= $percentage; ?>";
 					var single_prd_badges="";
-					single_prd_badges+='<div class="singleprd_badges">';
+					single_prd_badges+='<div class="singleprd_badges js-selector">';
 					single_prd_badges+='<div class="single_product free_delivery">GRATIS BEZORGD</div>';
 					if(get_percent!=0){
 						single_prd_badges+='<div class="single_product discount_percentage">'+get_percent+'% korting</div>';
@@ -274,7 +274,7 @@ function your_function() {
 				jQuery(function($){
 					var get_percent="<?= $percentage; ?>";
 					var single_prd_badges="";
-					single_prd_badges+='<div class="singleprd_badges">';
+					single_prd_badges+='<div class="singleprd_badges js-selector">';
 					single_prd_badges+='<div class="single_product free_delivery">GRATIS BEZORGD</div>';
 					single_prd_badges+='</div>';
 
@@ -430,17 +430,35 @@ function footer_script(){
 	<?php }
 }
 add_action('wp_footer', 'footer_script');
+
+
 add_filter( 'wc_price', 'woo_format_decimal_value', 20, 4 ); 
-function woo_format_decimal_value( $return, $price, $args, $unformatted_price ) { 
+
+function woo_format_decimal_value( $return, $price, $args, $unformatted_price ) {
 	if(strpos($price, ',') !== false && substr($price, strrpos($price, ',' )+1) == '00'){
 		return substr($price, 0, strripos($price, ',')).',-';
-	}else if(strpos($price, ',') === false){
+	} else if(strpos($price, ',') === false){
 		return $price.',-';
-	}else if(substr($price, strrpos($price, ',' )+1) != '00'){
-		return $price.',-';
+	} else if(substr($price, strrpos($price, ',' )+1) != '00'){
+		//return $price.',-';
+		return $price;
 	}
 	return $price;
 }
+
+
+
+// add_filter( 'woocommerce_get_price_html', 'cw_change_product_html', 10, 2 );
+// function cw_change_product_price_cart( $price, $cart_item, $cart_item_key ) {
+//     if(strpos($price, ',') !== false && substr($price, strrpos($price, ',' )+1) == '00'){
+// 		return substr($price, 0, strripos($price, ',')).',-';
+// 	}else if(strpos($price, ',') === false){
+// 		return $price.',-';
+// 	}else if(substr($price, strrpos($price, ',' )+1) != '00'){
+// 		return $price.',-';
+// 	}
+// 	return $price;
+// } 
 
 
 function header_script(){
@@ -766,40 +784,68 @@ function dropship_call_schedullar($filename) {
 	// print_r($rows);
 	// die();
 
-	foreach($rows as $stocks){
-    	$explode= explode(";", $stocks);
-    	
+	$count_rows= count($rows);
 
-    	$prd_sku= $explode[0];
-    	$prd_stock= $explode[1];
+	$sync_array=array(
+		"Total Records" => $count_rows,
+		"File Path" => $outputFile,
+		"FileName" => $filename
+	);
 
-    	//echo $prd_sku." - ". $prd_stock. "<br/>";
+	$send_email= json_encode($sync_array);
 
 
-    	$productId = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM $wpdb->postmeta WHERE meta_key='_sku' AND meta_value='%s' LIMIT 1", $prd_sku ) );
-    	if($productId){
-    		$prdID[]=$productId;
-    		if($prd_stock==0){
-                update_post_meta($productId, '_stock', NULL);
-                update_post_meta($productId, '_stock_status', "outofstock");
-            } else {
-            	//echo "Product ID: ".$productId." SKU: ".$prd_sku." - ". $prd_stock. "<br/>";
-                update_post_meta($productId, '_stock_status', "instock");
-                update_post_meta($productId, '_stock', $prd_stock);
-            }
-    	}
+
+	//file_put_contents(get_stylesheet_directory()."/dropship/".$filename.".json", $send_email);
+	
+
+	if($count_rows!= 0){
+
+		foreach($rows as $stocks){
+	    	$explode= explode(";", $stocks);
+	    	
+
+	    	$prd_sku= $explode[0];
+	    	$prd_stock= $explode[1];
+
+	    	//echo $prd_sku." - ". $prd_stock. "<br/>";
+
+
+	    	$productId = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM $wpdb->postmeta WHERE meta_key='_sku' AND meta_value='%s' LIMIT 1", $prd_sku ) );
+	    	if($productId){
+	    		$prdID[]=$productId;
+	    		if($prd_stock==0){
+	                update_post_meta($productId, '_stock', NULL);
+	                update_post_meta($productId, '_stock_status', "outofstock");
+	            } else {
+	            	//echo "Product ID: ".$productId." SKU: ".$prd_sku." - ". $prd_stock. "<br/>";
+	                update_post_meta($productId, '_stock_status', "instock");
+	                update_post_meta($productId, '_stock', $prd_stock);
+	            }
+	    	}
+		}
+
+
+	    $count= count($prdID);
+	    $import_ids=implode(", ", $prdID);
+	    
+	    $result=array(
+	        "code" => 200,
+	        "count_products" => $count,
+	        "message" => "Import successful and its affected on $import_ids",
+	        "status" => "Done",
+	        "product_match_id" => $import_ids, 
+	    );
+	} else {
+		$result=array(
+	        "code" => 202,
+	        "message" => "Failed to sync dropship file: ". $filename,
+	        "status" => "Failed"
+	    );
 	}
 
-
-    $count= count($prdID);
-    $import_ids=implode(", ", $prdID);
-    
-    $result=array(
-        "code" => 200,
-        "count_products" => $count,
-        "message" => "Import successful and its affected on $import_ids",
-        "product_match_id" => $import_ids, 
-    );
+	$file_result= json_encode($result);
+	file_put_contents(get_stylesheet_directory()."/dropship/".$filename.".json", $file_result);
     return $result;
 }
 
@@ -812,13 +858,22 @@ function dropship_call_schedullar($filename) {
 //Drop ship Testing Function
 function dropship_call_schedullar_shortcode($filename) {
 	global $wpdb;
-	$filename= "dropship-part-7.csv";
+	$filename= "dropship-part-8.csv";
 	$outputFile = get_stylesheet_directory_uri()  . '/dropship/'.$filename;
+
+	$result= dropship_call_schedullar($filename);
+
+	echo "<pre>";
+	print_r($result);
+	echo "</pre>";
+
+	die();
+
 	$data = file_get_contents($outputFile);
 	$rows = explode("\n",$data);
 	unset($rows[0]);
 	unset($rows[0]);
-	$prdID=array();
+	$prdID = $stock_id =array();
 
 	// echo "<pre>";
 	// print_r($rows);
@@ -836,11 +891,13 @@ function dropship_call_schedullar_shortcode($filename) {
 
     	$productId = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM $wpdb->postmeta WHERE meta_key='_sku' AND meta_value='%s' LIMIT 1", $prd_sku ) );
     	if($productId){
-    		$prdID[]=$productId;
+    		
     		if($prd_stock==0){
                 update_post_meta($productId, '_stock', NULL);
                 update_post_meta($productId, '_stock_status', "outofstock");
             } else {
+            	$prdID[]=$productId;
+            	$stock_id= $prd_sku;
             	//echo "Product ID: ".$productId." SKU: ".$prd_sku." - ". $prd_stock. "<br/>";
                 update_post_meta($productId, '_stock_status', "instock");
                 update_post_meta($productId, '_stock', $prd_stock);
@@ -851,14 +908,19 @@ function dropship_call_schedullar_shortcode($filename) {
 
     $count= count($prdID);
     $import_ids=implode(", ", $prdID);
+    $stock_ids=implode(", ", $stock_id);
     
     $result=array(
         "code" => 200,
         "count_products" => $count,
         "message" => "Import successful and its affected on $import_ids",
-        "product_match_id" => $import_ids, 
+        "product_match_id" => $import_ids,
+        "product_sku_id" => $stock_ids,
     );
+
+    echo "<pre>";
     return $result;
+    echo "</pre>";
 }
 
 add_shortcode('sync_dropship', 'dropship_call_schedullar_shortcode');
@@ -890,5 +952,38 @@ function add_percentage_to_sale_badge( $html, $post, $product ) {
         $percentage    = round(100 - ($sale_price / $regular_price * 100)) . '%';
     }
     return '<span class="onsale">' . esc_html__( 'SALE', 'woocommerce' ) . ' ' . $percentage . '</span>';
+}
+
+
+
+
+function display_cards(){
+	echo '<div class="wc-payment-info-mode-single">';
+	echo '<span><i class="icon-lock"></i> Betaal veilig</span>';
+	if ( ( $payments = get_field( 'cart_payments', 'option' ) ) && ! empty( $payments ) ) {
+		echo '<ul>';
+		foreach ( $payments as $payment ) {
+			echo '<li>' . wp_get_attachment_image( $payment['id'], 'medium' ) . '</li>';
+		}
+		echo '</ul>';
+	}
+	echo '</div>';
+
+}
+add_action('woocommerce_after_add_to_cart_form', 'display_cards');
+
+
+
+
+add_action('woocommerce_product_query', 'show_only_instock_products');
+
+function show_only_instock_products($query) {
+    $meta_query = $query->get( 'meta_query' );
+    $meta_query[] = array(
+            'key'       => '_stock_status',
+            'compare'   => '=',
+            'value'     => 'instock'
+    );
+    $query->set( 'meta_query', $meta_query );
 }
 ?>

@@ -7,8 +7,11 @@
                         <div class="row justify-content-between align-items-center">
                             {% if options.help_person %}
                                 <div class="col-md-5">
-                                    <div class="employee__image">
+                                    <div class="employee__image desktop_image">
                                         {{ image(options.help_person,[1080,1080]) }}
+                                    </div>
+                                    <div class="employee__image mobile_image">
+                                        {{ image(options.help_person_mobile,[1080,1080]) }}
                                     </div>
                                 </div>
                             {% endif %}

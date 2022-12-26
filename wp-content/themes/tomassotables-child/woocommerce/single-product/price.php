@@ -20,4 +20,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
+
+$prd_id=  get_the_id();
+
+$stock_status= get_post_meta( $prd_id, '_stock_status', true );
+$delivery_time= get_post_meta( $prd_id, 'delivery_time', true );
+
 ?>
+
+<div class="delivery_information desktop_screen">
+    <div class="delivery_time">
+        <span class="icon">
+            <img src="<?php echo site_url() ?>/wp-content/uploads/delivery.png"/>
+        </span>
+        <span class="icon_text"><?= $delivery_time ?></span>
+    </div>
+    <?php if($stock_status=="instock"){ ?>
+    <div class="stock_status">
+        <span class="icon">
+            <img src="<?php echo site_url() ?>/wp-content/uploads/instock.png"/>
+        </span>
+        <span class="icon_text">Op Voorraad</span>
+    </div>
+    <?php } ?>
+</div>
